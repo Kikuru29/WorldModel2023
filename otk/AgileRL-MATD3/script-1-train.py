@@ -7,6 +7,7 @@ Authors: Michael (https://github.com/mikepratt1), Nickua (https://github.com/nic
 import os
 import pprint
 import datetime
+import json
 
 import numpy as np
 import torch
@@ -24,32 +25,40 @@ if __name__ == "__main__":
     dt_now = datetime.datetime.now()
     str_dt_now = dt_now.strftime("%Y%m%d-%H%M")
     print(str_dt_now)
+
+    
+    #JSONファイルからパラメータを読み込み
+    with open("./parameters.json", mode="rt", encoding="utf-8") as f:
+        param_json = json.load(f)
+        
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("===== AgileRL Online Multi-Agent Demo =====")
 
     # Define the network configuration
     # ネットワークコンフィグレーションの定義
-    NET_CONFIG = {
-        "arch": "mlp",  # Network architecture
-        "h_size": [32, 32],  # Actor hidden size
-    }
+    #NET_CONFIG = {
+    #    "arch": "mlp",  # Network architecture
+    #    "h_size": [32, 32],  # Actor hidden size
+    #}
+    NET_CONFIG = param_json["NET_CONFIG"] # JSONファイルからの読み込み値を反映
 
     # Define the initial hyperparameters
     # 初期ハイパーパラメータの定義
-    INIT_HP = {
-        "POPULATION_SIZE": 4,
-        "ALGO": "MATD3",  # Algorithm
-        # Swap image channels dimension from last to first [H, W, C] -> [C, H, W]
-        "CHANNELS_LAST": False,
-        "BATCH_SIZE": 32,  # Batch size
-        "LR": 0.01,  # Learning rate
-        "GAMMA": 0.95,  # Discount factor
-        "MEMORY_SIZE": 100000,  # Max memory buffer size
-        "LEARN_STEP": 5,  # Learning frequency
-        "TAU": 0.01,  # For soft update of target parameters
-        "POLICY_FREQ": 2,  # Policy frequnecy
-    }
+    #INIT_HP = {
+    #    "POPULATION_SIZE": 4,
+    #    "ALGO": "MATD3",  # Algorithm
+    #    # Swap image channels dimension from last to first [H, W, C] -> [C, H, W]
+    #    "CHANNELS_LAST": False,
+    #    "BATCH_SIZE": 32,  # Batch size
+    #    "LR": 0.01,  # Learning rate
+    #    "GAMMA": 0.95,  # Discount factor
+    #    "MEMORY_SIZE": 100000,  # Max memory buffer size
+    #    "LEARN_STEP": 5,  # Learning frequency
+    #    "TAU": 0.01,  # For soft update of target parameters
+    #    "POLICY_FREQ": 2,  # Policy frequnecy
+    #}
+    INIT_HP = param_json["INIT_HP"] # JSONファイルからの読み込み値を反映
 
     # Define the simple speaker listener environment as a parallel environment
     # シンプル・スピーカー・リスナー環境（並列）の定義
@@ -163,13 +172,20 @@ if __name__ == "__main__":
 
     # Define training loop parameters
     # 学習ループ・パラメータを定義
-    max_episodes = 10 # 6000 #500  # Total episodes (default: 6000)
-    max_steps = 100 #25  # Maximum steps to take in each episode
-    epsilon = 1.0  # Starting epsilon value
-    eps_end = 0.1  # Final epsilon value
-    eps_decay = 0.995  # Epsilon decay
-    evo_epochs = 20  # Evolution frequency
-    evo_loop = 1  # Number of evaluation episodes
+    max_episodes = param_json["PARAM_TRAIN"]["max_episodes"]
+    max_steps    = param_json["PARAM_TRAIN"]["max_steps"]
+    epsilon      = param_json["PARAM_TRAIN"]["epsilon"]
+    eps_end      = param_json["PARAM_TRAIN"]["eps_end"]
+    eps_decay    = param_json["PARAM_TRAIN"]["eps_decay"]
+    evo_epochs   = param_json["PARAM_TRAIN"]["evo_epochs"]
+    evo_loop     = param_json["PARAM_TRAIN"]["evo_loop"]
+    #max_episodes = 10 # 6000 #500  # Total episodes (default: 6000)
+    #max_steps = 100 #25  # Maximum steps to take in each episode
+    #epsilon = 1.0  # Starting epsilon value
+    #eps_end = 0.1  # Final epsilon value
+    #eps_decay = 0.995  # Epsilon decay
+    #evo_epochs = 20  # Evolution frequency
+    #evo_loop = 1  # Number of evaluation episodes
     elite = population[0]  # Assign a placeholder "elite" agent
 
     # Training loop
