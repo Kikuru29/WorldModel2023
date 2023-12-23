@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
     # Load the saved algorithm into the MADDPG object
     #path = "./models/MATD3/MATD3_trained_agent.pt"
-    path = "./"+str_dt_now+"/models/MATD3/MATD3_trained_agent.pt"
+    path = "./result/"+str_dt_now+"/models/MATD3/MATD3_trained_agent.pt"
     matd3.loadCheckpoint(path)
 
     # Define test loop parameters
