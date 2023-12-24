@@ -340,25 +340,25 @@ if __name__ == "__main__":
     elite.saveCheckpoint(save_path)
 
     # population を保存
-    filename = "population.pkl"
+    filename = "pickle-population.pkl"
     save_path = os.path.join(path, filename)
     with open(save_path, "wb") as f:
         dill.dump(population, f)
 
     # replaybuffer
-    filename = "replaybuffer.pkl"
+    filename = "pickle-replaybuffer.pkl"
     save_path = os.path.join(path, filename)
     with open(save_path, "wb") as f:
         dill.dump(memory, f)
 
     # tounament
-    filename = "tournament.pkl"
+    filename = "pickle-tournament.pkl"
     save_path = os.path.join(path, filename)
     with open(save_path, "wb") as f:
         dill.dump(tournament, f)
 
     # mutation
-    filename = "mutations.pkl"
+    filename = "pickle-mutations.pkl"
     save_path = os.path.join(path, filename)
     with open(save_path, "wb") as f:
         dill.dump(mutations, f)
@@ -368,3 +368,5 @@ if __name__ == "__main__":
         param_json = json.load(f)
     with open(path+"/parameters.json", mode="wt", encoding="utf-8") as f:
         json.dump(param_json, f, ensure_ascii=False, indent=2)
+
+    print("Done.")
