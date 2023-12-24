@@ -13,13 +13,13 @@
     "BATCH_SIZE": 32,
     "LR": 0.01,
     "GAMMA": 0.95,
-    "MEMORY_SIZE": 100000,
+    "MEMORY_SIZE": 200000,
     "LEARN_STEP": 5,
     "TAU": 0.01,
     "POLICY_FREQ": 2
   },
   "PARAM_TRAIN": {
-    "max_episodes": 3000,
+    "max_episodes": 2000,
     "max_steps": 100,
     "epsilon": 1.0,
     "eps_end": 0.1,

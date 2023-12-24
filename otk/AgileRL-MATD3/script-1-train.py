@@ -9,6 +9,7 @@ import pprint
 import datetime
 import json
 import argparse
+import dill #import pickle
 
 import numpy as np
 import torch
@@ -26,8 +27,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument('-dt', '--datetime', help='年月日時分をYYYYMMDD-hhmmの形式で指定。')
-
     parser.add_argument('-p', '--param', default='./parameters.json', help='学習用パラメータJSONファイルのパスを指定。')
+    parser.add_argument('-pop', '--population', help='population.pklファイルのパスを指定', )
+    parser.add_argument('-r', '--replaybuffer', help='replaybuffer.pklファイルのパスを指定', )
+    parser.add_argument('-t', '--tournament', help='tournament.pklファイルのパスを指定', )
+    parser.add_argument('-m', '--mutations', help='mutations.pklファイルのパスを指定', )
 
     args = parser.parse_args()
 
@@ -131,57 +135,70 @@ if __name__ == "__main__":
     
     # Create a population ready for evolutionary hyper-parameter optimisation
     # 進化的なハイパーパラメータ最適化のための母集団を作成する
-    population = initialPopulation(
-        INIT_HP["ALGO"],
-        state_dim,
-        action_dim,
-        one_hot,
-        NET_CONFIG,
-        INIT_HP,
-        population_size=INIT_HP["POPULATION_SIZE"],
-        device=device,
-    )
+    if not args.population:
+        population = initialPopulation(
+            INIT_HP["ALGO"],
+            state_dim,
+            action_dim,
+            one_hot,
+            NET_CONFIG,
+            INIT_HP,
+            population_size=INIT_HP["POPULATION_SIZE"],
+            device=device,
+        )
+    else: #引数に指定されている場合はファイルから読み込む
+        population = dill.load(open(args.population,'rb'))
+        
 
     # Configure the multi-agent replay buffer
     # マルチ・エージェント・リプレイバッファを設定する
-    field_names = ["state", "action", "reward", "next_state", "done"]
-    memory = MultiAgentReplayBuffer(
-        INIT_HP["MEMORY_SIZE"],
-        field_names=field_names,
-        agent_ids=INIT_HP["AGENT_IDS"],
-        device=device,
-    )
+    if not args.replaybuffer:
+        field_names = ["state", "action", "reward", "next_state", "done"]
+        memory = MultiAgentReplayBuffer(
+            INIT_HP["MEMORY_SIZE"],
+            field_names=field_names,
+            agent_ids=INIT_HP["AGENT_IDS"],
+            device=device,
+        )
+    else: #引数に指定されている場合はファイルから読み込む
+        memory = dill.load(open(args.replaybuffer,'rb'))
 
     # Instantiate a tournament selection object (used for HPO)
     # トーナメント選択オブジェクトのインスタンス化（HPOで使用）
-    tournament = TournamentSelection(
-        tournament_size=2,  # Tournament selection size
-        elitism=True,  # Elitism in tournament selection
-        population_size=INIT_HP["POPULATION_SIZE"],  # Population size
-        evo_step=1,
-    )  # Evaluate using last N fitness scores
+    if not args.tournament:
+        tournament = TournamentSelection(
+            tournament_size=2,  # Tournament selection size
+            elitism=True,  # Elitism in tournament selection
+            population_size=INIT_HP["POPULATION_SIZE"],  # Population size
+            evo_step=1,
+        )  # Evaluate using last N fitness scores
+    else: #引数に指定されている場合はファイルから読み込む
+        tournament = dill.load(open(args.tournament,'rb'))
 
     # Instantiate a mutations object (used for HPO)
     # ミューテーション・オブジェクトのインスタンス化（HPOで使用）
-    mutations = Mutations(
-        algo=INIT_HP["ALGO"],
-        no_mutation=0.2,  # Probability of no mutation
-        architecture=0.2,  # Probability of architecture mutation
-        new_layer_prob=0.2,  # Probability of new layer mutation
-        parameters=0.2,  # Probability of parameter mutation
-        activation=0,  # Probability of activation function mutation
-        rl_hp=0.2,  # Probability of RL hyperparameter mutation
-        rl_hp_selection=[
-            "lr",
-            "learn_step",
-            "batch_size",
-        ],  # RL hyperparams selected for mutation
-        mutation_sd=0.1,  # Mutation strength
-        agent_ids=INIT_HP["AGENT_IDS"],
-        arch=NET_CONFIG["arch"],
-        rand_seed=2,#1,
-        device=device,
-    )
+    if not args.mutations:
+        mutations = Mutations(
+            algo=INIT_HP["ALGO"],
+            no_mutation=0.2,  # Probability of no mutation
+            architecture=0.2,  # Probability of architecture mutation
+            new_layer_prob=0.2,  # Probability of new layer mutation
+            parameters=0.2,  # Probability of parameter mutation
+            activation=0,  # Probability of activation function mutation
+            rl_hp=0.2,  # Probability of RL hyperparameter mutation
+            rl_hp_selection=[
+                "lr",
+                "learn_step",
+                "batch_size",
+            ],  # RL hyperparams selected for mutation
+            mutation_sd=0.1,  # Mutation strength
+            agent_ids=INIT_HP["AGENT_IDS"],
+            arch=NET_CONFIG["arch"],
+            rand_seed=2,#1,
+            device=device,
+        )
+    else: #引数に指定されている場合はファイルから読み込む
+        mutations = dill.load(open(args.mutations,'rb'))
 
     # Define training loop parameters
     # 学習ループ・パラメータを定義
@@ -321,6 +338,30 @@ if __name__ == "__main__":
     os.makedirs(path, exist_ok=True)
     save_path = os.path.join(path, filename)
     elite.saveCheckpoint(save_path)
+
+    # population を保存
+    filename = "population.pkl"
+    save_path = os.path.join(path, filename)
+    with open(save_path, "wb") as f:
+        dill.dump(population, f)
+
+    # replaybuffer
+    filename = "replaybuffer.pkl"
+    save_path = os.path.join(path, filename)
+    with open(save_path, "wb") as f:
+        dill.dump(memory, f)
+
+    # tounament
+    filename = "tournament.pkl"
+    save_path = os.path.join(path, filename)
+    with open(save_path, "wb") as f:
+        dill.dump(tournament, f)
+
+    # mutation
+    filename = "mutations.pkl"
+    save_path = os.path.join(path, filename)
+    with open(save_path, "wb") as f:
+        dill.dump(mutations, f)
 
     #JSONファイルも複製をとっておく
     with open(args.param, mode="rt", encoding="utf-8") as f:
