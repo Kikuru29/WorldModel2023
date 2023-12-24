@@ -166,3 +166,5 @@ if __name__ == "__main__":
         #os.path.join("./videos/", "speaker_listener.gif"), frames, duration=10
         os.path.join(gif_path, "speaker_listener.gif"), frames, duration=10
     )
+
+    print("Done.")
