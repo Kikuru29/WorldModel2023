@@ -159,7 +159,7 @@ if __name__ == "__main__":
 
     # Save the gif to specified path
     #gif_path = "./videos/"
-    gif_path = "./result/"+args.datetime+"/videos/"
+    gif_path = "./result/"+args.datetime
     print(os.path.join(gif_path, "speaker_listener.gif"))
     os.makedirs(gif_path, exist_ok=True)
     imageio.mimwrite(

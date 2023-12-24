@@ -316,7 +316,7 @@ if __name__ == "__main__":
     # Save the trained algorithm
     # 学習アルゴリズムを保存する
     #path = "./models/MATD3"
-    path = "./result/"+str_dt_now+"/models/MATD3"
+    path = "./result/"+str_dt_now
     filename = "MATD3_trained_agent.pt"
     os.makedirs(path, exist_ok=True)
     save_path = os.path.join(path, filename)
