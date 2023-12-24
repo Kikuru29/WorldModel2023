@@ -1,4 +1,5 @@
 import os
+import argparse
 
 import imageio
 import numpy as np
@@ -28,7 +29,16 @@ def _label_with_episode_number(frame, episode_num):
 
 if __name__ == "__main__":
 
-    str_dt_now = "20231223-1901"
+    #引数を取得
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('-dt', '--datetime', help='年月日時分をYYYYMMDD-hhmmの形式で指定。')
+
+    args = parser.parse_args()
+
+    if not args.datetime:
+        parser.error('datetime が指定されていません。')
+
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -73,7 +83,7 @@ if __name__ == "__main__":
 
     # Load the saved algorithm into the MADDPG object
     #path = "./models/MATD3/MATD3_trained_agent.pt"
-    path = "./result/"+str_dt_now+"/models/MATD3/MATD3_trained_agent.pt"
+    path = "./result/"+args.datetime+"/models/MATD3/MATD3_trained_agent.pt"
     matd3.loadCheckpoint(path)
 
     # Define test loop parameters
@@ -149,7 +159,7 @@ if __name__ == "__main__":
 
     # Save the gif to specified path
     #gif_path = "./videos/"
-    gif_path = "./result/"+str_dt_now+"/videos/"
+    gif_path = "./result/"+args.datetime+"/videos/"
     print(os.path.join(gif_path, "speaker_listener.gif"))
     os.makedirs(gif_path, exist_ok=True)
     imageio.mimwrite(

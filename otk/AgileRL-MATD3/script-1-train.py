@@ -8,6 +8,7 @@ import os
 import pprint
 import datetime
 import json
+import argparse
 
 import numpy as np
 import torch
@@ -21,6 +22,13 @@ from agilerl.utils.utils import initialPopulation
 
 if __name__ == "__main__":
 
+    #引数を取得
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('-p', '--param', default='./parameters.json', help='学習用パラメータJSONファイルのパスを指定。')
+
+    args = parser.parse_args()
+
     #現在日時を取得
     dt_now = datetime.datetime.now()
     str_dt_now = dt_now.strftime("%Y%m%d-%H%M")
@@ -28,7 +36,7 @@ if __name__ == "__main__":
 
     
     #JSONファイルからパラメータを読み込み
-    with open("./parameters.json", mode="rt", encoding="utf-8") as f:
+    with open(args.param, mode="rt", encoding="utf-8") as f:
         param_json = json.load(f)
         
     
