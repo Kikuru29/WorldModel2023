@@ -316,3 +316,9 @@ if __name__ == "__main__":
     os.makedirs(path, exist_ok=True)
     save_path = os.path.join(path, filename)
     elite.saveCheckpoint(save_path)
+
+    #JSONファイルも同ディレクトリに保存する
+    with open("./parameters.json", mode="rt", encoding="utf-8") as f:
+        param_json = json.load(f)
+    with open(path+"/parameters.json", mode="wt", encoding="utf-8") as f:
+        json.dump(param_json, f, ensure_ascii=False, indent=2)
