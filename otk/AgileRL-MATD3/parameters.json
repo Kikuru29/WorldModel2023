@@ -19,7 +19,7 @@
     "POLICY_FREQ": 2
   },
   "PARAM_TRAIN": {
-    "max_episodes": 10,
+    "max_episodes": 3000,
     "max_steps": 100,
     "epsilon": 1.0,
     "eps_end": 0.1,

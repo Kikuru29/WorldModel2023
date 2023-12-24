@@ -25,14 +25,19 @@ if __name__ == "__main__":
     #引数を取得
     parser = argparse.ArgumentParser()
 
+    parser.add_argument('-dt', '--datetime', help='年月日時分をYYYYMMDD-hhmmの形式で指定。')
+
     parser.add_argument('-p', '--param', default='./parameters.json', help='学習用パラメータJSONファイルのパスを指定。')
 
     args = parser.parse_args()
 
-    #現在日時を取得
-    dt_now = datetime.datetime.now()
-    str_dt_now = dt_now.strftime("%Y%m%d-%H%M")
-    print(str_dt_now)
+    if not args.datetime:
+        #現在日時を取得
+        dt_now = datetime.datetime.now()
+        str_dt_now = dt_now.strftime("%Y%m%d-%H%M")
+        print(str_dt_now)
+    else:
+        str_dt_now = args.datetime
 
     
     #JSONファイルからパラメータを読み込み
