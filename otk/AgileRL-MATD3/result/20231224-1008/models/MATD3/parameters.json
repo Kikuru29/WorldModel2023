@@ -1,0 +1,30 @@
+{
+  "NET_CONFIG": {
+    "arch": "mlp",
+    "h_size": [
+      32,
+      32
+    ]
+  },
+  "INIT_HP": {
+    "POPULATION_SIZE": 4,
+    "ALGO": "MATD3",
+    "CHANNELS_LAST": false,
+    "BATCH_SIZE": 32,
+    "LR": 0.01,
+    "GAMMA": 0.95,
+    "MEMORY_SIZE": 100000,
+    "LEARN_STEP": 5,
+    "TAU": 0.01,
+    "POLICY_FREQ": 2
+  },
+  "PARAM_TRAIN": {
+    "max_episodes": 3000,
+    "max_steps": 100,
+    "epsilon": 1.0,
+    "eps_end": 0.1,
+    "eps_decay": 0.995,
+    "evo_epochs": 20,
+    "evo_loop": 1
+  }
+}
