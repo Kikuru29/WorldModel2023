@@ -348,7 +348,7 @@ def _label_with_episode_number(frame, episode_num):
 
 
 if __name__ == "__main__":
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # Configure the environment
     env = simple_speaker_listener_v4.parallel_env(
@@ -467,6 +467,7 @@ if __name__ == "__main__":
     # Save the gif to specified path
     gif_path = "./videos/"
     os.makedirs(gif_path, exist_ok=True)
+    current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     imageio.mimwrite(
-        os.path.join("./videos/", "speaker_listener.gif"), frames, duration=10
+        os.path.join(gif_path, f"speaker_listener_{current_time}.gif"), frames, duration=10
     )
