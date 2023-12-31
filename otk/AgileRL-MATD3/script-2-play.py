@@ -5,6 +5,7 @@ import imageio
 import numpy as np
 import torch
 from pettingzoo.mpe import simple_speaker_listener_v4
+from pettingzoo.mpe import simple_tag_v3
 from PIL import Image, ImageDraw
 
 from agilerl.algorithms.matd3 import MATD3
@@ -44,6 +45,9 @@ if __name__ == "__main__":
 
     # Configure the environment
     env = simple_speaker_listener_v4.parallel_env(
+        continuous_actions=True, render_mode="rgb_array"
+    )
+    env = simple_tag_v3.parallel_env(
         continuous_actions=True, render_mode="rgb_array"
     )
     env.reset()
@@ -88,7 +92,7 @@ if __name__ == "__main__":
 
     # Define test loop parameters
     episodes = 10  # Number of episodes to test agent on
-    max_steps = 25  # Max number of steps to take in the environment in each episode
+    max_steps = 2500  # Max number of steps to take in the environment in each episode
 
     rewards = []  # List to collect total episodic reward
     frames = []  # List to collect frames
@@ -160,7 +164,7 @@ if __name__ == "__main__":
     # Save the gif to specified path
     #gif_path = "./videos/"
     gif_path = "./result/"+args.datetime
-    print(os.path.join(gif_path, "speaker_listener.gif"))
+    #print(os.path.join(gif_path, "speaker_listener.gif"))
     os.makedirs(gif_path, exist_ok=True)
     imageio.mimwrite(
         #os.path.join("./videos/", "speaker_listener.gif"), frames, duration=10
