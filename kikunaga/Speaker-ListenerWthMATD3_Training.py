@@ -25,8 +25,8 @@ if __name__ == "__main__":
     str_dt_now = dt_now.strftime("%Y%m%d-%H%M")
     print(str_dt_now)
     
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    #device = torch.device("mps")
+    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("mps")
     print("===== AgileRL Online Multi-Agent Demo =====")
 
     # Define the network configuration
