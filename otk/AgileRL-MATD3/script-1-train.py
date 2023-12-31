@@ -14,6 +14,7 @@ import dill #import pickle
 import numpy as np
 import torch
 from pettingzoo.mpe import simple_speaker_listener_v4
+from pettingzoo.mpe import simple_tag_v3
 from tqdm import trange
 
 from agilerl.components.multi_agent_replay_buffer import MultiAgentReplayBuffer
@@ -79,7 +80,8 @@ if __name__ == "__main__":
 
     # Define the simple speaker listener environment as a parallel environment
     # シンプル・スピーカー・リスナー環境（並列）の定義
-    env = simple_speaker_listener_v4.parallel_env(continuous_actions=True)
+    #env = simple_speaker_listener_v4.parallel_env(continuous_actions=True)
+    env = simple_tag_v3.parallel_env(continuous_actions=True)
     env.reset()
 
     # Configure the multi-agent algo input arguments
@@ -328,8 +330,26 @@ if __name__ == "__main__":
             # Tournament selection and population mutation
             # トーナメント選択と母集団の変異
             elite, population = tournament.select(population)
-            population = mutations.mutation(population)
+            #population = mutations.mutation(population)
 
+
+            # 最高のfitness が得られたモデルを保存
+            print("The best fitness : ", max(elite.fitness))
+            #print(elite.fitness)
+            if elite.fitness[-1]==max(elite.fitness):
+
+                    print("Save the best model! fitness : ", elite.fitness[-1] )
+                
+                    path = "./result/"+str_dt_now
+                    filename = "MATD3_trained_agent_best.pt"
+                    os.makedirs(path, exist_ok=True)
+                    save_path = os.path.join(path, filename)
+                    elite.saveCheckpoint(save_path)
+                
+
+    print()
+    print("Saving Files...")
+    
     # Save the trained algorithm
     # 学習アルゴリズムを保存する
     #path = "./models/MATD3"
@@ -345,19 +365,19 @@ if __name__ == "__main__":
     with open(save_path, "wb") as f:
         dill.dump(population, f)
 
-    # replaybuffer
+    # replaybuffer を保存
     filename = "pickle-replaybuffer.pkl"
     save_path = os.path.join(path, filename)
     with open(save_path, "wb") as f:
         dill.dump(memory, f)
 
-    # tounament
+    # tounament を保存
     filename = "pickle-tournament.pkl"
     save_path = os.path.join(path, filename)
     with open(save_path, "wb") as f:
         dill.dump(tournament, f)
 
-    # mutation
+    # mutation を保存
     filename = "pickle-mutations.pkl"
     save_path = os.path.join(path, filename)
     with open(save_path, "wb") as f:
