@@ -333,18 +333,33 @@ if __name__ == "__main__":
             #population = mutations.mutation(population)
 
 
-            # 最高のfitness が得られたモデルを保存
-            print("The best fitness : ", max(elite.fitness))
-            #print(elite.fitness)
-            if elite.fitness[-1]==max(elite.fitness):
+        # 5000エピソードごとに、モデルを保存
+        if (idx_epi + 1) % 500 == 0:
 
-                    print("Save the best model! fitness : ", elite.fitness[-1] )
+            print("Save Model at ep ", (idx_epi+1))
+            
+            str_idx = f'{(idx_epi+1):07}'
+
+            path = "./result/"+str_dt_now
+            filename = "MATD3_trained_agent_"+str_idx+".pt"
+            os.makedirs(path, exist_ok=True)
+            save_path = os.path.join(path, filename)
+            elite.saveCheckpoint(save_path)
+
+
+            if False:
+                # 最高のfitness が得られたモデルを保存
+                print("The best fitness : ", max(elite.fitness))
+                #print(elite.fitness)
+                if elite.fitness[-1]==max(elite.fitness):
+
+                        print("Save the best model! fitness : ", elite.fitness[-1] )
                 
-                    path = "./result/"+str_dt_now
-                    filename = "MATD3_trained_agent_best.pt"
-                    os.makedirs(path, exist_ok=True)
-                    save_path = os.path.join(path, filename)
-                    elite.saveCheckpoint(save_path)
+                        path = "./result/"+str_dt_now
+                        filename = "MATD3_trained_agent_best.pt"
+                        os.makedirs(path, exist_ok=True)
+                        save_path = os.path.join(path, filename)
+                        elite.saveCheckpoint(save_path)
                 
 
     print()
