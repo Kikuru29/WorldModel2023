@@ -334,7 +334,7 @@ if __name__ == "__main__":
 
 
         # 5000エピソードごとに、モデルを保存
-        if (idx_epi + 1) % 500 == 0:
+        if (idx_epi + 1) % 5000 == 0:
 
             print("Save Model at ep ", (idx_epi+1))
             
