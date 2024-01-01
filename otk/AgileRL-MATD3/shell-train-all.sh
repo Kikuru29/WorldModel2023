@@ -8,6 +8,10 @@ echo $DATE
 
 
 
+cd ./simple_world_comm_v3/
+python3 ./script-1-train.py -dt $DATE -p "./parameters.json" | tee -a simple_world_comm_v3.log
+cd ../
+
 cd ./simple_adversary_v3/
 python3 ./script-1-train.py -dt $DATE -p "./parameters.json" | tee -a simple_adversary_v3.log
 cd ../
@@ -40,9 +44,7 @@ cd ./simple_v3/
 python3 ./script-1-train.py -dt $DATE -p "./parameters.json" | tee -a simple_v3.log
 cd ../
 
-cd ./simple_world_comm_v3/
-python3 ./script-1-train.py -dt $DATE -p "./parameters.json" | tee -a simple_world_comm_v3.log
-cd ../
+
 
 
 done
