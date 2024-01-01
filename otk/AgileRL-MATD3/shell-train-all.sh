@@ -1,4 +1,10 @@
 
+python3 -m pip install --upgrade pip
+
+python3 -m pip install pettingzoo[mpe]
+python3 -m pip install agilerl
+
+
 while true
 do
 
