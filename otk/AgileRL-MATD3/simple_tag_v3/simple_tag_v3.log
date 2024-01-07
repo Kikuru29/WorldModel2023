@@ -1,0 +1,6052 @@
+===== AgileRL Online Multi-Agent Demo =====
+state_dim [(16,), (16,), (16,), (14,)]
+action_dim [5, 5, 5, 5]
+one_hot False
+NET_CONFIG
+{'arch': 'mlp', 'h_size': [32, 32]}
+INIT_HP
+{'AGENT_IDS': ['adversary_0', 'adversary_1', 'adversary_2', 'agent_0'],
+ 'ALGO': 'MATD3',
+ 'BATCH_SIZE': 64,
+ 'CHANNELS_LAST': False,
+ 'DISCRETE_ACTIONS': False,
+ 'GAMMA': 0.95,
+ 'LEARN_STEP': 5,
+ 'LR': 0.01,
+ 'MAX_ACTION': [array([1., 1., 1., 1., 1.], dtype=float32),
+                array([1., 1., 1., 1., 1.], dtype=float32),
+                array([1., 1., 1., 1., 1.], dtype=float32),
+                array([1., 1., 1., 1., 1.], dtype=float32)],
+ 'MEMORY_SIZE': 200000,
+ 'MIN_ACTION': [array([0., 0., 0., 0., 0.], dtype=float32),
+                array([0., 0., 0., 0., 0.], dtype=float32),
+                array([0., 0., 0., 0., 0.], dtype=float32),
+                array([0., 0., 0., 0., 0.], dtype=float32)],
+ 'N_AGENTS': 4,
+ 'POLICY_FREQ': 2,
+ 'POPULATION_SIZE': 1,
+ 'TAU': 0.01}
+device cpu
+Episode 50/100000
+Fitnesses: ['-151.32']
+100 fitness avgs: ['-151.32']
+Episode 100/100000
+Fitnesses: ['-55.42']
+100 fitness avgs: ['-103.37']
+Episode 150/100000
+Fitnesses: ['-47.75']
+100 fitness avgs: ['-84.83']
+Episode 200/100000
+Fitnesses: ['-100.61']
+100 fitness avgs: ['-88.77']
+Episode 250/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['-67.02']
+Episode 300/100000
+Fitnesses: ['-12.46']
+100 fitness avgs: ['-57.93']
+Episode 350/100000
+Fitnesses: ['-98.80']
+100 fitness avgs: ['-63.77']
+Episode 400/100000
+Fitnesses: ['13.32']
+100 fitness avgs: ['-54.13']
+Episode 450/100000
+Fitnesses: ['-39.01']
+100 fitness avgs: ['-52.45']
+Episode 500/100000
+Fitnesses: ['-95.67']
+100 fitness avgs: ['-56.77']
+Episode 550/100000
+Fitnesses: ['19.58']
+100 fitness avgs: ['-49.83']
+Episode 600/100000
+Fitnesses: ['-4.20']
+100 fitness avgs: ['-46.03']
+Episode 650/100000
+Fitnesses: ['0.49']
+100 fitness avgs: ['-42.45']
+Episode 700/100000
+Fitnesses: ['-0.70']
+100 fitness avgs: ['-39.47']
+Episode 750/100000
+Fitnesses: ['20.72']
+100 fitness avgs: ['-35.45']
+Episode 800/100000
+Fitnesses: ['5.62']
+100 fitness avgs: ['-32.89']
+Episode 850/100000
+Fitnesses: ['2.60']
+100 fitness avgs: ['-30.80']
+Episode 900/100000
+Fitnesses: ['11.61']
+100 fitness avgs: ['-28.44']
+Episode 950/100000
+Fitnesses: ['11.29']
+100 fitness avgs: ['-26.35']
+Episode 1000/100000
+Fitnesses: ['-3.83']
+100 fitness avgs: ['-25.23']
+Episode 1050/100000
+Fitnesses: ['-3.41']
+100 fitness avgs: ['-24.19']
+Episode 1100/100000
+Fitnesses: ['32.69']
+100 fitness avgs: ['-21.60']
+Episode 1150/100000
+Fitnesses: ['-5.56']
+100 fitness avgs: ['-20.90']
+Episode 1200/100000
+Fitnesses: ['-2.75']
+100 fitness avgs: ['-20.15']
+Episode 1250/100000
+Fitnesses: ['-3.68']
+100 fitness avgs: ['-19.49']
+Episode 1300/100000
+Fitnesses: ['24.94']
+100 fitness avgs: ['-17.78']
+Episode 1350/100000
+Fitnesses: ['-0.17']
+100 fitness avgs: ['-17.13']
+Episode 1400/100000
+Fitnesses: ['6.19']
+100 fitness avgs: ['-16.30']
+Episode 1450/100000
+Fitnesses: ['6.56']
+100 fitness avgs: ['-15.51']
+Episode 1500/100000
+Fitnesses: ['11.88']
+100 fitness avgs: ['-14.59']
+Episode 1550/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['-14.12']
+Episode 1600/100000
+Fitnesses: ['-0.11']
+100 fitness avgs: ['-13.69']
+Episode 1650/100000
+Fitnesses: ['73.03']
+100 fitness avgs: ['-11.06']
+Episode 1700/100000
+Fitnesses: ['-2.71']
+100 fitness avgs: ['-10.81']
+Episode 1750/100000
+Fitnesses: ['26.13']
+100 fitness avgs: ['-9.76']
+Episode 1800/100000
+Fitnesses: ['5.84']
+100 fitness avgs: ['-9.32']
+Episode 1850/100000
+Fitnesses: ['-8.41']
+100 fitness avgs: ['-9.30']
+Episode 1900/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['-8.70']
+Episode 1950/100000
+Fitnesses: ['-11.48']
+100 fitness avgs: ['-8.77']
+Episode 2000/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['-8.39']
+Episode 2050/100000
+Fitnesses: ['53.33']
+100 fitness avgs: ['-6.88']
+Episode 2100/100000
+Fitnesses: ['5.62']
+100 fitness avgs: ['-6.59']
+Episode 2150/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['-5.97']
+Episode 2200/100000
+Fitnesses: ['-0.69']
+100 fitness avgs: ['-5.85']
+Episode 2250/100000
+Fitnesses: ['-1.56']
+100 fitness avgs: ['-5.75']
+Episode 2300/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['-5.63']
+Episode 2350/100000
+Fitnesses: ['5.07']
+100 fitness avgs: ['-5.40']
+Episode 2400/100000
+Fitnesses: ['3.87']
+100 fitness avgs: ['-5.21']
+Episode 2450/100000
+Fitnesses: ['-0.00']
+100 fitness avgs: ['-5.10']
+Episode 2500/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['-5.00']
+Episode 2550/100000
+Fitnesses: ['6.61']
+100 fitness avgs: ['-4.77']
+Episode 2600/100000
+Fitnesses: ['10.97']
+100 fitness avgs: ['-4.47']
+Episode 2650/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['-4.13']
+Episode 2700/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['-3.81']
+Episode 2750/100000
+Fitnesses: ['26.96']
+100 fitness avgs: ['-3.25']
+Episode 2800/100000
+Fitnesses: ['93.33']
+100 fitness avgs: ['-1.52']
+Episode 2850/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['-0.68']
+Episode 2900/100000
+Fitnesses: ['73.33']
+100 fitness avgs: ['0.60']
+Episode 2950/100000
+Fitnesses: ['116.88']
+100 fitness avgs: ['2.57']
+Episode 3000/100000
+Fitnesses: ['27.99']
+100 fitness avgs: ['2.99']
+Episode 3050/100000
+Fitnesses: ['-0.44']
+100 fitness avgs: ['2.94']
+Episode 3100/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['3.21']
+Episode 3150/100000
+Fitnesses: ['26.33']
+100 fitness avgs: ['3.58']
+Episode 3200/100000
+Fitnesses: ['53.33']
+100 fitness avgs: ['4.36']
+Episode 3250/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['4.80']
+Episode 3300/100000
+Fitnesses: ['72.90']
+100 fitness avgs: ['5.83']
+Episode 3350/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['5.85']
+Episode 3400/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['6.45']
+Episode 3450/100000
+Fitnesses: ['99.78']
+100 fitness avgs: ['7.80']
+Episode 3500/100000
+Fitnesses: ['46.52']
+100 fitness avgs: ['8.35']
+Episode 3550/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['8.52']
+Episode 3600/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['8.49']
+Episode 3650/100000
+Fitnesses: ['12.90']
+100 fitness avgs: ['8.55']
+Episode 3700/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['8.70']
+Episode 3750/100000
+Fitnesses: ['-4.20']
+100 fitness avgs: ['8.53']
+Episode 3800/100000
+Fitnesses: ['39.13']
+100 fitness avgs: ['8.94']
+Episode 3850/100000
+Fitnesses: ['14.82']
+100 fitness avgs: ['9.01']
+Episode 3900/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['9.07']
+Episode 3950/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['9.04']
+Episode 4000/100000
+Fitnesses: ['19.26']
+100 fitness avgs: ['9.16']
+Episode 4050/100000
+Fitnesses: ['-0.13']
+100 fitness avgs: ['9.05']
+Episode 4100/100000
+Fitnesses: ['13.23']
+100 fitness avgs: ['9.10']
+Episode 4150/100000
+Fitnesses: ['33.03']
+100 fitness avgs: ['9.39']
+Episode 4200/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['9.67']
+Episode 4250/100000
+Fitnesses: ['9.54']
+100 fitness avgs: ['9.67']
+Episode 4300/100000
+Fitnesses: ['-2.36']
+100 fitness avgs: ['9.53']
+Episode 4350/100000
+Fitnesses: ['9.97']
+100 fitness avgs: ['9.54']
+Episode 4400/100000
+Fitnesses: ['-0.10']
+100 fitness avgs: ['9.43']
+Episode 4450/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['9.55']
+Episode 4500/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['9.44']
+Episode 4550/100000
+Fitnesses: ['17.17']
+100 fitness avgs: ['9.53']
+Episode 4600/100000
+Fitnesses: ['-0.17']
+100 fitness avgs: ['9.42']
+Episode 4650/100000
+Fitnesses: ['25.96']
+100 fitness avgs: ['9.60']
+Episode 4700/100000
+Fitnesses: ['-0.01']
+100 fitness avgs: ['9.50']
+Episode 4750/100000
+Fitnesses: ['12.11']
+100 fitness avgs: ['9.52']
+Episode 4800/100000
+Fitnesses: ['6.05']
+100 fitness avgs: ['9.49']
+Episode 4850/100000
+Fitnesses: ['-5.12']
+100 fitness avgs: ['9.34']
+Episode 4900/100000
+Fitnesses: ['13.38']
+100 fitness avgs: ['9.38']
+Episode 4950/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['9.35']
+Episode 5000/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['9.26']
+Save Model at ep  5000
+Episode 5050/100000
+Fitnesses: ['26.67']
+100 fitness avgs: ['11.04']
+Episode 5100/100000
+Fitnesses: ['48.66']
+100 fitness avgs: ['12.08']
+Episode 5150/100000
+Fitnesses: ['10.86']
+100 fitness avgs: ['12.66']
+Episode 5200/100000
+Fitnesses: ['24.96']
+100 fitness avgs: ['13.92']
+Episode 5250/100000
+Fitnesses: ['16.09']
+100 fitness avgs: ['13.88']
+Episode 5300/100000
+Fitnesses: ['1.38']
+100 fitness avgs: ['14.02']
+Episode 5350/100000
+Fitnesses: ['64.55']
+100 fitness avgs: ['15.65']
+Episode 5400/100000
+Fitnesses: ['4.39']
+100 fitness avgs: ['15.56']
+Episode 5450/100000
+Fitnesses: ['19.88']
+100 fitness avgs: ['16.15']
+Episode 5500/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['17.31']
+Episode 5550/100000
+Fitnesses: ['6.54']
+100 fitness avgs: ['17.18']
+Episode 5600/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['17.55']
+Episode 5650/100000
+Fitnesses: ['-0.23']
+100 fitness avgs: ['17.55']
+Episode 5700/100000
+Fitnesses: ['33.13']
+100 fitness avgs: ['17.88']
+Episode 5750/100000
+Fitnesses: ['12.76']
+100 fitness avgs: ['17.81']
+Episode 5800/100000
+Fitnesses: ['46.35']
+100 fitness avgs: ['18.21']
+Episode 5850/100000
+Fitnesses: ['26.67']
+100 fitness avgs: ['18.45']
+Episode 5900/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['18.34']
+Episode 5950/100000
+Fitnesses: ['19.56']
+100 fitness avgs: ['18.42']
+Episode 6000/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['18.79']
+Episode 6050/100000
+Fitnesses: ['-0.62']
+100 fitness avgs: ['18.82']
+Episode 6100/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['18.49']
+Episode 6150/100000
+Fitnesses: ['28.25']
+100 fitness avgs: ['18.83']
+Episode 6200/100000
+Fitnesses: ['6.14']
+100 fitness avgs: ['18.92']
+Episode 6250/100000
+Fitnesses: ['-5.22']
+100 fitness avgs: ['18.90']
+Episode 6300/100000
+Fitnesses: ['10.62']
+100 fitness avgs: ['18.76']
+Episode 6350/100000
+Fitnesses: ['46.58']
+100 fitness avgs: ['19.23']
+Episode 6400/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['19.37']
+Episode 6450/100000
+Fitnesses: ['-4.01']
+100 fitness avgs: ['19.26']
+Episode 6500/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['19.47']
+Episode 6550/100000
+Fitnesses: ['-0.41']
+100 fitness avgs: ['19.47']
+Episode 6600/100000
+Fitnesses: ['-4.86']
+100 fitness avgs: ['19.42']
+Episode 6650/100000
+Fitnesses: ['32.95']
+100 fitness avgs: ['19.02']
+Episode 6700/100000
+Fitnesses: ['32.92']
+100 fitness avgs: ['19.38']
+Episode 6750/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['19.32']
+Episode 6800/100000
+Fitnesses: ['30.22']
+100 fitness avgs: ['19.56']
+Episode 6850/100000
+Fitnesses: ['-0.72']
+100 fitness avgs: ['19.64']
+Episode 6900/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['19.50']
+Episode 6950/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['19.75']
+Episode 7000/100000
+Fitnesses: ['86.29']
+100 fitness avgs: ['20.55']
+Episode 7050/100000
+Fitnesses: ['11.97']
+100 fitness avgs: ['20.14']
+Episode 7100/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['20.41']
+Episode 7150/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['20.41']
+Episode 7200/100000
+Fitnesses: ['-6.04']
+100 fitness avgs: ['20.36']
+Episode 7250/100000
+Fitnesses: ['-0.73']
+100 fitness avgs: ['20.37']
+Episode 7300/100000
+Fitnesses: ['38.61']
+100 fitness avgs: ['20.75']
+Episode 7350/100000
+Fitnesses: ['26.43']
+100 fitness avgs: ['20.97']
+Episode 7400/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['20.93']
+Episode 7450/100000
+Fitnesses: ['2.67']
+100 fitness avgs: ['20.96']
+Episode 7500/100000
+Fitnesses: ['79.16']
+100 fitness avgs: ['21.75']
+Episode 7550/100000
+Fitnesses: ['63.70']
+100 fitness avgs: ['22.32']
+Episode 7600/100000
+Fitnesses: ['80.00']
+100 fitness avgs: ['23.01']
+Episode 7650/100000
+Fitnesses: ['33.24']
+100 fitness avgs: ['23.21']
+Episode 7700/100000
+Fitnesses: ['32.38']
+100 fitness avgs: ['23.40']
+Episode 7750/100000
+Fitnesses: ['32.75']
+100 fitness avgs: ['23.46']
+Episode 7800/100000
+Fitnesses: ['26.67']
+100 fitness avgs: ['22.79']
+Episode 7850/100000
+Fitnesses: ['16.48']
+100 fitness avgs: ['22.49']
+Episode 7900/100000
+Fitnesses: ['66.56']
+100 fitness avgs: ['22.42']
+Episode 7950/100000
+Fitnesses: ['66.54']
+100 fitness avgs: ['21.92']
+Episode 8000/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['21.84']
+Episode 8050/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['21.84']
+Episode 8100/100000
+Fitnesses: ['39.53']
+100 fitness avgs: ['22.04']
+Episode 8150/100000
+Fitnesses: ['37.81']
+100 fitness avgs: ['22.15']
+Episode 8200/100000
+Fitnesses: ['46.22']
+100 fitness avgs: ['22.08']
+Episode 8250/100000
+Fitnesses: ['43.34']
+100 fitness avgs: ['22.18']
+Episode 8300/100000
+Fitnesses: ['24.10']
+100 fitness avgs: ['21.69']
+Episode 8350/100000
+Fitnesses: ['18.03']
+100 fitness avgs: ['21.81']
+Episode 8400/100000
+Fitnesses: ['42.37']
+100 fitness avgs: ['21.76']
+Episode 8450/100000
+Fitnesses: ['7.74']
+100 fitness avgs: ['20.84']
+Episode 8500/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['20.98']
+Episode 8550/100000
+Fitnesses: ['7.19']
+100 fitness avgs: ['20.85']
+Episode 8600/100000
+Fitnesses: ['-6.11']
+100 fitness avgs: ['20.72']
+Episode 8650/100000
+Fitnesses: ['10.11']
+100 fitness avgs: ['20.69']
+Episode 8700/100000
+Fitnesses: ['-16.08']
+100 fitness avgs: ['20.33']
+Episode 8750/100000
+Fitnesses: ['18.22']
+100 fitness avgs: ['20.56']
+Episode 8800/100000
+Fitnesses: ['-30.71']
+100 fitness avgs: ['19.86']
+Episode 8850/100000
+Fitnesses: ['48.76']
+100 fitness avgs: ['20.20']
+Episode 8900/100000
+Fitnesses: ['-33.25']
+100 fitness avgs: ['19.73']
+Episode 8950/100000
+Fitnesses: ['-2.53']
+100 fitness avgs: ['19.64']
+Episode 9000/100000
+Fitnesses: ['4.01']
+100 fitness avgs: ['19.49']
+Episode 9050/100000
+Fitnesses: ['14.71']
+100 fitness avgs: ['19.64']
+Episode 9100/100000
+Fitnesses: ['13.06']
+100 fitness avgs: ['19.63']
+Episode 9150/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['19.77']
+Episode 9200/100000
+Fitnesses: ['93.26']
+100 fitness avgs: ['20.37']
+Episode 9250/100000
+Fitnesses: ['50.29']
+100 fitness avgs: ['20.78']
+Episode 9300/100000
+Fitnesses: ['25.30']
+100 fitness avgs: ['21.05']
+Episode 9350/100000
+Fitnesses: ['39.99']
+100 fitness avgs: ['21.35']
+Episode 9400/100000
+Fitnesses: ['69.78']
+100 fitness avgs: ['22.05']
+Episode 9450/100000
+Fitnesses: ['5.41']
+100 fitness avgs: ['21.91']
+Episode 9500/100000
+Fitnesses: ['67.64']
+100 fitness avgs: ['22.58']
+Episode 9550/100000
+Fitnesses: ['-12.24']
+100 fitness avgs: ['22.29']
+Episode 9600/100000
+Fitnesses: ['42.56']
+100 fitness avgs: ['22.72']
+Episode 9650/100000
+Fitnesses: ['1.17']
+100 fitness avgs: ['22.47']
+Episode 9700/100000
+Fitnesses: ['44.03']
+100 fitness avgs: ['22.91']
+Episode 9750/100000
+Fitnesses: ['49.23']
+100 fitness avgs: ['23.28']
+Episode 9800/100000
+Fitnesses: ['38.83']
+100 fitness avgs: ['23.61']
+Episode 9850/100000
+Fitnesses: ['49.44']
+100 fitness avgs: ['24.15']
+Episode 9900/100000
+Fitnesses: ['53.33']
+100 fitness avgs: ['24.55']
+Episode 9950/100000
+Fitnesses: ['13.68']
+100 fitness avgs: ['24.62']
+Episode 10000/100000
+Fitnesses: ['34.59']
+100 fitness avgs: ['24.97']
+Save Model at ep  10000
+Episode 10050/100000
+Fitnesses: ['32.82']
+100 fitness avgs: ['25.03']
+Episode 10100/100000
+Fitnesses: ['28.68']
+100 fitness avgs: ['24.83']
+Episode 10150/100000
+Fitnesses: ['-3.35']
+100 fitness avgs: ['24.69']
+Episode 10200/100000
+Fitnesses: ['22.64']
+100 fitness avgs: ['24.67']
+Episode 10250/100000
+Fitnesses: ['17.12']
+100 fitness avgs: ['24.68']
+Episode 10300/100000
+Fitnesses: ['22.14']
+100 fitness avgs: ['24.88']
+Episode 10350/100000
+Fitnesses: ['46.47']
+100 fitness avgs: ['24.70']
+Episode 10400/100000
+Fitnesses: ['-8.72']
+100 fitness avgs: ['24.57']
+Episode 10450/100000
+Fitnesses: ['19.99']
+100 fitness avgs: ['24.57']
+Episode 10500/100000
+Fitnesses: ['1.69']
+100 fitness avgs: ['24.39']
+Episode 10550/100000
+Fitnesses: ['-11.18']
+100 fitness avgs: ['24.21']
+Episode 10600/100000
+Fitnesses: ['18.90']
+100 fitness avgs: ['24.07']
+Episode 10650/100000
+Fitnesses: ['34.49']
+100 fitness avgs: ['24.41']
+Episode 10700/100000
+Fitnesses: ['46.80']
+100 fitness avgs: ['24.55']
+Episode 10750/100000
+Fitnesses: ['34.32']
+100 fitness avgs: ['24.77']
+Episode 10800/100000
+Fitnesses: ['64.80']
+100 fitness avgs: ['24.95']
+Episode 10850/100000
+Fitnesses: ['23.13']
+100 fitness avgs: ['24.92']
+Episode 10900/100000
+Fitnesses: ['38.09']
+100 fitness avgs: ['25.30']
+Episode 10950/100000
+Fitnesses: ['19.41']
+100 fitness avgs: ['25.30']
+Episode 11000/100000
+Fitnesses: ['46.61']
+100 fitness avgs: ['25.43']
+Episode 11050/100000
+Fitnesses: ['-8.99']
+100 fitness avgs: ['25.34']
+Episode 11100/100000
+Fitnesses: ['39.21']
+100 fitness avgs: ['25.74']
+Episode 11150/100000
+Fitnesses: ['40.24']
+100 fitness avgs: ['25.86']
+Episode 11200/100000
+Fitnesses: ['46.57']
+100 fitness avgs: ['26.26']
+Episode 11250/100000
+Fitnesses: ['-9.33']
+100 fitness avgs: ['26.22']
+Episode 11300/100000
+Fitnesses: ['19.62']
+100 fitness avgs: ['26.31']
+Episode 11350/100000
+Fitnesses: ['-18.50']
+100 fitness avgs: ['25.66']
+Episode 11400/100000
+Fitnesses: ['17.05']
+100 fitness avgs: ['25.63']
+Episode 11450/100000
+Fitnesses: ['9.26']
+100 fitness avgs: ['25.76']
+Episode 11500/100000
+Fitnesses: ['-26.66']
+100 fitness avgs: ['25.16']
+Episode 11550/100000
+Fitnesses: ['12.62']
+100 fitness avgs: ['25.29']
+Episode 11600/100000
+Fitnesses: ['1.91']
+100 fitness avgs: ['25.36']
+Episode 11650/100000
+Fitnesses: ['21.48']
+100 fitness avgs: ['25.25']
+Episode 11700/100000
+Fitnesses: ['26.42']
+100 fitness avgs: ['25.18']
+Episode 11750/100000
+Fitnesses: ['31.53']
+100 fitness avgs: ['25.30']
+Episode 11800/100000
+Fitnesses: ['10.24']
+100 fitness avgs: ['25.10']
+Episode 11850/100000
+Fitnesses: ['18.65']
+100 fitness avgs: ['25.29']
+Episode 11900/100000
+Fitnesses: ['20.91']
+100 fitness avgs: ['25.50']
+Episode 11950/100000
+Fitnesses: ['46.12']
+100 fitness avgs: ['25.83']
+Episode 12000/100000
+Fitnesses: ['31.41']
+100 fitness avgs: ['25.28']
+Episode 12050/100000
+Fitnesses: ['34.46']
+100 fitness avgs: ['25.50']
+Episode 12100/100000
+Fitnesses: ['46.46']
+100 fitness avgs: ['25.63']
+Episode 12150/100000
+Fitnesses: ['-7.00']
+100 fitness avgs: ['25.36']
+Episode 12200/100000
+Fitnesses: ['2.61']
+100 fitness avgs: ['25.45']
+Episode 12250/100000
+Fitnesses: ['33.28']
+100 fitness avgs: ['25.79']
+Episode 12300/100000
+Fitnesses: ['70.12']
+100 fitness avgs: ['26.11']
+Episode 12350/100000
+Fitnesses: ['35.51']
+100 fitness avgs: ['26.20']
+Episode 12400/100000
+Fitnesses: ['22.85']
+100 fitness avgs: ['26.42']
+Episode 12450/100000
+Fitnesses: ['64.09']
+100 fitness avgs: ['27.04']
+Episode 12500/100000
+Fitnesses: ['12.66']
+100 fitness avgs: ['26.37']
+Episode 12550/100000
+Fitnesses: ['30.24']
+100 fitness avgs: ['26.04']
+Episode 12600/100000
+Fitnesses: ['29.39']
+100 fitness avgs: ['25.53']
+Episode 12650/100000
+Fitnesses: ['35.24']
+100 fitness avgs: ['25.55']
+Episode 12700/100000
+Fitnesses: ['48.71']
+100 fitness avgs: ['25.72']
+Episode 12750/100000
+Fitnesses: ['26.32']
+100 fitness avgs: ['25.65']
+Episode 12800/100000
+Fitnesses: ['66.16']
+100 fitness avgs: ['26.05']
+Episode 12850/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['26.35']
+Episode 12900/100000
+Fitnesses: ['-2.53']
+100 fitness avgs: ['25.66']
+Episode 12950/100000
+Fitnesses: ['30.73']
+100 fitness avgs: ['25.30']
+Episode 13000/100000
+Fitnesses: ['-18.39']
+100 fitness avgs: ['24.92']
+Episode 13050/100000
+Fitnesses: ['69.68']
+100 fitness avgs: ['25.61']
+Episode 13100/100000
+Fitnesses: ['8.62']
+100 fitness avgs: ['25.30']
+Episode 13150/100000
+Fitnesses: ['55.37']
+100 fitness avgs: ['25.48']
+Episode 13200/100000
+Fitnesses: ['5.66']
+100 fitness avgs: ['25.07']
+Episode 13250/100000
+Fitnesses: ['40.00']
+100 fitness avgs: ['25.04']
+Episode 13300/100000
+Fitnesses: ['73.06']
+100 fitness avgs: ['25.53']
+Episode 13350/100000
+Fitnesses: ['12.01']
+100 fitness avgs: ['25.47']
+Episode 13400/100000
+Fitnesses: ['-7.44']
+100 fitness avgs: ['24.97']
+Episode 13450/100000
+Fitnesses: ['-8.09']
+100 fitness avgs: ['24.81']
+Episode 13500/100000
+Fitnesses: ['16.33']
+100 fitness avgs: ['24.38']
+Episode 13550/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['24.64']
+Episode 13600/100000
+Fitnesses: ['35.43']
+100 fitness avgs: ['25.05']
+Episode 13650/100000
+Fitnesses: ['18.19']
+100 fitness avgs: ['25.13']
+Episode 13700/100000
+Fitnesses: ['30.16']
+100 fitness avgs: ['25.60']
+Episode 13750/100000
+Fitnesses: ['12.28']
+100 fitness avgs: ['25.54']
+Episode 13800/100000
+Fitnesses: ['36.24']
+100 fitness avgs: ['26.21']
+Episode 13850/100000
+Fitnesses: ['58.44']
+100 fitness avgs: ['26.30']
+Episode 13900/100000
+Fitnesses: ['73.24']
+100 fitness avgs: ['27.37']
+Episode 13950/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['27.59']
+Episode 14000/100000
+Fitnesses: ['19.87']
+100 fitness avgs: ['27.75']
+Episode 14050/100000
+Fitnesses: ['66.57']
+100 fitness avgs: ['28.27']
+Episode 14100/100000
+Fitnesses: ['15.22']
+100 fitness avgs: ['28.29']
+Episode 14150/100000
+Fitnesses: ['16.18']
+100 fitness avgs: ['27.99']
+Episode 14200/100000
+Fitnesses: ['40.00']
+100 fitness avgs: ['27.46']
+Episode 14250/100000
+Fitnesses: ['24.38']
+100 fitness avgs: ['27.20']
+Episode 14300/100000
+Fitnesses: ['3.19']
+100 fitness avgs: ['26.98']
+Episode 14350/100000
+Fitnesses: ['11.11']
+100 fitness avgs: ['26.69']
+Episode 14400/100000
+Fitnesses: ['-0.94']
+100 fitness avgs: ['25.98']
+Episode 14450/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['26.39']
+Episode 14500/100000
+Fitnesses: ['16.91']
+100 fitness avgs: ['25.88']
+Episode 14550/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['26.47']
+Episode 14600/100000
+Fitnesses: ['-1.55']
+100 fitness avgs: ['26.03']
+Episode 14650/100000
+Fitnesses: ['12.24']
+100 fitness avgs: ['26.14']
+Episode 14700/100000
+Fitnesses: ['11.22']
+100 fitness avgs: ['25.81']
+Episode 14750/100000
+Fitnesses: ['13.05']
+100 fitness avgs: ['25.45']
+Episode 14800/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['25.13']
+Episode 14850/100000
+Fitnesses: ['-8.44']
+100 fitness avgs: ['24.55']
+Episode 14900/100000
+Fitnesses: ['15.81']
+100 fitness avgs: ['24.18']
+Episode 14950/100000
+Fitnesses: ['53.44']
+100 fitness avgs: ['24.58']
+Episode 15000/100000
+Fitnesses: ['29.11']
+100 fitness avgs: ['24.52']
+Save Model at ep  15000
+Episode 15050/100000
+Fitnesses: ['16.23']
+100 fitness avgs: ['24.35']
+Episode 15100/100000
+Fitnesses: ['32.50']
+100 fitness avgs: ['24.39']
+Episode 15150/100000
+Fitnesses: ['30.44']
+100 fitness avgs: ['24.73']
+Episode 15200/100000
+Fitnesses: ['-0.03']
+100 fitness avgs: ['24.50']
+Episode 15250/100000
+Fitnesses: ['10.85']
+100 fitness avgs: ['24.44']
+Episode 15300/100000
+Fitnesses: ['69.14']
+100 fitness avgs: ['24.91']
+Episode 15350/100000
+Fitnesses: ['31.87']
+100 fitness avgs: ['24.77']
+Episode 15400/100000
+Fitnesses: ['52.47']
+100 fitness avgs: ['25.38']
+Episode 15450/100000
+Fitnesses: ['23.63']
+100 fitness avgs: ['25.41']
+Episode 15500/100000
+Fitnesses: ['12.97']
+100 fitness avgs: ['25.53']
+Episode 15550/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['25.70']
+Episode 15600/100000
+Fitnesses: ['46.18']
+100 fitness avgs: ['25.98']
+Episode 15650/100000
+Fitnesses: ['91.26']
+100 fitness avgs: ['26.54']
+Episode 15700/100000
+Fitnesses: ['52.70']
+100 fitness avgs: ['26.60']
+Episode 15750/100000
+Fitnesses: ['12.63']
+100 fitness avgs: ['26.39']
+Episode 15800/100000
+Fitnesses: ['13.11']
+100 fitness avgs: ['25.87']
+Episode 15850/100000
+Fitnesses: ['34.53']
+100 fitness avgs: ['25.98']
+Episode 15900/100000
+Fitnesses: ['3.01']
+100 fitness avgs: ['25.63']
+Episode 15950/100000
+Fitnesses: ['55.76']
+100 fitness avgs: ['26.00']
+Episode 16000/100000
+Fitnesses: ['52.77']
+100 fitness avgs: ['26.06']
+Episode 16050/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['26.28']
+Episode 16100/100000
+Fitnesses: ['52.67']
+100 fitness avgs: ['26.42']
+Episode 16150/100000
+Fitnesses: ['46.50']
+100 fitness avgs: ['26.48']
+Episode 16200/100000
+Fitnesses: ['42.53']
+100 fitness avgs: ['26.44']
+Episode 16250/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['26.53']
+Episode 16300/100000
+Fitnesses: ['-7.69']
+100 fitness avgs: ['26.26']
+Episode 16350/100000
+Fitnesses: ['12.66']
+100 fitness avgs: ['26.57']
+Episode 16400/100000
+Fitnesses: ['44.80']
+100 fitness avgs: ['26.85']
+Episode 16450/100000
+Fitnesses: ['7.92']
+100 fitness avgs: ['26.83']
+Episode 16500/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['27.57']
+Episode 16550/100000
+Fitnesses: ['-2.39']
+100 fitness avgs: ['27.42']
+Episode 16600/100000
+Fitnesses: ['57.47']
+100 fitness avgs: ['27.97']
+Episode 16650/100000
+Fitnesses: ['59.59']
+100 fitness avgs: ['28.35']
+Episode 16700/100000
+Fitnesses: ['-1.81']
+100 fitness avgs: ['28.07']
+Episode 16750/100000
+Fitnesses: ['43.62']
+100 fitness avgs: ['28.19']
+Episode 16800/100000
+Fitnesses: ['33.09']
+100 fitness avgs: ['28.42']
+Episode 16850/100000
+Fitnesses: ['-6.86']
+100 fitness avgs: ['28.17']
+Episode 16900/100000
+Fitnesses: ['79.97']
+100 fitness avgs: ['28.76']
+Episode 16950/100000
+Fitnesses: ['-4.52']
+100 fitness avgs: ['28.25']
+Episode 17000/100000
+Fitnesses: ['50.95']
+100 fitness avgs: ['28.45']
+Episode 17050/100000
+Fitnesses: ['5.71']
+100 fitness avgs: ['28.16']
+Episode 17100/100000
+Fitnesses: ['11.80']
+100 fitness avgs: ['27.81']
+Episode 17150/100000
+Fitnesses: ['30.94']
+100 fitness avgs: ['28.19']
+Episode 17200/100000
+Fitnesses: ['33.80']
+100 fitness avgs: ['28.50']
+Episode 17250/100000
+Fitnesses: ['60.28']
+100 fitness avgs: ['28.77']
+Episode 17300/100000
+Fitnesses: ['51.55']
+100 fitness avgs: ['28.59']
+Episode 17350/100000
+Fitnesses: ['49.03']
+100 fitness avgs: ['28.72']
+Episode 17400/100000
+Fitnesses: ['57.03']
+100 fitness avgs: ['29.06']
+Episode 17450/100000
+Fitnesses: ['5.75']
+100 fitness avgs: ['28.48']
+Episode 17500/100000
+Fitnesses: ['24.97']
+100 fitness avgs: ['28.60']
+Episode 17550/100000
+Fitnesses: ['-7.04']
+100 fitness avgs: ['28.23']
+Episode 17600/100000
+Fitnesses: ['53.13']
+100 fitness avgs: ['28.47']
+Episode 17650/100000
+Fitnesses: ['86.67']
+100 fitness avgs: ['28.98']
+Episode 17700/100000
+Fitnesses: ['30.63']
+100 fitness avgs: ['28.80']
+Episode 17750/100000
+Fitnesses: ['30.86']
+100 fitness avgs: ['28.85']
+Episode 17800/100000
+Fitnesses: ['44.71']
+100 fitness avgs: ['28.63']
+Episode 17850/100000
+Fitnesses: ['27.31']
+100 fitness avgs: ['28.44']
+Episode 17900/100000
+Fitnesses: ['66.22']
+100 fitness avgs: ['29.13']
+Episode 17950/100000
+Fitnesses: ['71.41']
+100 fitness avgs: ['29.53']
+Episode 18000/100000
+Fitnesses: ['26.67']
+100 fitness avgs: ['29.99']
+Episode 18050/100000
+Fitnesses: ['62.84']
+100 fitness avgs: ['29.92']
+Episode 18100/100000
+Fitnesses: ['27.19']
+100 fitness avgs: ['30.10']
+Episode 18150/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['29.68']
+Episode 18200/100000
+Fitnesses: ['2.22']
+100 fitness avgs: ['29.65']
+Episode 18250/100000
+Fitnesses: ['18.95']
+100 fitness avgs: ['29.44']
+Episode 18300/100000
+Fitnesses: ['39.27']
+100 fitness avgs: ['29.10']
+Episode 18350/100000
+Fitnesses: ['8.18']
+100 fitness avgs: ['29.06']
+Episode 18400/100000
+Fitnesses: ['30.96']
+100 fitness avgs: ['29.45']
+Episode 18450/100000
+Fitnesses: ['6.00']
+100 fitness avgs: ['29.59']
+Episode 18500/100000
+Fitnesses: ['-0.28']
+100 fitness avgs: ['29.42']
+Episode 18550/100000
+Fitnesses: ['66.67']
+100 fitness avgs: ['29.75']
+Episode 18600/100000
+Fitnesses: ['12.41']
+100 fitness avgs: ['29.52']
+Episode 18650/100000
+Fitnesses: ['30.70']
+100 fitness avgs: ['29.65']
+Episode 18700/100000
+Fitnesses: ['24.22']
+100 fitness avgs: ['29.59']
+Episode 18750/100000
+Fitnesses: ['45.64']
+100 fitness avgs: ['29.92']
+Episode 18800/100000
+Fitnesses: ['3.23']
+100 fitness avgs: ['29.59']
+Episode 18850/100000
+Fitnesses: ['-8.31']
+100 fitness avgs: ['28.92']
+Episode 18900/100000
+Fitnesses: ['-0.40']
+100 fitness avgs: ['28.19']
+Episode 18950/100000
+Fitnesses: ['63.17']
+100 fitness avgs: ['28.62']
+Episode 19000/100000
+Fitnesses: ['25.03']
+100 fitness avgs: ['28.67']
+Episode 19050/100000
+Fitnesses: ['5.55']
+100 fitness avgs: ['28.06']
+Episode 19100/100000
+Fitnesses: ['1.54']
+100 fitness avgs: ['27.92']
+Episode 19150/100000
+Fitnesses: ['45.22']
+100 fitness avgs: ['28.21']
+Episode 19200/100000
+Fitnesses: ['16.78']
+100 fitness avgs: ['27.98']
+Episode 19250/100000
+Fitnesses: ['8.77']
+100 fitness avgs: ['27.83']
+Episode 19300/100000
+Fitnesses: ['17.19']
+100 fitness avgs: ['27.97']
+Episode 19350/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['28.19']
+Episode 19400/100000
+Fitnesses: ['24.83']
+100 fitness avgs: ['28.45']
+Episode 19450/100000
+Fitnesses: ['48.52']
+100 fitness avgs: ['28.47']
+Episode 19500/100000
+Fitnesses: ['32.00']
+100 fitness avgs: ['28.62']
+Episode 19550/100000
+Fitnesses: ['41.49']
+100 fitness avgs: ['28.56']
+Episode 19600/100000
+Fitnesses: ['8.01']
+100 fitness avgs: ['28.66']
+Episode 19650/100000
+Fitnesses: ['8.69']
+100 fitness avgs: ['28.62']
+Episode 19700/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['28.71']
+Episode 19750/100000
+Fitnesses: ['-3.49']
+100 fitness avgs: ['28.55']
+Episode 19800/100000
+Fitnesses: ['32.07']
+100 fitness avgs: ['28.80']
+Episode 19850/100000
+Fitnesses: ['11.96']
+100 fitness avgs: ['29.00']
+Episode 19900/100000
+Fitnesses: ['51.54']
+100 fitness avgs: ['29.36']
+Episode 19950/100000
+Fitnesses: ['30.92']
+100 fitness avgs: ['29.14']
+Episode 20000/100000
+Fitnesses: ['31.82']
+100 fitness avgs: ['29.16']
+Save Model at ep  20000
+Episode 20050/100000
+Fitnesses: ['-3.09']
+100 fitness avgs: ['28.97']
+Episode 20100/100000
+Fitnesses: ['53.17']
+100 fitness avgs: ['29.18']
+Episode 20150/100000
+Fitnesses: ['-4.00']
+100 fitness avgs: ['28.83']
+Episode 20200/100000
+Fitnesses: ['53.35']
+100 fitness avgs: ['29.37']
+Episode 20250/100000
+Fitnesses: ['-1.81']
+100 fitness avgs: ['29.24']
+Episode 20300/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['29.15']
+Episode 20350/100000
+Fitnesses: ['38.95']
+100 fitness avgs: ['29.22']
+Episode 20400/100000
+Fitnesses: ['-4.18']
+100 fitness avgs: ['28.65']
+Episode 20450/100000
+Fitnesses: ['-4.39']
+100 fitness avgs: ['28.37']
+Episode 20500/100000
+Fitnesses: ['25.23']
+100 fitness avgs: ['28.50']
+Episode 20550/100000
+Fitnesses: ['29.50']
+100 fitness avgs: ['28.72']
+Episode 20600/100000
+Fitnesses: ['69.07']
+100 fitness avgs: ['28.95']
+Episode 20650/100000
+Fitnesses: ['46.41']
+100 fitness avgs: ['28.50']
+Episode 20700/100000
+Fitnesses: ['0.08']
+100 fitness avgs: ['27.98']
+Episode 20750/100000
+Fitnesses: ['9.36']
+100 fitness avgs: ['27.95']
+Episode 20800/100000
+Fitnesses: ['69.55']
+100 fitness avgs: ['28.51']
+Episode 20850/100000
+Fitnesses: ['20.52']
+100 fitness avgs: ['28.37']
+Episode 20900/100000
+Fitnesses: ['52.49']
+100 fitness avgs: ['28.86']
+Episode 20950/100000
+Fitnesses: ['19.05']
+100 fitness avgs: ['28.50']
+Episode 21000/100000
+Fitnesses: ['16.30']
+100 fitness avgs: ['28.13']
+Episode 21050/100000
+Fitnesses: ['26.92']
+100 fitness avgs: ['28.27']
+Episode 21100/100000
+Fitnesses: ['92.33']
+100 fitness avgs: ['28.67']
+Episode 21150/100000
+Fitnesses: ['44.39']
+100 fitness avgs: ['28.64']
+Episode 21200/100000
+Fitnesses: ['8.56']
+100 fitness avgs: ['28.30']
+Episode 21250/100000
+Fitnesses: ['53.10']
+100 fitness avgs: ['28.84']
+Episode 21300/100000
+Fitnesses: ['18.90']
+100 fitness avgs: ['29.10']
+Episode 21350/100000
+Fitnesses: ['28.80']
+100 fitness avgs: ['29.26']
+Episode 21400/100000
+Fitnesses: ['-2.53']
+100 fitness avgs: ['28.79']
+Episode 21450/100000
+Fitnesses: ['19.39']
+100 fitness avgs: ['28.90']
+Episode 21500/100000
+Fitnesses: ['4.63']
+100 fitness avgs: ['28.48']
+Episode 21550/100000
+Fitnesses: ['17.74']
+100 fitness avgs: ['28.68']
+Episode 21600/100000
+Fitnesses: ['29.81']
+100 fitness avgs: ['28.41']
+Episode 21650/100000
+Fitnesses: ['15.75']
+100 fitness avgs: ['27.97']
+Episode 21700/100000
+Fitnesses: ['26.67']
+100 fitness avgs: ['28.25']
+Episode 21750/100000
+Fitnesses: ['67.95']
+100 fitness avgs: ['28.50']
+Episode 21800/100000
+Fitnesses: ['12.42']
+100 fitness avgs: ['28.29']
+Episode 21850/100000
+Fitnesses: ['72.74']
+100 fitness avgs: ['29.09']
+Episode 21900/100000
+Fitnesses: ['17.98']
+100 fitness avgs: ['28.47']
+Episode 21950/100000
+Fitnesses: ['73.33']
+100 fitness avgs: ['29.25']
+Episode 22000/100000
+Fitnesses: ['9.99']
+100 fitness avgs: ['28.84']
+Episode 22050/100000
+Fitnesses: ['122.55']
+100 fitness avgs: ['30.00']
+Episode 22100/100000
+Fitnesses: ['18.98']
+100 fitness avgs: ['30.08']
+Episode 22150/100000
+Fitnesses: ['66.67']
+100 fitness avgs: ['30.43']
+Episode 22200/100000
+Fitnesses: ['79.91']
+100 fitness avgs: ['30.89']
+Episode 22250/100000
+Fitnesses: ['27.70']
+100 fitness avgs: ['30.57']
+Episode 22300/100000
+Fitnesses: ['50.79']
+100 fitness avgs: ['30.56']
+Episode 22350/100000
+Fitnesses: ['-9.95']
+100 fitness avgs: ['29.97']
+Episode 22400/100000
+Fitnesses: ['10.43']
+100 fitness avgs: ['29.51']
+Episode 22450/100000
+Fitnesses: ['55.49']
+100 fitness avgs: ['30.00']
+Episode 22500/100000
+Fitnesses: ['30.63']
+100 fitness avgs: ['30.06']
+Episode 22550/100000
+Fitnesses: ['45.45']
+100 fitness avgs: ['30.58']
+Episode 22600/100000
+Fitnesses: ['30.93']
+100 fitness avgs: ['30.36']
+Episode 22650/100000
+Fitnesses: ['-9.64']
+100 fitness avgs: ['29.40']
+Episode 22700/100000
+Fitnesses: ['-7.83']
+100 fitness avgs: ['29.01']
+Episode 22750/100000
+Fitnesses: ['29.54']
+100 fitness avgs: ['29.00']
+Episode 22800/100000
+Fitnesses: ['25.90']
+100 fitness avgs: ['28.81']
+Episode 22850/100000
+Fitnesses: ['25.47']
+100 fitness avgs: ['28.79']
+Episode 22900/100000
+Fitnesses: ['-5.25']
+100 fitness avgs: ['28.08']
+Episode 22950/100000
+Fitnesses: ['50.18']
+100 fitness avgs: ['27.87']
+Episode 23000/100000
+Fitnesses: ['44.49']
+100 fitness avgs: ['28.05']
+Episode 23050/100000
+Fitnesses: ['-54.70']
+100 fitness avgs: ['26.87']
+Episode 23100/100000
+Fitnesses: ['34.74']
+100 fitness avgs: ['26.95']
+Episode 23150/100000
+Fitnesses: ['10.69']
+100 fitness avgs: ['26.92']
+Episode 23200/100000
+Fitnesses: ['-1.37']
+100 fitness avgs: ['26.88']
+Episode 23250/100000
+Fitnesses: ['5.92']
+100 fitness avgs: ['26.75']
+Episode 23300/100000
+Fitnesses: ['-1.16']
+100 fitness avgs: ['26.35']
+Episode 23350/100000
+Fitnesses: ['-12.19']
+100 fitness avgs: ['26.15']
+Episode 23400/100000
+Fitnesses: ['17.95']
+100 fitness avgs: ['26.02']
+Episode 23450/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['26.16']
+Episode 23500/100000
+Fitnesses: ['-35.32']
+100 fitness avgs: ['25.81']
+Episode 23550/100000
+Fitnesses: ['31.49']
+100 fitness avgs: ['25.45']
+Episode 23600/100000
+Fitnesses: ['-45.90']
+100 fitness avgs: ['24.87']
+Episode 23650/100000
+Fitnesses: ['-11.89']
+100 fitness avgs: ['24.44']
+Episode 23700/100000
+Fitnesses: ['59.68']
+100 fitness avgs: ['24.80']
+Episode 23750/100000
+Fitnesses: ['-0.18']
+100 fitness avgs: ['24.34']
+Episode 23800/100000
+Fitnesses: ['-2.38']
+100 fitness avgs: ['24.28']
+Episode 23850/100000
+Fitnesses: ['0.32']
+100 fitness avgs: ['24.37']
+Episode 23900/100000
+Fitnesses: ['42.30']
+100 fitness avgs: ['24.80']
+Episode 23950/100000
+Fitnesses: ['-4.71']
+100 fitness avgs: ['24.12']
+Episode 24000/100000
+Fitnesses: ['2.78']
+100 fitness avgs: ['23.90']
+Episode 24050/100000
+Fitnesses: ['1.51']
+100 fitness avgs: ['23.86']
+Episode 24100/100000
+Fitnesses: ['38.92']
+100 fitness avgs: ['24.23']
+Episode 24150/100000
+Fitnesses: ['67.60']
+100 fitness avgs: ['24.45']
+Episode 24200/100000
+Fitnesses: ['26.20']
+100 fitness avgs: ['24.55']
+Episode 24250/100000
+Fitnesses: ['27.32']
+100 fitness avgs: ['24.73']
+Episode 24300/100000
+Fitnesses: ['4.32']
+100 fitness avgs: ['24.60']
+Episode 24350/100000
+Fitnesses: ['5.35']
+100 fitness avgs: ['24.32']
+Episode 24400/100000
+Fitnesses: ['39.74']
+100 fitness avgs: ['24.47']
+Episode 24450/100000
+Fitnesses: ['29.35']
+100 fitness avgs: ['24.28']
+Episode 24500/100000
+Fitnesses: ['58.11']
+100 fitness avgs: ['24.54']
+Episode 24550/100000
+Fitnesses: ['-14.03']
+100 fitness avgs: ['23.99']
+Episode 24600/100000
+Fitnesses: ['31.46']
+100 fitness avgs: ['24.22']
+Episode 24650/100000
+Fitnesses: ['10.74']
+100 fitness avgs: ['24.24']
+Episode 24700/100000
+Fitnesses: ['59.10']
+100 fitness avgs: ['24.63']
+Episode 24750/100000
+Fitnesses: ['2.70']
+100 fitness avgs: ['24.70']
+Episode 24800/100000
+Fitnesses: ['-0.09']
+100 fitness avgs: ['24.37']
+Episode 24850/100000
+Fitnesses: ['6.42']
+100 fitness avgs: ['24.32']
+Episode 24900/100000
+Fitnesses: ['4.67']
+100 fitness avgs: ['23.85']
+Episode 24950/100000
+Fitnesses: ['34.93']
+100 fitness avgs: ['23.89']
+Episode 25000/100000
+Fitnesses: ['24.13']
+100 fitness avgs: ['23.81']
+Save Model at ep  25000
+Episode 25050/100000
+Fitnesses: ['12.36']
+100 fitness avgs: ['23.97']
+Episode 25100/100000
+Fitnesses: ['89.13']
+100 fitness avgs: ['24.33']
+Episode 25150/100000
+Fitnesses: ['11.12']
+100 fitness avgs: ['24.48']
+Episode 25200/100000
+Fitnesses: ['31.20']
+100 fitness avgs: ['24.26']
+Episode 25250/100000
+Fitnesses: ['8.90']
+100 fitness avgs: ['24.36']
+Episode 25300/100000
+Fitnesses: ['10.41']
+100 fitness avgs: ['23.87']
+Episode 25350/100000
+Fitnesses: ['-3.08']
+100 fitness avgs: ['23.45']
+Episode 25400/100000
+Fitnesses: ['12.06']
+100 fitness avgs: ['23.61']
+Episode 25450/100000
+Fitnesses: ['-10.08']
+100 fitness avgs: ['23.55']
+Episode 25500/100000
+Fitnesses: ['12.06']
+100 fitness avgs: ['23.42']
+Episode 25550/100000
+Fitnesses: ['47.06']
+100 fitness avgs: ['23.60']
+Episode 25600/100000
+Fitnesses: ['10.27']
+100 fitness avgs: ['23.01']
+Episode 25650/100000
+Fitnesses: ['16.97']
+100 fitness avgs: ['22.72']
+Episode 25700/100000
+Fitnesses: ['49.44']
+100 fitness avgs: ['23.21']
+Episode 25750/100000
+Fitnesses: ['56.86']
+100 fitness avgs: ['23.68']
+Episode 25800/100000
+Fitnesses: ['-4.78']
+100 fitness avgs: ['22.94']
+Episode 25850/100000
+Fitnesses: ['13.64']
+100 fitness avgs: ['22.87']
+Episode 25900/100000
+Fitnesses: ['25.93']
+100 fitness avgs: ['22.61']
+Episode 25950/100000
+Fitnesses: ['53.33']
+100 fitness avgs: ['22.95']
+Episode 26000/100000
+Fitnesses: ['20.26']
+100 fitness avgs: ['22.99']
+Episode 26050/100000
+Fitnesses: ['38.01']
+100 fitness avgs: ['23.10']
+Episode 26100/100000
+Fitnesses: ['23.19']
+100 fitness avgs: ['22.41']
+Episode 26150/100000
+Fitnesses: ['22.98']
+100 fitness avgs: ['22.19']
+Episode 26200/100000
+Fitnesses: ['52.07']
+100 fitness avgs: ['22.63']
+Episode 26250/100000
+Fitnesses: ['50.23']
+100 fitness avgs: ['22.60']
+Episode 26300/100000
+Fitnesses: ['35.49']
+100 fitness avgs: ['22.77']
+Episode 26350/100000
+Fitnesses: ['43.42']
+100 fitness avgs: ['22.91']
+Episode 26400/100000
+Fitnesses: ['23.73']
+100 fitness avgs: ['23.18']
+Episode 26450/100000
+Fitnesses: ['37.71']
+100 fitness avgs: ['23.36']
+Episode 26500/100000
+Fitnesses: ['66.67']
+100 fitness avgs: ['23.98']
+Episode 26550/100000
+Fitnesses: ['10.33']
+100 fitness avgs: ['23.90']
+Episode 26600/100000
+Fitnesses: ['20.20']
+100 fitness avgs: ['23.81']
+Episode 26650/100000
+Fitnesses: ['14.81']
+100 fitness avgs: ['23.80']
+Episode 26700/100000
+Fitnesses: ['26.49']
+100 fitness avgs: ['23.80']
+Episode 26750/100000
+Fitnesses: ['86.45']
+100 fitness avgs: ['23.98']
+Episode 26800/100000
+Fitnesses: ['64.79']
+100 fitness avgs: ['24.51']
+Episode 26850/100000
+Fitnesses: ['32.42']
+100 fitness avgs: ['24.10']
+Episode 26900/100000
+Fitnesses: ['32.59']
+100 fitness avgs: ['24.25']
+Episode 26950/100000
+Fitnesses: ['83.80']
+100 fitness avgs: ['24.35']
+Episode 27000/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['24.45']
+Episode 27050/100000
+Fitnesses: ['25.45']
+100 fitness avgs: ['23.48']
+Episode 27100/100000
+Fitnesses: ['7.61']
+100 fitness avgs: ['23.37']
+Episode 27150/100000
+Fitnesses: ['-1.48']
+100 fitness avgs: ['22.69']
+Episode 27200/100000
+Fitnesses: ['18.93']
+100 fitness avgs: ['22.08']
+Episode 27250/100000
+Fitnesses: ['62.63']
+100 fitness avgs: ['22.43']
+Episode 27300/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['21.99']
+Episode 27350/100000
+Fitnesses: ['-0.54']
+100 fitness avgs: ['22.08']
+Episode 27400/100000
+Fitnesses: ['26.09']
+100 fitness avgs: ['22.24']
+Episode 27450/100000
+Fitnesses: ['25.41']
+100 fitness avgs: ['21.94']
+Episode 27500/100000
+Fitnesses: ['5.09']
+100 fitness avgs: ['21.68']
+Episode 27550/100000
+Fitnesses: ['3.32']
+100 fitness avgs: ['21.26']
+Episode 27600/100000
+Fitnesses: ['28.04']
+100 fitness avgs: ['21.23']
+Episode 27650/100000
+Fitnesses: ['62.60']
+100 fitness avgs: ['21.95']
+Episode 27700/100000
+Fitnesses: ['35.90']
+100 fitness avgs: ['22.39']
+Episode 27750/100000
+Fitnesses: ['-0.86']
+100 fitness avgs: ['22.09']
+Episode 27800/100000
+Fitnesses: ['38.00']
+100 fitness avgs: ['22.21']
+Episode 27850/100000
+Fitnesses: ['39.35']
+100 fitness avgs: ['22.35']
+Episode 27900/100000
+Fitnesses: ['36.42']
+100 fitness avgs: ['22.76']
+Episode 27950/100000
+Fitnesses: ['66.51']
+100 fitness avgs: ['22.93']
+Episode 28000/100000
+Fitnesses: ['-0.13']
+100 fitness avgs: ['22.48']
+Episode 28050/100000
+Fitnesses: ['68.83']
+100 fitness avgs: ['23.71']
+Episode 28100/100000
+Fitnesses: ['17.59']
+100 fitness avgs: ['23.54']
+Episode 28150/100000
+Fitnesses: ['32.87']
+100 fitness avgs: ['23.77']
+Episode 28200/100000
+Fitnesses: ['24.40']
+100 fitness avgs: ['24.02']
+Episode 28250/100000
+Fitnesses: ['18.03']
+100 fitness avgs: ['24.14']
+Episode 28300/100000
+Fitnesses: ['38.85']
+100 fitness avgs: ['24.54']
+Episode 28350/100000
+Fitnesses: ['41.81']
+100 fitness avgs: ['25.08']
+Episode 28400/100000
+Fitnesses: ['116.73']
+100 fitness avgs: ['26.07']
+Episode 28450/100000
+Fitnesses: ['73.01']
+100 fitness avgs: ['26.60']
+Episode 28500/100000
+Fitnesses: ['9.77']
+100 fitness avgs: ['27.05']
+Episode 28550/100000
+Fitnesses: ['45.52']
+100 fitness avgs: ['27.19']
+Episode 28600/100000
+Fitnesses: ['33.14']
+100 fitness avgs: ['27.98']
+Episode 28650/100000
+Fitnesses: ['27.73']
+100 fitness avgs: ['28.38']
+Episode 28700/100000
+Fitnesses: ['56.93']
+100 fitness avgs: ['28.35']
+Episode 28750/100000
+Fitnesses: ['29.55']
+100 fitness avgs: ['28.65']
+Episode 28800/100000
+Fitnesses: ['12.27']
+100 fitness avgs: ['28.80']
+Episode 28850/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['29.39']
+Episode 28900/100000
+Fitnesses: ['29.17']
+100 fitness avgs: ['29.26']
+Episode 28950/100000
+Fitnesses: ['47.92']
+100 fitness avgs: ['29.79']
+Episode 29000/100000
+Fitnesses: ['18.56']
+100 fitness avgs: ['29.95']
+Episode 29050/100000
+Fitnesses: ['10.78']
+100 fitness avgs: ['30.04']
+Episode 29100/100000
+Fitnesses: ['11.85']
+100 fitness avgs: ['29.77']
+Episode 29150/100000
+Fitnesses: ['23.04']
+100 fitness avgs: ['29.32']
+Episode 29200/100000
+Fitnesses: ['61.38']
+100 fitness avgs: ['29.67']
+Episode 29250/100000
+Fitnesses: ['33.76']
+100 fitness avgs: ['29.74']
+Episode 29300/100000
+Fitnesses: ['2.36']
+100 fitness avgs: ['29.72']
+Episode 29350/100000
+Fitnesses: ['10.05']
+100 fitness avgs: ['29.77']
+Episode 29400/100000
+Fitnesses: ['31.73']
+100 fitness avgs: ['29.69']
+Episode 29450/100000
+Fitnesses: ['8.48']
+100 fitness avgs: ['29.48']
+Episode 29500/100000
+Fitnesses: ['25.32']
+100 fitness avgs: ['29.15']
+Episode 29550/100000
+Fitnesses: ['57.88']
+100 fitness avgs: ['29.87']
+Episode 29600/100000
+Fitnesses: ['39.77']
+100 fitness avgs: ['29.95']
+Episode 29650/100000
+Fitnesses: ['70.84']
+100 fitness avgs: ['30.55']
+Episode 29700/100000
+Fitnesses: ['13.34']
+100 fitness avgs: ['30.09']
+Episode 29750/100000
+Fitnesses: ['24.96']
+100 fitness avgs: ['30.32']
+Episode 29800/100000
+Fitnesses: ['65.94']
+100 fitness avgs: ['30.98']
+Episode 29850/100000
+Fitnesses: ['93.33']
+100 fitness avgs: ['31.85']
+Episode 29900/100000
+Fitnesses: ['46.50']
+100 fitness avgs: ['32.26']
+Episode 29950/100000
+Fitnesses: ['51.10']
+100 fitness avgs: ['32.43']
+Episode 30000/100000
+Fitnesses: ['13.32']
+100 fitness avgs: ['32.32']
+Save Model at ep  30000
+Episode 30050/100000
+Fitnesses: ['52.69']
+100 fitness avgs: ['32.72']
+Episode 30100/100000
+Fitnesses: ['29.84']
+100 fitness avgs: ['32.13']
+Episode 30150/100000
+Fitnesses: ['78.70']
+100 fitness avgs: ['32.80']
+Episode 30200/100000
+Fitnesses: ['15.89']
+100 fitness avgs: ['32.65']
+Episode 30250/100000
+Fitnesses: ['28.37']
+100 fitness avgs: ['32.85']
+Episode 30300/100000
+Fitnesses: ['21.70']
+100 fitness avgs: ['32.96']
+Episode 30350/100000
+Fitnesses: ['35.44']
+100 fitness avgs: ['33.34']
+Episode 30400/100000
+Fitnesses: ['45.37']
+100 fitness avgs: ['33.68']
+Episode 30450/100000
+Fitnesses: ['12.72']
+100 fitness avgs: ['33.91']
+Episode 30500/100000
+Fitnesses: ['26.67']
+100 fitness avgs: ['34.05']
+Episode 30550/100000
+Fitnesses: ['41.19']
+100 fitness avgs: ['33.99']
+Episode 30600/100000
+Fitnesses: ['16.34']
+100 fitness avgs: ['34.05']
+Episode 30650/100000
+Fitnesses: ['2.61']
+100 fitness avgs: ['33.91']
+Episode 30700/100000
+Fitnesses: ['47.18']
+100 fitness avgs: ['33.89']
+Episode 30750/100000
+Fitnesses: ['9.56']
+100 fitness avgs: ['33.41']
+Episode 30800/100000
+Fitnesses: ['23.02']
+100 fitness avgs: ['33.69']
+Episode 30850/100000
+Fitnesses: ['24.52']
+100 fitness avgs: ['33.80']
+Episode 30900/100000
+Fitnesses: ['17.95']
+100 fitness avgs: ['33.72']
+Episode 30950/100000
+Fitnesses: ['52.77']
+100 fitness avgs: ['33.72']
+Episode 31000/100000
+Fitnesses: ['46.32']
+100 fitness avgs: ['33.98']
+Episode 31050/100000
+Fitnesses: ['33.98']
+100 fitness avgs: ['33.94']
+Episode 31100/100000
+Fitnesses: ['7.49']
+100 fitness avgs: ['33.78']
+Episode 31150/100000
+Fitnesses: ['38.74']
+100 fitness avgs: ['33.94']
+Episode 31200/100000
+Fitnesses: ['9.73']
+100 fitness avgs: ['33.51']
+Episode 31250/100000
+Fitnesses: ['59.24']
+100 fitness avgs: ['33.60']
+Episode 31300/100000
+Fitnesses: ['24.20']
+100 fitness avgs: ['33.49']
+Episode 31350/100000
+Fitnesses: ['36.30']
+100 fitness avgs: ['33.42']
+Episode 31400/100000
+Fitnesses: ['39.41']
+100 fitness avgs: ['33.58']
+Episode 31450/100000
+Fitnesses: ['61.37']
+100 fitness avgs: ['33.81']
+Episode 31500/100000
+Fitnesses: ['19.38']
+100 fitness avgs: ['33.34']
+Episode 31550/100000
+Fitnesses: ['30.32']
+100 fitness avgs: ['33.54']
+Episode 31600/100000
+Fitnesses: ['45.21']
+100 fitness avgs: ['33.79']
+Episode 31650/100000
+Fitnesses: ['53.26']
+100 fitness avgs: ['34.17']
+Episode 31700/100000
+Fitnesses: ['10.24']
+100 fitness avgs: ['34.01']
+Episode 31750/100000
+Fitnesses: ['17.75']
+100 fitness avgs: ['33.33']
+Episode 31800/100000
+Fitnesses: ['10.35']
+100 fitness avgs: ['32.78']
+Episode 31850/100000
+Fitnesses: ['33.07']
+100 fitness avgs: ['32.79']
+Episode 31900/100000
+Fitnesses: ['12.18']
+100 fitness avgs: ['32.58']
+Episode 31950/100000
+Fitnesses: ['29.26']
+100 fitness avgs: ['32.04']
+Episode 32000/100000
+Fitnesses: ['1.02']
+100 fitness avgs: ['31.85']
+Episode 32050/100000
+Fitnesses: ['40.88']
+100 fitness avgs: ['32.00']
+Episode 32100/100000
+Fitnesses: ['42.52']
+100 fitness avgs: ['32.35']
+Episode 32150/100000
+Fitnesses: ['37.07']
+100 fitness avgs: ['32.74']
+Episode 32200/100000
+Fitnesses: ['45.19']
+100 fitness avgs: ['33.00']
+Episode 32250/100000
+Fitnesses: ['24.39']
+100 fitness avgs: ['32.62']
+Episode 32300/100000
+Fitnesses: ['9.52']
+100 fitness avgs: ['32.65']
+Episode 32350/100000
+Fitnesses: ['-1.97']
+100 fitness avgs: ['32.63']
+Episode 32400/100000
+Fitnesses: ['32.76']
+100 fitness avgs: ['32.70']
+Episode 32450/100000
+Fitnesses: ['92.72']
+100 fitness avgs: ['33.37']
+Episode 32500/100000
+Fitnesses: ['7.86']
+100 fitness avgs: ['33.40']
+Episode 32550/100000
+Fitnesses: ['12.23']
+100 fitness avgs: ['33.49']
+Episode 32600/100000
+Fitnesses: ['24.08']
+100 fitness avgs: ['33.45']
+Episode 32650/100000
+Fitnesses: ['39.01']
+100 fitness avgs: ['33.21']
+Episode 32700/100000
+Fitnesses: ['19.63']
+100 fitness avgs: ['33.05']
+Episode 32750/100000
+Fitnesses: ['46.54']
+100 fitness avgs: ['33.52']
+Episode 32800/100000
+Fitnesses: ['25.14']
+100 fitness avgs: ['33.39']
+Episode 32850/100000
+Fitnesses: ['-0.09']
+100 fitness avgs: ['33.00']
+Episode 32900/100000
+Fitnesses: ['10.92']
+100 fitness avgs: ['32.75']
+Episode 32950/100000
+Fitnesses: ['30.52']
+100 fitness avgs: ['32.39']
+Episode 33000/100000
+Fitnesses: ['51.18']
+100 fitness avgs: ['32.90']
+Episode 33050/100000
+Fitnesses: ['24.14']
+100 fitness avgs: ['32.45']
+Episode 33100/100000
+Fitnesses: ['35.57']
+100 fitness avgs: ['32.63']
+Episode 33150/100000
+Fitnesses: ['26.27']
+100 fitness avgs: ['32.57']
+Episode 33200/100000
+Fitnesses: ['14.02']
+100 fitness avgs: ['32.46']
+Episode 33250/100000
+Fitnesses: ['17.35']
+100 fitness avgs: ['32.45']
+Episode 33300/100000
+Fitnesses: ['33.19']
+100 fitness avgs: ['32.40']
+Episode 33350/100000
+Fitnesses: ['46.29']
+100 fitness avgs: ['32.44']
+Episode 33400/100000
+Fitnesses: ['17.15']
+100 fitness avgs: ['31.45']
+Episode 33450/100000
+Fitnesses: ['3.78']
+100 fitness avgs: ['30.75']
+Episode 33500/100000
+Fitnesses: ['35.06']
+100 fitness avgs: ['31.01']
+Episode 33550/100000
+Fitnesses: ['31.02']
+100 fitness avgs: ['30.86']
+Episode 33600/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['31.13']
+Episode 33650/100000
+Fitnesses: ['45.04']
+100 fitness avgs: ['31.30']
+Episode 33700/100000
+Fitnesses: ['52.47']
+100 fitness avgs: ['31.26']
+Episode 33750/100000
+Fitnesses: ['17.47']
+100 fitness avgs: ['31.14']
+Episode 33800/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['31.02']
+Episode 33850/100000
+Fitnesses: ['-6.92']
+100 fitness avgs: ['30.35']
+Episode 33900/100000
+Fitnesses: ['71.58']
+100 fitness avgs: ['30.77']
+Episode 33950/100000
+Fitnesses: ['63.00']
+100 fitness avgs: ['30.92']
+Episode 34000/100000
+Fitnesses: ['-2.10']
+100 fitness avgs: ['30.72']
+Episode 34050/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['30.81']
+Episode 34100/100000
+Fitnesses: ['40.25']
+100 fitness avgs: ['31.09']
+Episode 34150/100000
+Fitnesses: ['48.49']
+100 fitness avgs: ['31.35']
+Episode 34200/100000
+Fitnesses: ['5.48']
+100 fitness avgs: ['30.79']
+Episode 34250/100000
+Fitnesses: ['30.60']
+100 fitness avgs: ['30.76']
+Episode 34300/100000
+Fitnesses: ['43.11']
+100 fitness avgs: ['31.16']
+Episode 34350/100000
+Fitnesses: ['3.91']
+100 fitness avgs: ['31.10']
+Episode 34400/100000
+Fitnesses: ['-0.47']
+100 fitness avgs: ['30.78']
+Episode 34450/100000
+Fitnesses: ['46.46']
+100 fitness avgs: ['31.16']
+Episode 34500/100000
+Fitnesses: ['79.52']
+100 fitness avgs: ['31.70']
+Episode 34550/100000
+Fitnesses: ['8.19']
+100 fitness avgs: ['31.20']
+Episode 34600/100000
+Fitnesses: ['-0.67']
+100 fitness avgs: ['30.80']
+Episode 34650/100000
+Fitnesses: ['12.87']
+100 fitness avgs: ['30.22']
+Episode 34700/100000
+Fitnesses: ['-16.03']
+100 fitness avgs: ['29.93']
+Episode 34750/100000
+Fitnesses: ['43.01']
+100 fitness avgs: ['30.11']
+Episode 34800/100000
+Fitnesses: ['65.07']
+100 fitness avgs: ['30.10']
+Episode 34850/100000
+Fitnesses: ['4.61']
+100 fitness avgs: ['29.21']
+Episode 34900/100000
+Fitnesses: ['44.50']
+100 fitness avgs: ['29.19']
+Episode 34950/100000
+Fitnesses: ['5.72']
+100 fitness avgs: ['28.74']
+Episode 35000/100000
+Fitnesses: ['44.32']
+100 fitness avgs: ['29.05']
+Save Model at ep  35000
+Episode 35050/100000
+Fitnesses: ['7.99']
+100 fitness avgs: ['28.60']
+Episode 35100/100000
+Fitnesses: ['46.91']
+100 fitness avgs: ['28.77']
+Episode 35150/100000
+Fitnesses: ['0.18']
+100 fitness avgs: ['27.99']
+Episode 35200/100000
+Fitnesses: ['24.62']
+100 fitness avgs: ['28.07']
+Episode 35250/100000
+Fitnesses: ['40.24']
+100 fitness avgs: ['28.19']
+Episode 35300/100000
+Fitnesses: ['9.26']
+100 fitness avgs: ['28.07']
+Episode 35350/100000
+Fitnesses: ['36.01']
+100 fitness avgs: ['28.07']
+Episode 35400/100000
+Fitnesses: ['29.08']
+100 fitness avgs: ['27.91']
+Episode 35450/100000
+Fitnesses: ['39.97']
+100 fitness avgs: ['28.18']
+Episode 35500/100000
+Fitnesses: ['-7.78']
+100 fitness avgs: ['27.84']
+Episode 35550/100000
+Fitnesses: ['14.89']
+100 fitness avgs: ['27.58']
+Episode 35600/100000
+Fitnesses: ['-7.16']
+100 fitness avgs: ['27.34']
+Episode 35650/100000
+Fitnesses: ['-5.23']
+100 fitness avgs: ['27.26']
+Episode 35700/100000
+Fitnesses: ['44.05']
+100 fitness avgs: ['27.23']
+Episode 35750/100000
+Fitnesses: ['-0.75']
+100 fitness avgs: ['27.13']
+Episode 35800/100000
+Fitnesses: ['3.84']
+100 fitness avgs: ['26.94']
+Episode 35850/100000
+Fitnesses: ['-1.47']
+100 fitness avgs: ['26.68']
+Episode 35900/100000
+Fitnesses: ['21.88']
+100 fitness avgs: ['26.72']
+Episode 35950/100000
+Fitnesses: ['0.36']
+100 fitness avgs: ['26.19']
+Episode 36000/100000
+Fitnesses: ['51.05']
+100 fitness avgs: ['26.24']
+Episode 36050/100000
+Fitnesses: ['-2.33']
+100 fitness avgs: ['25.88']
+Episode 36100/100000
+Fitnesses: ['-1.01']
+100 fitness avgs: ['25.79']
+Episode 36150/100000
+Fitnesses: ['43.57']
+100 fitness avgs: ['25.84']
+Episode 36200/100000
+Fitnesses: ['21.93']
+100 fitness avgs: ['25.96']
+Episode 36250/100000
+Fitnesses: ['29.97']
+100 fitness avgs: ['25.67']
+Episode 36300/100000
+Fitnesses: ['4.76']
+100 fitness avgs: ['25.47']
+Episode 36350/100000
+Fitnesses: ['81.22']
+100 fitness avgs: ['25.92']
+Episode 36400/100000
+Fitnesses: ['18.69']
+100 fitness avgs: ['25.72']
+Episode 36450/100000
+Fitnesses: ['-2.96']
+100 fitness avgs: ['25.07']
+Episode 36500/100000
+Fitnesses: ['6.94']
+100 fitness avgs: ['24.95']
+Episode 36550/100000
+Fitnesses: ['10.59']
+100 fitness avgs: ['24.75']
+Episode 36600/100000
+Fitnesses: ['26.00']
+100 fitness avgs: ['24.56']
+Episode 36650/100000
+Fitnesses: ['26.43']
+100 fitness avgs: ['24.29']
+Episode 36700/100000
+Fitnesses: ['58.14']
+100 fitness avgs: ['24.77']
+Episode 36750/100000
+Fitnesses: ['-15.49']
+100 fitness avgs: ['24.44']
+Episode 36800/100000
+Fitnesses: ['33.93']
+100 fitness avgs: ['24.67']
+Episode 36850/100000
+Fitnesses: ['15.88']
+100 fitness avgs: ['24.50']
+Episode 36900/100000
+Fitnesses: ['-10.57']
+100 fitness avgs: ['24.27']
+Episode 36950/100000
+Fitnesses: ['-4.22']
+100 fitness avgs: ['23.94']
+Episode 37000/100000
+Fitnesses: ['25.18']
+100 fitness avgs: ['24.18']
+Episode 37050/100000
+Fitnesses: ['28.65']
+100 fitness avgs: ['24.06']
+Episode 37100/100000
+Fitnesses: ['8.42']
+100 fitness avgs: ['23.72']
+Episode 37150/100000
+Fitnesses: ['-2.99']
+100 fitness avgs: ['23.32']
+Episode 37200/100000
+Fitnesses: ['14.38']
+100 fitness avgs: ['23.01']
+Episode 37250/100000
+Fitnesses: ['25.25']
+100 fitness avgs: ['23.02']
+Episode 37300/100000
+Fitnesses: ['37.42']
+100 fitness avgs: ['23.30']
+Episode 37350/100000
+Fitnesses: ['18.14']
+100 fitness avgs: ['23.50']
+Episode 37400/100000
+Fitnesses: ['43.30']
+100 fitness avgs: ['23.60']
+Episode 37450/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['22.87']
+Episode 37500/100000
+Fitnesses: ['36.46']
+100 fitness avgs: ['23.16']
+Episode 37550/100000
+Fitnesses: ['-0.97']
+100 fitness avgs: ['23.03']
+Episode 37600/100000
+Fitnesses: ['56.28']
+100 fitness avgs: ['23.35']
+Episode 37650/100000
+Fitnesses: ['38.76']
+100 fitness avgs: ['23.35']
+Episode 37700/100000
+Fitnesses: ['28.67']
+100 fitness avgs: ['23.44']
+Episode 37750/100000
+Fitnesses: ['19.88']
+100 fitness avgs: ['23.17']
+Episode 37800/100000
+Fitnesses: ['-0.54']
+100 fitness avgs: ['22.92']
+Episode 37850/100000
+Fitnesses: ['55.58']
+100 fitness avgs: ['23.47']
+Episode 37900/100000
+Fitnesses: ['-3.20']
+100 fitness avgs: ['23.33']
+Episode 37950/100000
+Fitnesses: ['-5.20']
+100 fitness avgs: ['22.97']
+Episode 38000/100000
+Fitnesses: ['10.28']
+100 fitness avgs: ['22.56']
+Episode 38050/100000
+Fitnesses: ['16.63']
+100 fitness avgs: ['22.49']
+Episode 38100/100000
+Fitnesses: ['29.83']
+100 fitness avgs: ['22.43']
+Episode 38150/100000
+Fitnesses: ['65.02']
+100 fitness avgs: ['22.82']
+Episode 38200/100000
+Fitnesses: ['-11.73']
+100 fitness avgs: ['22.56']
+Episode 38250/100000
+Fitnesses: ['35.84']
+100 fitness avgs: ['22.75']
+Episode 38300/100000
+Fitnesses: ['33.02']
+100 fitness avgs: ['22.75']
+Episode 38350/100000
+Fitnesses: ['8.15']
+100 fitness avgs: ['22.36']
+Episode 38400/100000
+Fitnesses: ['4.49']
+100 fitness avgs: ['22.24']
+Episode 38450/100000
+Fitnesses: ['19.75']
+100 fitness avgs: ['22.40']
+Episode 38500/100000
+Fitnesses: ['21.52']
+100 fitness avgs: ['22.26']
+Episode 38550/100000
+Fitnesses: ['26.72']
+100 fitness avgs: ['22.22']
+Episode 38600/100000
+Fitnesses: ['15.77']
+100 fitness avgs: ['21.78']
+Episode 38650/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['21.93']
+Episode 38700/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['21.60']
+Episode 38750/100000
+Fitnesses: ['4.33']
+100 fitness avgs: ['21.47']
+Episode 38800/100000
+Fitnesses: ['19.99']
+100 fitness avgs: ['21.67']
+Episode 38850/100000
+Fitnesses: ['24.13']
+100 fitness avgs: ['21.98']
+Episode 38900/100000
+Fitnesses: ['42.16']
+100 fitness avgs: ['21.69']
+Episode 38950/100000
+Fitnesses: ['-5.83']
+100 fitness avgs: ['21.00']
+Episode 39000/100000
+Fitnesses: ['-4.46']
+100 fitness avgs: ['20.97']
+Episode 39050/100000
+Fitnesses: ['28.73']
+100 fitness avgs: ['21.06']
+Episode 39100/100000
+Fitnesses: ['-6.35']
+100 fitness avgs: ['20.60']
+Episode 39150/100000
+Fitnesses: ['41.24']
+100 fitness avgs: ['20.52']
+Episode 39200/100000
+Fitnesses: ['-5.37']
+100 fitness avgs: ['20.41']
+Episode 39250/100000
+Fitnesses: ['2.84']
+100 fitness avgs: ['20.14']
+Episode 39300/100000
+Fitnesses: ['27.62']
+100 fitness avgs: ['19.98']
+Episode 39350/100000
+Fitnesses: ['4.05']
+100 fitness avgs: ['19.98']
+Episode 39400/100000
+Fitnesses: ['2.51']
+100 fitness avgs: ['20.01']
+Episode 39450/100000
+Fitnesses: ['25.44']
+100 fitness avgs: ['19.80']
+Episode 39500/100000
+Fitnesses: ['9.22']
+100 fitness avgs: ['19.10']
+Episode 39550/100000
+Fitnesses: ['29.69']
+100 fitness avgs: ['19.31']
+Episode 39600/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['19.52']
+Episode 39650/100000
+Fitnesses: ['6.72']
+100 fitness avgs: ['19.46']
+Episode 39700/100000
+Fitnesses: ['2.48']
+100 fitness avgs: ['19.65']
+Episode 39750/100000
+Fitnesses: ['42.84']
+100 fitness avgs: ['19.64']
+Episode 39800/100000
+Fitnesses: ['9.45']
+100 fitness avgs: ['19.09']
+Episode 39850/100000
+Fitnesses: ['25.89']
+100 fitness avgs: ['19.30']
+Episode 39900/100000
+Fitnesses: ['17.74']
+100 fitness avgs: ['19.03']
+Episode 39950/100000
+Fitnesses: ['21.18']
+100 fitness avgs: ['19.19']
+Episode 40000/100000
+Fitnesses: ['4.29']
+100 fitness avgs: ['18.79']
+Save Model at ep  40000
+Episode 40050/100000
+Fitnesses: ['-1.08']
+100 fitness avgs: ['18.70']
+Episode 40100/100000
+Fitnesses: ['-5.53']
+100 fitness avgs: ['18.17']
+Episode 40150/100000
+Fitnesses: ['34.39']
+100 fitness avgs: ['18.51']
+Episode 40200/100000
+Fitnesses: ['7.40']
+100 fitness avgs: ['18.34']
+Episode 40250/100000
+Fitnesses: ['5.42']
+100 fitness avgs: ['17.99']
+Episode 40300/100000
+Fitnesses: ['25.17']
+100 fitness avgs: ['18.15']
+Episode 40350/100000
+Fitnesses: ['3.50']
+100 fitness avgs: ['17.83']
+Episode 40400/100000
+Fitnesses: ['15.59']
+100 fitness avgs: ['17.69']
+Episode 40450/100000
+Fitnesses: ['9.90']
+100 fitness avgs: ['17.39']
+Episode 40500/100000
+Fitnesses: ['57.08']
+100 fitness avgs: ['18.04']
+Episode 40550/100000
+Fitnesses: ['37.85']
+100 fitness avgs: ['18.27']
+Episode 40600/100000
+Fitnesses: ['78.00']
+100 fitness avgs: ['19.12']
+Episode 40650/100000
+Fitnesses: ['-8.20']
+100 fitness avgs: ['19.09']
+Episode 40700/100000
+Fitnesses: ['37.47']
+100 fitness avgs: ['19.03']
+Episode 40750/100000
+Fitnesses: ['27.29']
+100 fitness avgs: ['19.31']
+Episode 40800/100000
+Fitnesses: ['39.02']
+100 fitness avgs: ['19.66']
+Episode 40850/100000
+Fitnesses: ['0.53']
+100 fitness avgs: ['19.68']
+Episode 40900/100000
+Fitnesses: ['38.98']
+100 fitness avgs: ['19.85']
+Episode 40950/100000
+Fitnesses: ['35.74']
+100 fitness avgs: ['20.20']
+Episode 41000/100000
+Fitnesses: ['40.46']
+100 fitness avgs: ['20.10']
+Episode 41050/100000
+Fitnesses: ['-4.67']
+100 fitness avgs: ['20.07']
+Episode 41100/100000
+Fitnesses: ['17.32']
+100 fitness avgs: ['20.26']
+Episode 41150/100000
+Fitnesses: ['31.86']
+100 fitness avgs: ['20.14']
+Episode 41200/100000
+Fitnesses: ['6.95']
+100 fitness avgs: ['19.99']
+Episode 41250/100000
+Fitnesses: ['27.54']
+100 fitness avgs: ['19.97']
+Episode 41300/100000
+Fitnesses: ['53.24']
+100 fitness avgs: ['20.45']
+Episode 41350/100000
+Fitnesses: ['53.69']
+100 fitness avgs: ['20.18']
+Episode 41400/100000
+Fitnesses: ['3.70']
+100 fitness avgs: ['20.03']
+Episode 41450/100000
+Fitnesses: ['35.90']
+100 fitness avgs: ['20.41']
+Episode 41500/100000
+Fitnesses: ['21.85']
+100 fitness avgs: ['20.56']
+Episode 41550/100000
+Fitnesses: ['37.00']
+100 fitness avgs: ['20.83']
+Episode 41600/100000
+Fitnesses: ['18.96']
+100 fitness avgs: ['20.76']
+Episode 41650/100000
+Fitnesses: ['4.44']
+100 fitness avgs: ['20.54']
+Episode 41700/100000
+Fitnesses: ['31.76']
+100 fitness avgs: ['20.27']
+Episode 41750/100000
+Fitnesses: ['31.66']
+100 fitness avgs: ['20.75']
+Episode 41800/100000
+Fitnesses: ['35.38']
+100 fitness avgs: ['20.76']
+Episode 41850/100000
+Fitnesses: ['32.77']
+100 fitness avgs: ['20.93']
+Episode 41900/100000
+Fitnesses: ['30.63']
+100 fitness avgs: ['21.34']
+Episode 41950/100000
+Fitnesses: ['-6.07']
+100 fitness avgs: ['21.32']
+Episode 42000/100000
+Fitnesses: ['53.00']
+100 fitness avgs: ['21.60']
+Episode 42050/100000
+Fitnesses: ['7.19']
+100 fitness avgs: ['21.39']
+Episode 42100/100000
+Fitnesses: ['77.60']
+100 fitness avgs: ['22.08']
+Episode 42150/100000
+Fitnesses: ['31.09']
+100 fitness avgs: ['22.42']
+Episode 42200/100000
+Fitnesses: ['9.19']
+100 fitness avgs: ['22.37']
+Episode 42250/100000
+Fitnesses: ['90.38']
+100 fitness avgs: ['23.02']
+Episode 42300/100000
+Fitnesses: ['23.28']
+100 fitness avgs: ['22.88']
+Episode 42350/100000
+Fitnesses: ['-4.94']
+100 fitness avgs: ['22.65']
+Episode 42400/100000
+Fitnesses: ['-6.36']
+100 fitness avgs: ['22.15']
+Episode 42450/100000
+Fitnesses: ['24.05']
+100 fitness avgs: ['22.19']
+Episode 42500/100000
+Fitnesses: ['23.55']
+100 fitness avgs: ['22.06']
+Episode 42550/100000
+Fitnesses: ['8.94']
+100 fitness avgs: ['22.16']
+Episode 42600/100000
+Fitnesses: ['84.99']
+100 fitness avgs: ['22.45']
+Episode 42650/100000
+Fitnesses: ['44.78']
+100 fitness avgs: ['22.51']
+Episode 42700/100000
+Fitnesses: ['3.73']
+100 fitness avgs: ['22.26']
+Episode 42750/100000
+Fitnesses: ['1.71']
+100 fitness avgs: ['22.08']
+Episode 42800/100000
+Fitnesses: ['-10.76']
+100 fitness avgs: ['21.97']
+Episode 42850/100000
+Fitnesses: ['70.34']
+100 fitness avgs: ['22.12']
+Episode 42900/100000
+Fitnesses: ['19.56']
+100 fitness avgs: ['22.35']
+Episode 42950/100000
+Fitnesses: ['16.87']
+100 fitness avgs: ['22.57']
+Episode 43000/100000
+Fitnesses: ['20.47']
+100 fitness avgs: ['22.67']
+Episode 43050/100000
+Fitnesses: ['66.60']
+100 fitness avgs: ['23.17']
+Episode 43100/100000
+Fitnesses: ['31.27']
+100 fitness avgs: ['23.19']
+Episode 43150/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['22.54']
+Episode 43200/100000
+Fitnesses: ['37.91']
+100 fitness avgs: ['23.03']
+Episode 43250/100000
+Fitnesses: ['11.18']
+100 fitness avgs: ['22.79']
+Episode 43300/100000
+Fitnesses: ['30.03']
+100 fitness avgs: ['22.76']
+Episode 43350/100000
+Fitnesses: ['69.74']
+100 fitness avgs: ['23.37']
+Episode 43400/100000
+Fitnesses: ['15.06']
+100 fitness avgs: ['23.48']
+Episode 43450/100000
+Fitnesses: ['7.56']
+100 fitness avgs: ['23.35']
+Episode 43500/100000
+Fitnesses: ['40.00']
+100 fitness avgs: ['23.54']
+Episode 43550/100000
+Fitnesses: ['31.93']
+100 fitness avgs: ['23.59']
+Episode 43600/100000
+Fitnesses: ['4.06']
+100 fitness avgs: ['23.47']
+Episode 43650/100000
+Fitnesses: ['24.81']
+100 fitness avgs: ['23.12']
+Episode 43700/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['22.92']
+Episode 43750/100000
+Fitnesses: ['24.57']
+100 fitness avgs: ['23.13']
+Episode 43800/100000
+Fitnesses: ['30.73']
+100 fitness avgs: ['23.23']
+Episode 43850/100000
+Fitnesses: ['71.97']
+100 fitness avgs: ['23.71']
+Episode 43900/100000
+Fitnesses: ['27.19']
+100 fitness avgs: ['23.56']
+Episode 43950/100000
+Fitnesses: ['32.17']
+100 fitness avgs: ['23.94']
+Episode 44000/100000
+Fitnesses: ['43.68']
+100 fitness avgs: ['24.42']
+Episode 44050/100000
+Fitnesses: ['-7.95']
+100 fitness avgs: ['24.06']
+Episode 44100/100000
+Fitnesses: ['40.80']
+100 fitness avgs: ['24.53']
+Episode 44150/100000
+Fitnesses: ['25.46']
+100 fitness avgs: ['24.37']
+Episode 44200/100000
+Fitnesses: ['-5.05']
+100 fitness avgs: ['24.37']
+Episode 44250/100000
+Fitnesses: ['48.83']
+100 fitness avgs: ['24.83']
+Episode 44300/100000
+Fitnesses: ['52.40']
+100 fitness avgs: ['25.08']
+Episode 44350/100000
+Fitnesses: ['37.24']
+100 fitness avgs: ['25.41']
+Episode 44400/100000
+Fitnesses: ['10.64']
+100 fitness avgs: ['25.49']
+Episode 44450/100000
+Fitnesses: ['52.81']
+100 fitness avgs: ['25.77']
+Episode 44500/100000
+Fitnesses: ['36.84']
+100 fitness avgs: ['26.04']
+Episode 44550/100000
+Fitnesses: ['59.03']
+100 fitness avgs: ['26.34']
+Episode 44600/100000
+Fitnesses: ['39.25']
+100 fitness avgs: ['26.53']
+Episode 44650/100000
+Fitnesses: ['31.44']
+100 fitness avgs: ['26.78']
+Episode 44700/100000
+Fitnesses: ['23.39']
+100 fitness avgs: ['26.99']
+Episode 44750/100000
+Fitnesses: ['13.34']
+100 fitness avgs: ['26.69']
+Episode 44800/100000
+Fitnesses: ['24.66']
+100 fitness avgs: ['26.84']
+Episode 44850/100000
+Fitnesses: ['50.02']
+100 fitness avgs: ['27.08']
+Episode 44900/100000
+Fitnesses: ['14.26']
+100 fitness avgs: ['27.05']
+Episode 44950/100000
+Fitnesses: ['67.99']
+100 fitness avgs: ['27.52']
+Episode 45000/100000
+Fitnesses: ['5.57']
+100 fitness avgs: ['27.53']
+Save Model at ep  45000
+Episode 45050/100000
+Fitnesses: ['34.48']
+100 fitness avgs: ['27.89']
+Episode 45100/100000
+Fitnesses: ['32.83']
+100 fitness avgs: ['28.27']
+Episode 45150/100000
+Fitnesses: ['64.17']
+100 fitness avgs: ['28.57']
+Episode 45200/100000
+Fitnesses: ['-3.86']
+100 fitness avgs: ['28.45']
+Episode 45250/100000
+Fitnesses: ['57.86']
+100 fitness avgs: ['28.98']
+Episode 45300/100000
+Fitnesses: ['-3.05']
+100 fitness avgs: ['28.70']
+Episode 45350/100000
+Fitnesses: ['49.10']
+100 fitness avgs: ['29.15']
+Episode 45400/100000
+Fitnesses: ['11.26']
+100 fitness avgs: ['29.11']
+Episode 45450/100000
+Fitnesses: ['62.31']
+100 fitness avgs: ['29.63']
+Episode 45500/100000
+Fitnesses: ['41.85']
+100 fitness avgs: ['29.48']
+Episode 45550/100000
+Fitnesses: ['59.88']
+100 fitness avgs: ['29.70']
+Episode 45600/100000
+Fitnesses: ['5.03']
+100 fitness avgs: ['28.97']
+Episode 45650/100000
+Fitnesses: ['20.82']
+100 fitness avgs: ['29.26']
+Episode 45700/100000
+Fitnesses: ['-11.91']
+100 fitness avgs: ['28.77']
+Episode 45750/100000
+Fitnesses: ['-10.23']
+100 fitness avgs: ['28.39']
+Episode 45800/100000
+Fitnesses: ['15.97']
+100 fitness avgs: ['28.16']
+Episode 45850/100000
+Fitnesses: ['24.73']
+100 fitness avgs: ['28.40']
+Episode 45900/100000
+Fitnesses: ['27.94']
+100 fitness avgs: ['28.29']
+Episode 45950/100000
+Fitnesses: ['-3.64']
+100 fitness avgs: ['27.90']
+Episode 46000/100000
+Fitnesses: ['58.47']
+100 fitness avgs: ['28.08']
+Episode 46050/100000
+Fitnesses: ['48.84']
+100 fitness avgs: ['28.62']
+Episode 46100/100000
+Fitnesses: ['99.08']
+100 fitness avgs: ['29.43']
+Episode 46150/100000
+Fitnesses: ['51.58']
+100 fitness avgs: ['29.63']
+Episode 46200/100000
+Fitnesses: ['41.63']
+100 fitness avgs: ['29.98']
+Episode 46250/100000
+Fitnesses: ['73.33']
+100 fitness avgs: ['30.44']
+Episode 46300/100000
+Fitnesses: ['-9.74']
+100 fitness avgs: ['29.81']
+Episode 46350/100000
+Fitnesses: ['49.73']
+100 fitness avgs: ['29.77']
+Episode 46400/100000
+Fitnesses: ['52.36']
+100 fitness avgs: ['30.25']
+Episode 46450/100000
+Fitnesses: ['25.49']
+100 fitness avgs: ['30.15']
+Episode 46500/100000
+Fitnesses: ['80.00']
+100 fitness avgs: ['30.73']
+Episode 46550/100000
+Fitnesses: ['12.63']
+100 fitness avgs: ['30.49']
+Episode 46600/100000
+Fitnesses: ['66.67']
+100 fitness avgs: ['30.96']
+Episode 46650/100000
+Fitnesses: ['49.21']
+100 fitness avgs: ['31.41']
+Episode 46700/100000
+Fitnesses: ['134.74']
+100 fitness avgs: ['32.44']
+Episode 46750/100000
+Fitnesses: ['52.79']
+100 fitness avgs: ['32.65']
+Episode 46800/100000
+Fitnesses: ['6.12']
+100 fitness avgs: ['32.36']
+Episode 46850/100000
+Fitnesses: ['19.01']
+100 fitness avgs: ['32.22']
+Episode 46900/100000
+Fitnesses: ['49.73']
+100 fitness avgs: ['32.41']
+Episode 46950/100000
+Fitnesses: ['53.81']
+100 fitness avgs: ['33.01']
+Episode 47000/100000
+Fitnesses: ['57.46']
+100 fitness avgs: ['33.06']
+Episode 47050/100000
+Fitnesses: ['26.64']
+100 fitness avgs: ['33.25']
+Episode 47100/100000
+Fitnesses: ['68.19']
+100 fitness avgs: ['33.16']
+Episode 47150/100000
+Fitnesses: ['18.58']
+100 fitness avgs: ['33.03']
+Episode 47200/100000
+Fitnesses: ['79.97']
+100 fitness avgs: ['33.74']
+Episode 47250/100000
+Fitnesses: ['49.39']
+100 fitness avgs: ['33.33']
+Episode 47300/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['33.43']
+Episode 47350/100000
+Fitnesses: ['30.05']
+100 fitness avgs: ['33.78']
+Episode 47400/100000
+Fitnesses: ['18.54']
+100 fitness avgs: ['34.03']
+Episode 47450/100000
+Fitnesses: ['13.20']
+100 fitness avgs: ['33.92']
+Episode 47500/100000
+Fitnesses: ['65.71']
+100 fitness avgs: ['34.34']
+Episode 47550/100000
+Fitnesses: ['15.77']
+100 fitness avgs: ['34.41']
+Episode 47600/100000
+Fitnesses: ['18.76']
+100 fitness avgs: ['33.75']
+Episode 47650/100000
+Fitnesses: ['39.23']
+100 fitness avgs: ['33.69']
+Episode 47700/100000
+Fitnesses: ['53.88']
+100 fitness avgs: ['34.19']
+Episode 47750/100000
+Fitnesses: ['40.81']
+100 fitness avgs: ['34.58']
+Episode 47800/100000
+Fitnesses: ['29.19']
+100 fitness avgs: ['34.98']
+Episode 47850/100000
+Fitnesses: ['30.44']
+100 fitness avgs: ['34.59']
+Episode 47900/100000
+Fitnesses: ['26.43']
+100 fitness avgs: ['34.65']
+Episode 47950/100000
+Fitnesses: ['5.04']
+100 fitness avgs: ['34.54']
+Episode 48000/100000
+Fitnesses: ['19.17']
+100 fitness avgs: ['34.52']
+Episode 48050/100000
+Fitnesses: ['2.91']
+100 fitness avgs: ['33.89']
+Episode 48100/100000
+Fitnesses: ['18.69']
+100 fitness avgs: ['33.76']
+Episode 48150/100000
+Fitnesses: ['25.97']
+100 fitness avgs: ['34.02']
+Episode 48200/100000
+Fitnesses: ['45.25']
+100 fitness avgs: ['34.09']
+Episode 48250/100000
+Fitnesses: ['13.23']
+100 fitness avgs: ['34.11']
+Episode 48300/100000
+Fitnesses: ['104.08']
+100 fitness avgs: ['34.85']
+Episode 48350/100000
+Fitnesses: ['35.23']
+100 fitness avgs: ['34.51']
+Episode 48400/100000
+Fitnesses: ['62.23']
+100 fitness avgs: ['34.98']
+Episode 48450/100000
+Fitnesses: ['53.51']
+100 fitness avgs: ['35.44']
+Episode 48500/100000
+Fitnesses: ['45.86']
+100 fitness avgs: ['35.50']
+Episode 48550/100000
+Fitnesses: ['-14.48']
+100 fitness avgs: ['35.03']
+Episode 48600/100000
+Fitnesses: ['-3.96']
+100 fitness avgs: ['34.95']
+Episode 48650/100000
+Fitnesses: ['2.50']
+100 fitness avgs: ['34.73']
+Episode 48700/100000
+Fitnesses: ['17.17']
+100 fitness avgs: ['34.90']
+Episode 48750/100000
+Fitnesses: ['97.35']
+100 fitness avgs: ['35.63']
+Episode 48800/100000
+Fitnesses: ['11.44']
+100 fitness avgs: ['35.44']
+Episode 48850/100000
+Fitnesses: ['-7.61']
+100 fitness avgs: ['34.64']
+Episode 48900/100000
+Fitnesses: ['26.29']
+100 fitness avgs: ['34.63']
+Episode 48950/100000
+Fitnesses: ['13.73']
+100 fitness avgs: ['34.45']
+Episode 49000/100000
+Fitnesses: ['3.90']
+100 fitness avgs: ['34.05']
+Episode 49050/100000
+Fitnesses: ['51.80']
+100 fitness avgs: ['34.65']
+Episode 49100/100000
+Fitnesses: ['9.53']
+100 fitness avgs: ['34.34']
+Episode 49150/100000
+Fitnesses: ['17.43']
+100 fitness avgs: ['34.26']
+Episode 49200/100000
+Fitnesses: ['13.46']
+100 fitness avgs: ['34.44']
+Episode 49250/100000
+Fitnesses: ['13.74']
+100 fitness avgs: ['34.09']
+Episode 49300/100000
+Fitnesses: ['34.31']
+100 fitness avgs: ['33.91']
+Episode 49350/100000
+Fitnesses: ['1.65']
+100 fitness avgs: ['33.55']
+Episode 49400/100000
+Fitnesses: ['59.42']
+100 fitness avgs: ['34.04']
+Episode 49450/100000
+Fitnesses: ['50.03']
+100 fitness avgs: ['34.01']
+Episode 49500/100000
+Fitnesses: ['1.03']
+100 fitness avgs: ['33.65']
+Episode 49550/100000
+Fitnesses: ['30.56']
+100 fitness avgs: ['33.37']
+Episode 49600/100000
+Fitnesses: ['25.15']
+100 fitness avgs: ['33.23']
+Episode 49650/100000
+Fitnesses: ['21.51']
+100 fitness avgs: ['33.13']
+Episode 49700/100000
+Fitnesses: ['-2.21']
+100 fitness avgs: ['32.87']
+Episode 49750/100000
+Fitnesses: ['-4.19']
+100 fitness avgs: ['32.70']
+Episode 49800/100000
+Fitnesses: ['29.92']
+100 fitness avgs: ['32.75']
+Episode 49850/100000
+Fitnesses: ['-12.32']
+100 fitness avgs: ['32.13']
+Episode 49900/100000
+Fitnesses: ['10.37']
+100 fitness avgs: ['32.09']
+Episode 49950/100000
+Fitnesses: ['12.11']
+100 fitness avgs: ['31.53']
+Episode 50000/100000
+Fitnesses: ['53.75']
+100 fitness avgs: ['32.01']
+Save Model at ep  50000
+Episode 50050/100000
+Fitnesses: ['-0.72']
+100 fitness avgs: ['31.66']
+Episode 50100/100000
+Fitnesses: ['52.97']
+100 fitness avgs: ['31.86']
+Episode 50150/100000
+Fitnesses: ['8.92']
+100 fitness avgs: ['31.31']
+Episode 50200/100000
+Fitnesses: ['17.17']
+100 fitness avgs: ['31.52']
+Episode 50250/100000
+Fitnesses: ['-1.47']
+100 fitness avgs: ['30.93']
+Episode 50300/100000
+Fitnesses: ['-5.07']
+100 fitness avgs: ['30.91']
+Episode 50350/100000
+Fitnesses: ['51.69']
+100 fitness avgs: ['30.93']
+Episode 50400/100000
+Fitnesses: ['12.27']
+100 fitness avgs: ['30.94']
+Episode 50450/100000
+Fitnesses: ['15.91']
+100 fitness avgs: ['30.48']
+Episode 50500/100000
+Fitnesses: ['-3.77']
+100 fitness avgs: ['30.02']
+Episode 50550/100000
+Fitnesses: ['-5.13']
+100 fitness avgs: ['29.37']
+Episode 50600/100000
+Fitnesses: ['11.80']
+100 fitness avgs: ['29.44']
+Episode 50650/100000
+Fitnesses: ['-5.41']
+100 fitness avgs: ['29.18']
+Episode 50700/100000
+Fitnesses: ['31.35']
+100 fitness avgs: ['29.61']
+Episode 50750/100000
+Fitnesses: ['9.27']
+100 fitness avgs: ['29.80']
+Episode 50800/100000
+Fitnesses: ['-8.59']
+100 fitness avgs: ['29.56']
+Episode 50850/100000
+Fitnesses: ['3.89']
+100 fitness avgs: ['29.35']
+Episode 50900/100000
+Fitnesses: ['9.59']
+100 fitness avgs: ['29.17']
+Episode 50950/100000
+Fitnesses: ['10.24']
+100 fitness avgs: ['29.31']
+Episode 51000/100000
+Fitnesses: ['37.11']
+100 fitness avgs: ['29.09']
+Episode 51050/100000
+Fitnesses: ['23.99']
+100 fitness avgs: ['28.84']
+Episode 51100/100000
+Fitnesses: ['5.37']
+100 fitness avgs: ['27.91']
+Episode 51150/100000
+Fitnesses: ['-13.57']
+100 fitness avgs: ['27.25']
+Episode 51200/100000
+Fitnesses: ['5.56']
+100 fitness avgs: ['26.89']
+Episode 51250/100000
+Fitnesses: ['81.18']
+100 fitness avgs: ['26.97']
+Episode 51300/100000
+Fitnesses: ['-3.27']
+100 fitness avgs: ['27.04']
+Episode 51350/100000
+Fitnesses: ['54.72']
+100 fitness avgs: ['27.09']
+Episode 51400/100000
+Fitnesses: ['29.42']
+100 fitness avgs: ['26.86']
+Episode 51450/100000
+Fitnesses: ['57.84']
+100 fitness avgs: ['27.18']
+Episode 51500/100000
+Fitnesses: ['7.36']
+100 fitness avgs: ['26.45']
+Episode 51550/100000
+Fitnesses: ['40.14']
+100 fitness avgs: ['26.73']
+Episode 51600/100000
+Fitnesses: ['-3.01']
+100 fitness avgs: ['26.03']
+Episode 51650/100000
+Fitnesses: ['23.34']
+100 fitness avgs: ['25.77']
+Episode 51700/100000
+Fitnesses: ['3.01']
+100 fitness avgs: ['24.46']
+Episode 51750/100000
+Fitnesses: ['-1.16']
+100 fitness avgs: ['23.92']
+Episode 51800/100000
+Fitnesses: ['11.35']
+100 fitness avgs: ['23.97']
+Episode 51850/100000
+Fitnesses: ['28.56']
+100 fitness avgs: ['24.07']
+Episode 51900/100000
+Fitnesses: ['30.24']
+100 fitness avgs: ['23.87']
+Episode 51950/100000
+Fitnesses: ['46.36']
+100 fitness avgs: ['23.80']
+Episode 52000/100000
+Fitnesses: ['2.90']
+100 fitness avgs: ['23.25']
+Episode 52050/100000
+Fitnesses: ['26.58']
+100 fitness avgs: ['23.25']
+Episode 52100/100000
+Fitnesses: ['15.16']
+100 fitness avgs: ['22.72']
+Episode 52150/100000
+Fitnesses: ['36.01']
+100 fitness avgs: ['22.89']
+Episode 52200/100000
+Fitnesses: ['-11.62']
+100 fitness avgs: ['21.98']
+Episode 52250/100000
+Fitnesses: ['25.99']
+100 fitness avgs: ['21.74']
+Episode 52300/100000
+Fitnesses: ['43.27']
+100 fitness avgs: ['21.84']
+Episode 52350/100000
+Fitnesses: ['52.77']
+100 fitness avgs: ['22.07']
+Episode 52400/100000
+Fitnesses: ['20.41']
+100 fitness avgs: ['22.09']
+Episode 52450/100000
+Fitnesses: ['23.31']
+100 fitness avgs: ['22.19']
+Episode 52500/100000
+Fitnesses: ['21.00']
+100 fitness avgs: ['21.74']
+Episode 52550/100000
+Fitnesses: ['58.82']
+100 fitness avgs: ['22.17']
+Episode 52600/100000
+Fitnesses: ['1.46']
+100 fitness avgs: ['22.00']
+Episode 52650/100000
+Fitnesses: ['25.49']
+100 fitness avgs: ['21.86']
+Episode 52700/100000
+Fitnesses: ['17.88']
+100 fitness avgs: ['21.50']
+Episode 52750/100000
+Fitnesses: ['63.71']
+100 fitness avgs: ['21.73']
+Episode 52800/100000
+Fitnesses: ['-6.24']
+100 fitness avgs: ['21.38']
+Episode 52850/100000
+Fitnesses: ['35.94']
+100 fitness avgs: ['21.43']
+Episode 52900/100000
+Fitnesses: ['-13.28']
+100 fitness avgs: ['21.04']
+Episode 52950/100000
+Fitnesses: ['49.99']
+100 fitness avgs: ['21.49']
+Episode 53000/100000
+Fitnesses: ['14.29']
+100 fitness avgs: ['21.44']
+Episode 53050/100000
+Fitnesses: ['18.01']
+100 fitness avgs: ['21.59']
+Episode 53100/100000
+Fitnesses: ['-13.93']
+100 fitness avgs: ['21.26']
+Episode 53150/100000
+Fitnesses: ['31.93']
+100 fitness avgs: ['21.32']
+Episode 53200/100000
+Fitnesses: ['12.08']
+100 fitness avgs: ['20.99']
+Episode 53250/100000
+Fitnesses: ['25.89']
+100 fitness avgs: ['21.12']
+Episode 53300/100000
+Fitnesses: ['55.03']
+100 fitness avgs: ['20.63']
+Episode 53350/100000
+Fitnesses: ['55.19']
+100 fitness avgs: ['20.82']
+Episode 53400/100000
+Fitnesses: ['-4.88']
+100 fitness avgs: ['20.15']
+Episode 53450/100000
+Fitnesses: ['102.62']
+100 fitness avgs: ['20.64']
+Episode 53500/100000
+Fitnesses: ['28.56']
+100 fitness avgs: ['20.47']
+Episode 53550/100000
+Fitnesses: ['18.31']
+100 fitness avgs: ['20.80']
+Episode 53600/100000
+Fitnesses: ['53.56']
+100 fitness avgs: ['21.37']
+Episode 53650/100000
+Fitnesses: ['-3.26']
+100 fitness avgs: ['21.32']
+Episode 53700/100000
+Fitnesses: ['30.83']
+100 fitness avgs: ['21.45']
+Episode 53750/100000
+Fitnesses: ['36.18']
+100 fitness avgs: ['20.84']
+Episode 53800/100000
+Fitnesses: ['43.85']
+100 fitness avgs: ['21.17']
+Episode 53850/100000
+Fitnesses: ['-14.52']
+100 fitness avgs: ['21.10']
+Episode 53900/100000
+Fitnesses: ['-8.90']
+100 fitness avgs: ['20.75']
+Episode 53950/100000
+Fitnesses: ['51.51']
+100 fitness avgs: ['21.12']
+Episode 54000/100000
+Fitnesses: ['26.54']
+100 fitness avgs: ['21.35']
+Episode 54050/100000
+Fitnesses: ['35.03']
+100 fitness avgs: ['21.18']
+Episode 54100/100000
+Fitnesses: ['28.25']
+100 fitness avgs: ['21.37']
+Episode 54150/100000
+Fitnesses: ['50.12']
+100 fitness avgs: ['21.70']
+Episode 54200/100000
+Fitnesses: ['24.28']
+100 fitness avgs: ['21.80']
+Episode 54250/100000
+Fitnesses: ['35.72']
+100 fitness avgs: ['22.02']
+Episode 54300/100000
+Fitnesses: ['30.57']
+100 fitness avgs: ['21.99']
+Episode 54350/100000
+Fitnesses: ['3.76']
+100 fitness avgs: ['22.01']
+Episode 54400/100000
+Fitnesses: ['5.85']
+100 fitness avgs: ['21.47']
+Episode 54450/100000
+Fitnesses: ['12.76']
+100 fitness avgs: ['21.10']
+Episode 54500/100000
+Fitnesses: ['-4.15']
+100 fitness avgs: ['21.05']
+Episode 54550/100000
+Fitnesses: ['39.26']
+100 fitness avgs: ['21.13']
+Episode 54600/100000
+Fitnesses: ['74.51']
+100 fitness avgs: ['21.63']
+Episode 54650/100000
+Fitnesses: ['39.13']
+100 fitness avgs: ['21.80']
+Episode 54700/100000
+Fitnesses: ['31.27']
+100 fitness avgs: ['22.14']
+Episode 54750/100000
+Fitnesses: ['-5.95']
+100 fitness avgs: ['22.12']
+Episode 54800/100000
+Fitnesses: ['12.53']
+100 fitness avgs: ['21.95']
+Episode 54850/100000
+Fitnesses: ['43.29']
+100 fitness avgs: ['22.50']
+Episode 54900/100000
+Fitnesses: ['32.39']
+100 fitness avgs: ['22.72']
+Episode 54950/100000
+Fitnesses: ['22.36']
+100 fitness avgs: ['22.83']
+Episode 55000/100000
+Fitnesses: ['9.64']
+100 fitness avgs: ['22.39']
+Save Model at ep  55000
+Episode 55050/100000
+Fitnesses: ['29.04']
+100 fitness avgs: ['22.68']
+Episode 55100/100000
+Fitnesses: ['-2.90']
+100 fitness avgs: ['22.12']
+Episode 55150/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['22.37']
+Episode 55200/100000
+Fitnesses: ['22.40']
+100 fitness avgs: ['22.42']
+Episode 55250/100000
+Fitnesses: ['45.68']
+100 fitness avgs: ['22.89']
+Episode 55300/100000
+Fitnesses: ['30.10']
+100 fitness avgs: ['23.24']
+Episode 55350/100000
+Fitnesses: ['31.27']
+100 fitness avgs: ['23.04']
+Episode 55400/100000
+Fitnesses: ['20.47']
+100 fitness avgs: ['23.12']
+Episode 55450/100000
+Fitnesses: ['28.44']
+100 fitness avgs: ['23.25']
+Episode 55500/100000
+Fitnesses: ['30.47']
+100 fitness avgs: ['23.59']
+Episode 55550/100000
+Fitnesses: ['12.01']
+100 fitness avgs: ['23.76']
+Episode 55600/100000
+Fitnesses: ['44.32']
+100 fitness avgs: ['24.09']
+Episode 55650/100000
+Fitnesses: ['10.12']
+100 fitness avgs: ['24.24']
+Episode 55700/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['23.93']
+Episode 55750/100000
+Fitnesses: ['22.66']
+100 fitness avgs: ['24.06']
+Episode 55800/100000
+Fitnesses: ['-4.32']
+100 fitness avgs: ['24.10']
+Episode 55850/100000
+Fitnesses: ['21.92']
+100 fitness avgs: ['24.28']
+Episode 55900/100000
+Fitnesses: ['21.56']
+100 fitness avgs: ['24.40']
+Episode 55950/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['24.30']
+Episode 56000/100000
+Fitnesses: ['-9.50']
+100 fitness avgs: ['23.84']
+Episode 56050/100000
+Fitnesses: ['17.80']
+100 fitness avgs: ['23.77']
+Episode 56100/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['24.05']
+Episode 56150/100000
+Fitnesses: ['3.62']
+100 fitness avgs: ['24.23']
+Episode 56200/100000
+Fitnesses: ['15.30']
+100 fitness avgs: ['24.32']
+Episode 56250/100000
+Fitnesses: ['70.95']
+100 fitness avgs: ['24.22']
+Episode 56300/100000
+Fitnesses: ['50.96']
+100 fitness avgs: ['24.76']
+Episode 56350/100000
+Fitnesses: ['45.57']
+100 fitness avgs: ['24.67']
+Episode 56400/100000
+Fitnesses: ['126.67']
+100 fitness avgs: ['25.64']
+Episode 56450/100000
+Fitnesses: ['28.75']
+100 fitness avgs: ['25.35']
+Episode 56500/100000
+Fitnesses: ['13.32']
+100 fitness avgs: ['25.41']
+Episode 56550/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['25.34']
+Episode 56600/100000
+Fitnesses: ['2.87']
+100 fitness avgs: ['25.40']
+Episode 56650/100000
+Fitnesses: ['28.94']
+100 fitness avgs: ['25.46']
+Episode 56700/100000
+Fitnesses: ['25.88']
+100 fitness avgs: ['25.69']
+Episode 56750/100000
+Fitnesses: ['25.00']
+100 fitness avgs: ['25.95']
+Episode 56800/100000
+Fitnesses: ['12.35']
+100 fitness avgs: ['25.96']
+Episode 56850/100000
+Fitnesses: ['29.92']
+100 fitness avgs: ['25.97']
+Episode 56900/100000
+Fitnesses: ['30.88']
+100 fitness avgs: ['25.98']
+Episode 56950/100000
+Fitnesses: ['32.52']
+100 fitness avgs: ['25.84']
+Episode 57000/100000
+Fitnesses: ['-0.67']
+100 fitness avgs: ['25.81']
+Episode 57050/100000
+Fitnesses: ['49.02']
+100 fitness avgs: ['26.03']
+Episode 57100/100000
+Fitnesses: ['-8.12']
+100 fitness avgs: ['25.80']
+Episode 57150/100000
+Fitnesses: ['-1.97']
+100 fitness avgs: ['25.42']
+Episode 57200/100000
+Fitnesses: ['18.77']
+100 fitness avgs: ['25.72']
+Episode 57250/100000
+Fitnesses: ['9.26']
+100 fitness avgs: ['25.55']
+Episode 57300/100000
+Fitnesses: ['5.00']
+100 fitness avgs: ['25.17']
+Episode 57350/100000
+Fitnesses: ['41.99']
+100 fitness avgs: ['25.06']
+Episode 57400/100000
+Fitnesses: ['13.22']
+100 fitness avgs: ['24.99']
+Episode 57450/100000
+Fitnesses: ['31.89']
+100 fitness avgs: ['25.08']
+Episode 57500/100000
+Fitnesses: ['68.21']
+100 fitness avgs: ['25.55']
+Episode 57550/100000
+Fitnesses: ['84.50']
+100 fitness avgs: ['25.81']
+Episode 57600/100000
+Fitnesses: ['42.45']
+100 fitness avgs: ['26.22']
+Episode 57650/100000
+Fitnesses: ['-3.03']
+100 fitness avgs: ['25.93']
+Episode 57700/100000
+Fitnesses: ['-1.02']
+100 fitness avgs: ['25.74']
+Episode 57750/100000
+Fitnesses: ['1.48']
+100 fitness avgs: ['25.12']
+Episode 57800/100000
+Fitnesses: ['43.06']
+100 fitness avgs: ['25.61']
+Episode 57850/100000
+Fitnesses: ['-2.99']
+100 fitness avgs: ['25.22']
+Episode 57900/100000
+Fitnesses: ['56.34']
+100 fitness avgs: ['25.92']
+Episode 57950/100000
+Fitnesses: ['47.05']
+100 fitness avgs: ['25.89']
+Episode 58000/100000
+Fitnesses: ['34.73']
+100 fitness avgs: ['26.09']
+Episode 58050/100000
+Fitnesses: ['16.31']
+100 fitness avgs: ['26.08']
+Episode 58100/100000
+Fitnesses: ['23.36']
+100 fitness avgs: ['26.45']
+Episode 58150/100000
+Fitnesses: ['61.46']
+100 fitness avgs: ['26.75']
+Episode 58200/100000
+Fitnesses: ['-3.83']
+100 fitness avgs: ['26.59']
+Episode 58250/100000
+Fitnesses: ['6.91']
+100 fitness avgs: ['26.40']
+Episode 58300/100000
+Fitnesses: ['34.60']
+100 fitness avgs: ['26.19']
+Episode 58350/100000
+Fitnesses: ['37.73']
+100 fitness avgs: ['26.02']
+Episode 58400/100000
+Fitnesses: ['35.97']
+100 fitness avgs: ['26.43']
+Episode 58450/100000
+Fitnesses: ['24.24']
+100 fitness avgs: ['25.64']
+Episode 58500/100000
+Fitnesses: ['38.56']
+100 fitness avgs: ['25.74']
+Episode 58550/100000
+Fitnesses: ['44.00']
+100 fitness avgs: ['26.00']
+Episode 58600/100000
+Fitnesses: ['10.54']
+100 fitness avgs: ['25.57']
+Episode 58650/100000
+Fitnesses: ['73.33']
+100 fitness avgs: ['26.33']
+Episode 58700/100000
+Fitnesses: ['13.38']
+100 fitness avgs: ['26.16']
+Episode 58750/100000
+Fitnesses: ['35.68']
+100 fitness avgs: ['26.16']
+Episode 58800/100000
+Fitnesses: ['124.66']
+100 fitness avgs: ['26.96']
+Episode 58850/100000
+Fitnesses: ['65.37']
+100 fitness avgs: ['27.76']
+Episode 58900/100000
+Fitnesses: ['70.22']
+100 fitness avgs: ['28.55']
+Episode 58950/100000
+Fitnesses: ['17.30']
+100 fitness avgs: ['28.21']
+Episode 59000/100000
+Fitnesses: ['58.17']
+100 fitness avgs: ['28.53']
+Episode 59050/100000
+Fitnesses: ['17.17']
+100 fitness avgs: ['28.35']
+Episode 59100/100000
+Fitnesses: ['43.82']
+100 fitness avgs: ['28.50']
+Episode 59150/100000
+Fitnesses: ['59.28']
+100 fitness avgs: ['28.60']
+Episode 59200/100000
+Fitnesses: ['26.58']
+100 fitness avgs: ['28.62']
+Episode 59250/100000
+Fitnesses: ['45.31']
+100 fitness avgs: ['28.72']
+Episode 59300/100000
+Fitnesses: ['16.42']
+100 fitness avgs: ['28.57']
+Episode 59350/100000
+Fitnesses: ['25.86']
+100 fitness avgs: ['28.79']
+Episode 59400/100000
+Fitnesses: ['41.76']
+100 fitness avgs: ['29.15']
+Episode 59450/100000
+Fitnesses: ['28.00']
+100 fitness avgs: ['29.31']
+Episode 59500/100000
+Fitnesses: ['30.58']
+100 fitness avgs: ['29.65']
+Episode 59550/100000
+Fitnesses: ['18.98']
+100 fitness avgs: ['29.45']
+Episode 59600/100000
+Fitnesses: ['38.99']
+100 fitness avgs: ['29.10']
+Episode 59650/100000
+Fitnesses: ['8.77']
+100 fitness avgs: ['28.79']
+Episode 59700/100000
+Fitnesses: ['53.75']
+100 fitness avgs: ['29.02']
+Episode 59750/100000
+Fitnesses: ['5.13']
+100 fitness avgs: ['29.13']
+Episode 59800/100000
+Fitnesses: ['64.43']
+100 fitness avgs: ['29.65']
+Episode 59850/100000
+Fitnesses: ['24.03']
+100 fitness avgs: ['29.45']
+Episode 59900/100000
+Fitnesses: ['-6.19']
+100 fitness avgs: ['29.07']
+Episode 59950/100000
+Fitnesses: ['38.05']
+100 fitness avgs: ['29.23']
+Episode 60000/100000
+Fitnesses: ['16.87']
+100 fitness avgs: ['29.30']
+Save Model at ep  60000
+Episode 60050/100000
+Fitnesses: ['24.82']
+100 fitness avgs: ['29.26']
+Episode 60100/100000
+Fitnesses: ['14.66']
+100 fitness avgs: ['29.43']
+Episode 60150/100000
+Fitnesses: ['51.49']
+100 fitness avgs: ['29.61']
+Episode 60200/100000
+Fitnesses: ['-1.04']
+100 fitness avgs: ['29.38']
+Episode 60250/100000
+Fitnesses: ['19.52']
+100 fitness avgs: ['29.12']
+Episode 60300/100000
+Fitnesses: ['37.58']
+100 fitness avgs: ['29.19']
+Episode 60350/100000
+Fitnesses: ['26.15']
+100 fitness avgs: ['29.14']
+Episode 60400/100000
+Fitnesses: ['2.37']
+100 fitness avgs: ['28.96']
+Episode 60450/100000
+Fitnesses: ['0.76']
+100 fitness avgs: ['28.68']
+Episode 60500/100000
+Fitnesses: ['-8.77']
+100 fitness avgs: ['28.29']
+Episode 60550/100000
+Fitnesses: ['27.62']
+100 fitness avgs: ['28.45']
+Episode 60600/100000
+Fitnesses: ['66.60']
+100 fitness avgs: ['28.67']
+Episode 60650/100000
+Fitnesses: ['-0.66']
+100 fitness avgs: ['28.56']
+Episode 60700/100000
+Fitnesses: ['18.81']
+100 fitness avgs: ['28.75']
+Episode 60750/100000
+Fitnesses: ['2.67']
+100 fitness avgs: ['28.55']
+Episode 60800/100000
+Fitnesses: ['64.48']
+100 fitness avgs: ['29.24']
+Episode 60850/100000
+Fitnesses: ['31.49']
+100 fitness avgs: ['29.33']
+Episode 60900/100000
+Fitnesses: ['3.85']
+100 fitness avgs: ['29.16']
+Episode 60950/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['29.16']
+Episode 61000/100000
+Fitnesses: ['19.54']
+100 fitness avgs: ['29.45']
+Episode 61050/100000
+Fitnesses: ['29.00']
+100 fitness avgs: ['29.56']
+Episode 61100/100000
+Fitnesses: ['18.00']
+100 fitness avgs: ['29.40']
+Episode 61150/100000
+Fitnesses: ['17.58']
+100 fitness avgs: ['29.54']
+Episode 61200/100000
+Fitnesses: ['24.43']
+100 fitness avgs: ['29.64']
+Episode 61250/100000
+Fitnesses: ['109.42']
+100 fitness avgs: ['30.02']
+Episode 61300/100000
+Fitnesses: ['42.68']
+100 fitness avgs: ['29.94']
+Episode 61350/100000
+Fitnesses: ['35.48']
+100 fitness avgs: ['29.84']
+Episode 61400/100000
+Fitnesses: ['31.72']
+100 fitness avgs: ['28.89']
+Episode 61450/100000
+Fitnesses: ['43.62']
+100 fitness avgs: ['29.04']
+Episode 61500/100000
+Fitnesses: ['38.92']
+100 fitness avgs: ['29.29']
+Episode 61550/100000
+Fitnesses: ['56.88']
+100 fitness avgs: ['29.53']
+Episode 61600/100000
+Fitnesses: ['24.68']
+100 fitness avgs: ['29.75']
+Episode 61650/100000
+Fitnesses: ['42.16']
+100 fitness avgs: ['29.88']
+Episode 61700/100000
+Fitnesses: ['43.10']
+100 fitness avgs: ['30.05']
+Episode 61750/100000
+Fitnesses: ['33.51']
+100 fitness avgs: ['30.14']
+Episode 61800/100000
+Fitnesses: ['13.01']
+100 fitness avgs: ['30.14']
+Episode 61850/100000
+Fitnesses: ['-1.50']
+100 fitness avgs: ['29.83']
+Episode 61900/100000
+Fitnesses: ['58.23']
+100 fitness avgs: ['30.10']
+Episode 61950/100000
+Fitnesses: ['23.39']
+100 fitness avgs: ['30.01']
+Episode 62000/100000
+Fitnesses: ['73.35']
+100 fitness avgs: ['30.75']
+Episode 62050/100000
+Fitnesses: ['43.53']
+100 fitness avgs: ['30.69']
+Episode 62100/100000
+Fitnesses: ['51.08']
+100 fitness avgs: ['31.29']
+Episode 62150/100000
+Fitnesses: ['5.74']
+100 fitness avgs: ['31.36']
+Episode 62200/100000
+Fitnesses: ['21.53']
+100 fitness avgs: ['31.39']
+Episode 62250/100000
+Fitnesses: ['36.20']
+100 fitness avgs: ['31.66']
+Episode 62300/100000
+Fitnesses: ['1.50']
+100 fitness avgs: ['31.63']
+Episode 62350/100000
+Fitnesses: ['13.95']
+100 fitness avgs: ['31.35']
+Episode 62400/100000
+Fitnesses: ['3.50']
+100 fitness avgs: ['31.25']
+Episode 62450/100000
+Fitnesses: ['52.03']
+100 fitness avgs: ['31.45']
+Episode 62500/100000
+Fitnesses: ['61.51']
+100 fitness avgs: ['31.38']
+Episode 62550/100000
+Fitnesses: ['8.63']
+100 fitness avgs: ['30.62']
+Episode 62600/100000
+Fitnesses: ['-8.63']
+100 fitness avgs: ['30.11']
+Episode 62650/100000
+Fitnesses: ['42.44']
+100 fitness avgs: ['30.57']
+Episode 62700/100000
+Fitnesses: ['37.62']
+100 fitness avgs: ['30.95']
+Episode 62750/100000
+Fitnesses: ['7.41']
+100 fitness avgs: ['31.01']
+Episode 62800/100000
+Fitnesses: ['41.08']
+100 fitness avgs: ['30.99']
+Episode 62850/100000
+Fitnesses: ['12.80']
+100 fitness avgs: ['31.15']
+Episode 62900/100000
+Fitnesses: ['34.59']
+100 fitness avgs: ['30.93']
+Episode 62950/100000
+Fitnesses: ['3.95']
+100 fitness avgs: ['30.50']
+Episode 63000/100000
+Fitnesses: ['36.15']
+100 fitness avgs: ['30.52']
+Episode 63050/100000
+Fitnesses: ['13.98']
+100 fitness avgs: ['30.49']
+Episode 63100/100000
+Fitnesses: ['-2.45']
+100 fitness avgs: ['30.24']
+Episode 63150/100000
+Fitnesses: ['-17.09']
+100 fitness avgs: ['29.45']
+Episode 63200/100000
+Fitnesses: ['-0.33']
+100 fitness avgs: ['29.49']
+Episode 63250/100000
+Fitnesses: ['23.17']
+100 fitness avgs: ['29.65']
+Episode 63300/100000
+Fitnesses: ['5.16']
+100 fitness avgs: ['29.35']
+Episode 63350/100000
+Fitnesses: ['5.65']
+100 fitness avgs: ['29.03']
+Episode 63400/100000
+Fitnesses: ['5.58']
+100 fitness avgs: ['28.73']
+Episode 63450/100000
+Fitnesses: ['69.03']
+100 fitness avgs: ['29.18']
+Episode 63500/100000
+Fitnesses: ['31.48']
+100 fitness avgs: ['29.11']
+Episode 63550/100000
+Fitnesses: ['17.76']
+100 fitness avgs: ['28.84']
+Episode 63600/100000
+Fitnesses: ['8.05']
+100 fitness avgs: ['28.82']
+Episode 63650/100000
+Fitnesses: ['20.59']
+100 fitness avgs: ['28.29']
+Episode 63700/100000
+Fitnesses: ['40.56']
+100 fitness avgs: ['28.56']
+Episode 63750/100000
+Fitnesses: ['15.38']
+100 fitness avgs: ['28.36']
+Episode 63800/100000
+Fitnesses: ['19.07']
+100 fitness avgs: ['27.30']
+Episode 63850/100000
+Fitnesses: ['-4.41']
+100 fitness avgs: ['26.61']
+Episode 63900/100000
+Fitnesses: ['-8.57']
+100 fitness avgs: ['25.82']
+Episode 63950/100000
+Fitnesses: ['11.52']
+100 fitness avgs: ['25.76']
+Episode 64000/100000
+Fitnesses: ['4.71']
+100 fitness avgs: ['25.23']
+Episode 64050/100000
+Fitnesses: ['-3.87']
+100 fitness avgs: ['25.02']
+Episode 64100/100000
+Fitnesses: ['7.12']
+100 fitness avgs: ['24.65']
+Episode 64150/100000
+Fitnesses: ['-3.24']
+100 fitness avgs: ['24.02']
+Episode 64200/100000
+Fitnesses: ['37.05']
+100 fitness avgs: ['24.13']
+Episode 64250/100000
+Fitnesses: ['18.94']
+100 fitness avgs: ['23.86']
+Episode 64300/100000
+Fitnesses: ['-5.83']
+100 fitness avgs: ['23.64']
+Episode 64350/100000
+Fitnesses: ['6.10']
+100 fitness avgs: ['23.44']
+Episode 64400/100000
+Fitnesses: ['-8.51']
+100 fitness avgs: ['22.94']
+Episode 64450/100000
+Fitnesses: ['21.94']
+100 fitness avgs: ['22.88']
+Episode 64500/100000
+Fitnesses: ['1.79']
+100 fitness avgs: ['22.59']
+Episode 64550/100000
+Fitnesses: ['45.52']
+100 fitness avgs: ['22.86']
+Episode 64600/100000
+Fitnesses: ['-19.43']
+100 fitness avgs: ['22.27']
+Episode 64650/100000
+Fitnesses: ['9.87']
+100 fitness avgs: ['22.29']
+Episode 64700/100000
+Fitnesses: ['48.71']
+100 fitness avgs: ['22.24']
+Episode 64750/100000
+Fitnesses: ['95.10']
+100 fitness avgs: ['23.13']
+Episode 64800/100000
+Fitnesses: ['53.87']
+100 fitness avgs: ['23.03']
+Episode 64850/100000
+Fitnesses: ['5.70']
+100 fitness avgs: ['22.85']
+Episode 64900/100000
+Fitnesses: ['73.33']
+100 fitness avgs: ['23.64']
+Episode 64950/100000
+Fitnesses: ['36.34']
+100 fitness avgs: ['23.62']
+Episode 65000/100000
+Fitnesses: ['-14.42']
+100 fitness avgs: ['23.31']
+Save Model at ep  65000
+Episode 65050/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['23.40']
+Episode 65100/100000
+Fitnesses: ['10.88']
+100 fitness avgs: ['23.36']
+Episode 65150/100000
+Fitnesses: ['-4.35']
+100 fitness avgs: ['22.80']
+Episode 65200/100000
+Fitnesses: ['25.40']
+100 fitness avgs: ['23.06']
+Episode 65250/100000
+Fitnesses: ['25.08']
+100 fitness avgs: ['23.12']
+Episode 65300/100000
+Fitnesses: ['-18.68']
+100 fitness avgs: ['22.56']
+Episode 65350/100000
+Fitnesses: ['21.43']
+100 fitness avgs: ['22.51']
+Episode 65400/100000
+Fitnesses: ['7.83']
+100 fitness avgs: ['22.57']
+Episode 65450/100000
+Fitnesses: ['-10.48']
+100 fitness avgs: ['22.45']
+Episode 65500/100000
+Fitnesses: ['25.88']
+100 fitness avgs: ['22.80']
+Episode 65550/100000
+Fitnesses: ['39.27']
+100 fitness avgs: ['22.92']
+Episode 65600/100000
+Fitnesses: ['5.40']
+100 fitness avgs: ['22.30']
+Episode 65650/100000
+Fitnesses: ['64.21']
+100 fitness avgs: ['22.95']
+Episode 65700/100000
+Fitnesses: ['38.87']
+100 fitness avgs: ['23.15']
+Episode 65750/100000
+Fitnesses: ['48.37']
+100 fitness avgs: ['23.61']
+Episode 65800/100000
+Fitnesses: ['41.47']
+100 fitness avgs: ['23.38']
+Episode 65850/100000
+Fitnesses: ['34.25']
+100 fitness avgs: ['23.41']
+Episode 65900/100000
+Fitnesses: ['62.14']
+100 fitness avgs: ['23.99']
+Episode 65950/100000
+Fitnesses: ['83.42']
+100 fitness avgs: ['24.82']
+Episode 66000/100000
+Fitnesses: ['56.79']
+100 fitness avgs: ['25.20']
+Episode 66050/100000
+Fitnesses: ['2.16']
+100 fitness avgs: ['24.93']
+Episode 66100/100000
+Fitnesses: ['2.50']
+100 fitness avgs: ['24.77']
+Episode 66150/100000
+Fitnesses: ['49.06']
+100 fitness avgs: ['25.09']
+Episode 66200/100000
+Fitnesses: ['-8.12']
+100 fitness avgs: ['24.76']
+Episode 66250/100000
+Fitnesses: ['91.95']
+100 fitness avgs: ['24.59']
+Episode 66300/100000
+Fitnesses: ['47.17']
+100 fitness avgs: ['24.63']
+Episode 66350/100000
+Fitnesses: ['118.57']
+100 fitness avgs: ['25.46']
+Episode 66400/100000
+Fitnesses: ['4.90']
+100 fitness avgs: ['25.20']
+Episode 66450/100000
+Fitnesses: ['12.55']
+100 fitness avgs: ['24.89']
+Episode 66500/100000
+Fitnesses: ['44.02']
+100 fitness avgs: ['24.94']
+Episode 66550/100000
+Fitnesses: ['44.06']
+100 fitness avgs: ['24.81']
+Episode 66600/100000
+Fitnesses: ['16.84']
+100 fitness avgs: ['24.73']
+Episode 66650/100000
+Fitnesses: ['34.61']
+100 fitness avgs: ['24.65']
+Episode 66700/100000
+Fitnesses: ['81.95']
+100 fitness avgs: ['25.04']
+Episode 66750/100000
+Fitnesses: ['11.69']
+100 fitness avgs: ['24.82']
+Episode 66800/100000
+Fitnesses: ['57.38']
+100 fitness avgs: ['25.27']
+Episode 66850/100000
+Fitnesses: ['67.06']
+100 fitness avgs: ['25.95']
+Episode 66900/100000
+Fitnesses: ['2.48']
+100 fitness avgs: ['25.40']
+Episode 66950/100000
+Fitnesses: ['15.37']
+100 fitness avgs: ['25.32']
+Episode 67000/100000
+Fitnesses: ['43.79']
+100 fitness avgs: ['25.02']
+Episode 67050/100000
+Fitnesses: ['54.76']
+100 fitness avgs: ['25.13']
+Episode 67100/100000
+Fitnesses: ['15.44']
+100 fitness avgs: ['24.78']
+Episode 67150/100000
+Fitnesses: ['7.44']
+100 fitness avgs: ['24.79']
+Episode 67200/100000
+Fitnesses: ['5.59']
+100 fitness avgs: ['24.63']
+Episode 67250/100000
+Fitnesses: ['49.92']
+100 fitness avgs: ['24.77']
+Episode 67300/100000
+Fitnesses: ['19.08']
+100 fitness avgs: ['24.95']
+Episode 67350/100000
+Fitnesses: ['63.18']
+100 fitness avgs: ['25.44']
+Episode 67400/100000
+Fitnesses: ['35.91']
+100 fitness avgs: ['25.76']
+Episode 67450/100000
+Fitnesses: ['57.91']
+100 fitness avgs: ['25.82']
+Episode 67500/100000
+Fitnesses: ['23.12']
+100 fitness avgs: ['25.44']
+Episode 67550/100000
+Fitnesses: ['23.98']
+100 fitness avgs: ['25.59']
+Episode 67600/100000
+Fitnesses: ['22.62']
+100 fitness avgs: ['25.90']
+Episode 67650/100000
+Fitnesses: ['35.52']
+100 fitness avgs: ['25.84']
+Episode 67700/100000
+Fitnesses: ['10.72']
+100 fitness avgs: ['25.57']
+Episode 67750/100000
+Fitnesses: ['11.13']
+100 fitness avgs: ['25.60']
+Episode 67800/100000
+Fitnesses: ['30.12']
+100 fitness avgs: ['25.49']
+Episode 67850/100000
+Fitnesses: ['13.33']
+100 fitness avgs: ['25.50']
+Episode 67900/100000
+Fitnesses: ['74.84']
+100 fitness avgs: ['25.90']
+Episode 67950/100000
+Fitnesses: ['30.49']
+100 fitness avgs: ['26.17']
+Episode 68000/100000
+Fitnesses: ['25.61']
+100 fitness avgs: ['26.06']
+Episode 68050/100000
+Fitnesses: ['39.36']
+100 fitness avgs: ['26.32']
+Episode 68100/100000
+Fitnesses: ['4.57']
+100 fitness avgs: ['26.39']
+Episode 68150/100000
+Fitnesses: ['76.06']
+100 fitness avgs: ['27.32']
+Episode 68200/100000
+Fitnesses: ['34.69']
+100 fitness avgs: ['27.67']
+Episode 68250/100000
+Fitnesses: ['24.21']
+100 fitness avgs: ['27.68']
+Episode 68300/100000
+Fitnesses: ['20.64']
+100 fitness avgs: ['27.83']
+Episode 68350/100000
+Fitnesses: ['42.24']
+100 fitness avgs: ['28.20']
+Episode 68400/100000
+Fitnesses: ['-1.25']
+100 fitness avgs: ['28.13']
+Episode 68450/100000
+Fitnesses: ['72.61']
+100 fitness avgs: ['28.17']
+Episode 68500/100000
+Fitnesses: ['0.78']
+100 fitness avgs: ['27.86']
+Episode 68550/100000
+Fitnesses: ['40.48']
+100 fitness avgs: ['28.09']
+Episode 68600/100000
+Fitnesses: ['11.04']
+100 fitness avgs: ['28.12']
+Episode 68650/100000
+Fitnesses: ['49.99']
+100 fitness avgs: ['28.41']
+Episode 68700/100000
+Fitnesses: ['-12.63']
+100 fitness avgs: ['27.88']
+Episode 68750/100000
+Fitnesses: ['-3.12']
+100 fitness avgs: ['27.69']
+Episode 68800/100000
+Fitnesses: ['41.83']
+100 fitness avgs: ['27.92']
+Episode 68850/100000
+Fitnesses: ['115.11']
+100 fitness avgs: ['29.12']
+Episode 68900/100000
+Fitnesses: ['-4.51']
+100 fitness avgs: ['29.16']
+Episode 68950/100000
+Fitnesses: ['38.15']
+100 fitness avgs: ['29.42']
+Episode 69000/100000
+Fitnesses: ['63.14']
+100 fitness avgs: ['30.01']
+Episode 69050/100000
+Fitnesses: ['65.70']
+100 fitness avgs: ['30.70']
+Episode 69100/100000
+Fitnesses: ['15.37']
+100 fitness avgs: ['30.79']
+Episode 69150/100000
+Fitnesses: ['5.18']
+100 fitness avgs: ['30.87']
+Episode 69200/100000
+Fitnesses: ['45.76']
+100 fitness avgs: ['30.96']
+Episode 69250/100000
+Fitnesses: ['21.60']
+100 fitness avgs: ['30.98']
+Episode 69300/100000
+Fitnesses: ['39.06']
+100 fitness avgs: ['31.43']
+Episode 69350/100000
+Fitnesses: ['38.44']
+100 fitness avgs: ['31.76']
+Episode 69400/100000
+Fitnesses: ['31.05']
+100 fitness avgs: ['32.15']
+Episode 69450/100000
+Fitnesses: ['57.59']
+100 fitness avgs: ['32.51']
+Episode 69500/100000
+Fitnesses: ['9.50']
+100 fitness avgs: ['32.58']
+Episode 69550/100000
+Fitnesses: ['19.66']
+100 fitness avgs: ['32.33']
+Episode 69600/100000
+Fitnesses: ['32.21']
+100 fitness avgs: ['32.84']
+Episode 69650/100000
+Fitnesses: ['62.97']
+100 fitness avgs: ['33.37']
+Episode 69700/100000
+Fitnesses: ['24.98']
+100 fitness avgs: ['33.14']
+Episode 69750/100000
+Fitnesses: ['45.61']
+100 fitness avgs: ['32.64']
+Episode 69800/100000
+Fitnesses: ['60.62']
+100 fitness avgs: ['32.71']
+Episode 69850/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['32.65']
+Episode 69900/100000
+Fitnesses: ['46.57']
+100 fitness avgs: ['32.38']
+Episode 69950/100000
+Fitnesses: ['127.60']
+100 fitness avgs: ['33.30']
+Episode 70000/100000
+Fitnesses: ['70.61']
+100 fitness avgs: ['34.15']
+Save Model at ep  70000
+Episode 70050/100000
+Fitnesses: ['16.00']
+100 fitness avgs: ['33.97']
+Episode 70100/100000
+Fitnesses: ['41.92']
+100 fitness avgs: ['34.28']
+Episode 70150/100000
+Fitnesses: ['27.80']
+100 fitness avgs: ['34.61']
+Episode 70200/100000
+Fitnesses: ['33.06']
+100 fitness avgs: ['34.68']
+Episode 70250/100000
+Fitnesses: ['24.96']
+100 fitness avgs: ['34.68']
+Episode 70300/100000
+Fitnesses: ['-1.29']
+100 fitness avgs: ['34.86']
+Episode 70350/100000
+Fitnesses: ['51.70']
+100 fitness avgs: ['35.16']
+Episode 70400/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['35.55']
+Episode 70450/100000
+Fitnesses: ['17.31']
+100 fitness avgs: ['35.82']
+Episode 70500/100000
+Fitnesses: ['24.53']
+100 fitness avgs: ['35.81']
+Episode 70550/100000
+Fitnesses: ['21.21']
+100 fitness avgs: ['35.63']
+Episode 70600/100000
+Fitnesses: ['34.34']
+100 fitness avgs: ['35.92']
+Episode 70650/100000
+Fitnesses: ['13.97']
+100 fitness avgs: ['35.42']
+Episode 70700/100000
+Fitnesses: ['39.91']
+100 fitness avgs: ['35.43']
+Episode 70750/100000
+Fitnesses: ['16.25']
+100 fitness avgs: ['35.11']
+Episode 70800/100000
+Fitnesses: ['9.65']
+100 fitness avgs: ['34.79']
+Episode 70850/100000
+Fitnesses: ['5.02']
+100 fitness avgs: ['34.50']
+Episode 70900/100000
+Fitnesses: ['48.66']
+100 fitness avgs: ['34.36']
+Episode 70950/100000
+Fitnesses: ['-11.97']
+100 fitness avgs: ['33.41']
+Episode 71000/100000
+Fitnesses: ['21.28']
+100 fitness avgs: ['33.05']
+Episode 71050/100000
+Fitnesses: ['15.90']
+100 fitness avgs: ['33.19']
+Episode 71100/100000
+Fitnesses: ['36.67']
+100 fitness avgs: ['33.53']
+Episode 71150/100000
+Fitnesses: ['24.71']
+100 fitness avgs: ['33.29']
+Episode 71200/100000
+Fitnesses: ['11.91']
+100 fitness avgs: ['33.49']
+Episode 71250/100000
+Fitnesses: ['1.29']
+100 fitness avgs: ['32.58']
+Episode 71300/100000
+Fitnesses: ['62.38']
+100 fitness avgs: ['32.73']
+Episode 71350/100000
+Fitnesses: ['75.62']
+100 fitness avgs: ['32.30']
+Episode 71400/100000
+Fitnesses: ['-2.35']
+100 fitness avgs: ['32.23']
+Episode 71450/100000
+Fitnesses: ['47.70']
+100 fitness avgs: ['32.58']
+Episode 71500/100000
+Fitnesses: ['53.33']
+100 fitness avgs: ['32.68']
+Episode 71550/100000
+Fitnesses: ['24.34']
+100 fitness avgs: ['32.48']
+Episode 71600/100000
+Fitnesses: ['4.21']
+100 fitness avgs: ['32.35']
+Episode 71650/100000
+Fitnesses: ['55.60']
+100 fitness avgs: ['32.56']
+Episode 71700/100000
+Fitnesses: ['61.18']
+100 fitness avgs: ['32.35']
+Episode 71750/100000
+Fitnesses: ['10.39']
+100 fitness avgs: ['32.34']
+Episode 71800/100000
+Fitnesses: ['63.01']
+100 fitness avgs: ['32.40']
+Episode 71850/100000
+Fitnesses: ['6.67']
+100 fitness avgs: ['31.79']
+Episode 71900/100000
+Fitnesses: ['23.09']
+100 fitness avgs: ['32.00']
+Episode 71950/100000
+Fitnesses: ['24.12']
+100 fitness avgs: ['32.09']
+Episode 72000/100000
+Fitnesses: ['-9.82']
+100 fitness avgs: ['31.55']
+Episode 72050/100000
+Fitnesses: ['100.22']
+100 fitness avgs: ['32.01']
+Episode 72100/100000
+Fitnesses: ['19.65']
+100 fitness avgs: ['32.05']
+Episode 72150/100000
+Fitnesses: ['44.71']
+100 fitness avgs: ['32.42']
+Episode 72200/100000
+Fitnesses: ['-0.84']
+100 fitness avgs: ['32.36']
+Episode 72250/100000
+Fitnesses: ['46.85']
+100 fitness avgs: ['32.33']
+Episode 72300/100000
+Fitnesses: ['16.43']
+100 fitness avgs: ['32.30']
+Episode 72350/100000
+Fitnesses: ['58.92']
+100 fitness avgs: ['32.26']
+Episode 72400/100000
+Fitnesses: ['-1.20']
+100 fitness avgs: ['31.89']
+Episode 72450/100000
+Fitnesses: ['16.08']
+100 fitness avgs: ['31.47']
+Episode 72500/100000
+Fitnesses: ['76.51']
+100 fitness avgs: ['32.00']
+Episode 72550/100000
+Fitnesses: ['25.26']
+100 fitness avgs: ['32.01']
+Episode 72600/100000
+Fitnesses: ['27.69']
+100 fitness avgs: ['32.06']
+Episode 72650/100000
+Fitnesses: ['66.16']
+100 fitness avgs: ['32.37']
+Episode 72700/100000
+Fitnesses: ['1.11']
+100 fitness avgs: ['32.27']
+Episode 72750/100000
+Fitnesses: ['29.06']
+100 fitness avgs: ['32.45']
+Episode 72800/100000
+Fitnesses: ['110.30']
+100 fitness avgs: ['33.26']
+Episode 72850/100000
+Fitnesses: ['49.66']
+100 fitness avgs: ['33.62']
+Episode 72900/100000
+Fitnesses: ['-16.21']
+100 fitness avgs: ['32.71']
+Episode 72950/100000
+Fitnesses: ['0.58']
+100 fitness avgs: ['32.41']
+Episode 73000/100000
+Fitnesses: ['17.67']
+100 fitness avgs: ['32.33']
+Episode 73050/100000
+Fitnesses: ['28.73']
+100 fitness avgs: ['32.22']
+Episode 73100/100000
+Fitnesses: ['-5.10']
+100 fitness avgs: ['32.13']
+Episode 73150/100000
+Fitnesses: ['-3.85']
+100 fitness avgs: ['31.33']
+Episode 73200/100000
+Fitnesses: ['-4.20']
+100 fitness avgs: ['30.94']
+Episode 73250/100000
+Fitnesses: ['44.61']
+100 fitness avgs: ['31.14']
+Episode 73300/100000
+Fitnesses: ['34.16']
+100 fitness avgs: ['31.28']
+Episode 73350/100000
+Fitnesses: ['17.42']
+100 fitness avgs: ['31.03']
+Episode 73400/100000
+Fitnesses: ['-3.38']
+100 fitness avgs: ['31.01']
+Episode 73450/100000
+Fitnesses: ['22.31']
+100 fitness avgs: ['30.51']
+Episode 73500/100000
+Fitnesses: ['18.15']
+100 fitness avgs: ['30.68']
+Episode 73550/100000
+Fitnesses: ['7.36']
+100 fitness avgs: ['30.35']
+Episode 73600/100000
+Fitnesses: ['54.02']
+100 fitness avgs: ['30.78']
+Episode 73650/100000
+Fitnesses: ['13.40']
+100 fitness avgs: ['30.41']
+Episode 73700/100000
+Fitnesses: ['12.38']
+100 fitness avgs: ['30.66']
+Episode 73750/100000
+Fitnesses: ['32.84']
+100 fitness avgs: ['31.02']
+Episode 73800/100000
+Fitnesses: ['18.94']
+100 fitness avgs: ['30.79']
+Episode 73850/100000
+Fitnesses: ['79.78']
+100 fitness avgs: ['30.44']
+Episode 73900/100000
+Fitnesses: ['82.85']
+100 fitness avgs: ['31.31']
+Episode 73950/100000
+Fitnesses: ['8.06']
+100 fitness avgs: ['31.01']
+Episode 74000/100000
+Fitnesses: ['19.94']
+100 fitness avgs: ['30.58']
+Episode 74050/100000
+Fitnesses: ['18.56']
+100 fitness avgs: ['30.11']
+Episode 74100/100000
+Fitnesses: ['10.28']
+100 fitness avgs: ['30.06']
+Episode 74150/100000
+Fitnesses: ['19.11']
+100 fitness avgs: ['30.20']
+Episode 74200/100000
+Fitnesses: ['-4.78']
+100 fitness avgs: ['29.69']
+Episode 74250/100000
+Fitnesses: ['0.81']
+100 fitness avgs: ['29.48']
+Episode 74300/100000
+Fitnesses: ['-2.19']
+100 fitness avgs: ['29.07']
+Episode 74350/100000
+Fitnesses: ['2.44']
+100 fitness avgs: ['28.71']
+Episode 74400/100000
+Fitnesses: ['3.81']
+100 fitness avgs: ['28.44']
+Episode 74450/100000
+Fitnesses: ['43.15']
+100 fitness avgs: ['28.29']
+Episode 74500/100000
+Fitnesses: ['14.87']
+100 fitness avgs: ['28.35']
+Episode 74550/100000
+Fitnesses: ['49.29']
+100 fitness avgs: ['28.64']
+Episode 74600/100000
+Fitnesses: ['25.74']
+100 fitness avgs: ['28.58']
+Episode 74650/100000
+Fitnesses: ['14.60']
+100 fitness avgs: ['28.10']
+Episode 74700/100000
+Fitnesses: ['1.73']
+100 fitness avgs: ['27.86']
+Episode 74750/100000
+Fitnesses: ['36.33']
+100 fitness avgs: ['27.77']
+Episode 74800/100000
+Fitnesses: ['23.89']
+100 fitness avgs: ['27.40']
+Episode 74850/100000
+Fitnesses: ['57.17']
+100 fitness avgs: ['27.98']
+Episode 74900/100000
+Fitnesses: ['74.72']
+100 fitness avgs: ['28.26']
+Episode 74950/100000
+Fitnesses: ['37.84']
+100 fitness avgs: ['27.36']
+Episode 75000/100000
+Fitnesses: ['36.17']
+100 fitness avgs: ['27.01']
+Save Model at ep  75000
+Episode 75050/100000
+Fitnesses: ['51.82']
+100 fitness avgs: ['27.37']
+Episode 75100/100000
+Fitnesses: ['5.26']
+100 fitness avgs: ['27.01']
+Episode 75150/100000
+Fitnesses: ['66.48']
+100 fitness avgs: ['27.39']
+Episode 75200/100000
+Fitnesses: ['23.68']
+100 fitness avgs: ['27.30']
+Episode 75250/100000
+Fitnesses: ['1.62']
+100 fitness avgs: ['27.07']
+Episode 75300/100000
+Fitnesses: ['24.30']
+100 fitness avgs: ['27.32']
+Episode 75350/100000
+Fitnesses: ['18.95']
+100 fitness avgs: ['26.99']
+Episode 75400/100000
+Fitnesses: ['19.80']
+100 fitness avgs: ['26.73']
+Episode 75450/100000
+Fitnesses: ['17.04']
+100 fitness avgs: ['26.72']
+Episode 75500/100000
+Fitnesses: ['16.40']
+100 fitness avgs: ['26.64']
+Episode 75550/100000
+Fitnesses: ['53.93']
+100 fitness avgs: ['26.97']
+Episode 75600/100000
+Fitnesses: ['50.93']
+100 fitness avgs: ['27.14']
+Episode 75650/100000
+Fitnesses: ['51.59']
+100 fitness avgs: ['27.51']
+Episode 75700/100000
+Fitnesses: ['0.50']
+100 fitness avgs: ['27.12']
+Episode 75750/100000
+Fitnesses: ['97.48']
+100 fitness avgs: ['27.93']
+Episode 75800/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['28.03']
+Episode 75850/100000
+Fitnesses: ['36.31']
+100 fitness avgs: ['28.35']
+Episode 75900/100000
+Fitnesses: ['37.99']
+100 fitness avgs: ['28.24']
+Episode 75950/100000
+Fitnesses: ['2.17']
+100 fitness avgs: ['28.38']
+Episode 76000/100000
+Fitnesses: ['51.59']
+100 fitness avgs: ['28.68']
+Episode 76050/100000
+Fitnesses: ['-6.82']
+100 fitness avgs: ['28.46']
+Episode 76100/100000
+Fitnesses: ['54.08']
+100 fitness avgs: ['28.63']
+Episode 76150/100000
+Fitnesses: ['56.94']
+100 fitness avgs: ['28.95']
+Episode 76200/100000
+Fitnesses: ['33.01']
+100 fitness avgs: ['29.16']
+Episode 76250/100000
+Fitnesses: ['6.33']
+100 fitness avgs: ['29.21']
+Episode 76300/100000
+Fitnesses: ['65.90']
+100 fitness avgs: ['29.25']
+Episode 76350/100000
+Fitnesses: ['64.69']
+100 fitness avgs: ['29.14']
+Episode 76400/100000
+Fitnesses: ['43.69']
+100 fitness avgs: ['29.60']
+Episode 76450/100000
+Fitnesses: ['4.50']
+100 fitness avgs: ['29.17']
+Episode 76500/100000
+Fitnesses: ['33.33']
+100 fitness avgs: ['28.97']
+Episode 76550/100000
+Fitnesses: ['6.25']
+100 fitness avgs: ['28.79']
+Episode 76600/100000
+Fitnesses: ['8.46']
+100 fitness avgs: ['28.83']
+Episode 76650/100000
+Fitnesses: ['15.86']
+100 fitness avgs: ['28.43']
+Episode 76700/100000
+Fitnesses: ['53.15']
+100 fitness avgs: ['28.35']
+Episode 76750/100000
+Fitnesses: ['25.46']
+100 fitness avgs: ['28.50']
+Episode 76800/100000
+Fitnesses: ['59.11']
+100 fitness avgs: ['28.46']
+Episode 76850/100000
+Fitnesses: ['-4.01']
+100 fitness avgs: ['28.36']
+Episode 76900/100000
+Fitnesses: ['30.25']
+100 fitness avgs: ['28.43']
+Episode 76950/100000
+Fitnesses: ['20.57']
+100 fitness avgs: ['28.39']
+Episode 77000/100000
+Fitnesses: ['24.15']
+100 fitness avgs: ['28.73']
+Episode 77050/100000
+Fitnesses: ['18.75']
+100 fitness avgs: ['27.92']
+Episode 77100/100000
+Fitnesses: ['10.27']
+100 fitness avgs: ['27.82']
+Episode 77150/100000
+Fitnesses: ['68.54']
+100 fitness avgs: ['28.06']
+Episode 77200/100000
+Fitnesses: ['13.06']
+100 fitness avgs: ['28.20']
+Episode 77250/100000
+Fitnesses: ['50.50']
+100 fitness avgs: ['28.24']
+Episode 77300/100000
+Fitnesses: ['16.33']
+100 fitness avgs: ['28.24']
+Episode 77350/100000
+Fitnesses: ['8.83']
+100 fitness avgs: ['27.74']
+Episode 77400/100000
+Fitnesses: ['46.39']
+100 fitness avgs: ['28.21']
+Episode 77450/100000
+Fitnesses: ['65.87']
+100 fitness avgs: ['28.71']
+Episode 77500/100000
+Fitnesses: ['7.55']
+100 fitness avgs: ['28.02']
+Episode 77550/100000
+Fitnesses: ['15.34']
+100 fitness avgs: ['27.92']
+Episode 77600/100000
+Fitnesses: ['11.71']
+100 fitness avgs: ['27.76']
+Episode 77650/100000
+Fitnesses: ['10.72']
+100 fitness avgs: ['27.21']
+Episode 77700/100000
+Fitnesses: ['31.40']
+100 fitness avgs: ['27.51']
+Episode 77750/100000
+Fitnesses: ['4.54']
+100 fitness avgs: ['27.26']
+Episode 77800/100000
+Fitnesses: ['17.73']
+100 fitness avgs: ['26.34']
+Episode 77850/100000
+Fitnesses: ['69.03']
+100 fitness avgs: ['26.53']
+Episode 77900/100000
+Fitnesses: ['60.32']
+100 fitness avgs: ['27.30']
+Episode 77950/100000
+Fitnesses: ['26.85']
+100 fitness avgs: ['27.56']
+Episode 78000/100000
+Fitnesses: ['-2.43']
+100 fitness avgs: ['27.36']
+Episode 78050/100000
+Fitnesses: ['77.71']
+100 fitness avgs: ['27.85']
+Episode 78100/100000
+Fitnesses: ['25.92']
+100 fitness avgs: ['28.16']
+Episode 78150/100000
+Fitnesses: ['39.49']
+100 fitness avgs: ['28.59']
+Episode 78200/100000
+Fitnesses: ['1.67']
+100 fitness avgs: ['28.65']
+Episode 78250/100000
+Fitnesses: ['16.38']
+100 fitness avgs: ['28.37']
+Episode 78300/100000
+Fitnesses: ['-6.16']
+100 fitness avgs: ['27.97']
+Episode 78350/100000
+Fitnesses: ['6.87']
+100 fitness avgs: ['27.86']
+Episode 78400/100000
+Fitnesses: ['1.68']
+100 fitness avgs: ['27.91']
+Episode 78450/100000
+Fitnesses: ['28.98']
+100 fitness avgs: ['27.98']
+Episode 78500/100000
+Fitnesses: ['36.02']
+100 fitness avgs: ['28.16']
+Episode 78550/100000
+Fitnesses: ['46.98']
+100 fitness avgs: ['28.55']
+Episode 78600/100000
+Fitnesses: ['12.04']
+100 fitness avgs: ['28.13']
+Episode 78650/100000
+Fitnesses: ['44.41']
+100 fitness avgs: ['28.44']
+Episode 78700/100000
+Fitnesses: ['5.98']
+100 fitness avgs: ['28.38']
+Episode 78750/100000
+Fitnesses: ['124.47']
+100 fitness avgs: ['29.30']
+Episode 78800/100000
+Fitnesses: ['5.69']
+100 fitness avgs: ['29.16']
+Episode 78850/100000
+Fitnesses: ['39.84']
+100 fitness avgs: ['28.76']
+Episode 78900/100000
+Fitnesses: ['-7.54']
+100 fitness avgs: ['27.86']
+Episode 78950/100000
+Fitnesses: ['50.90']
+100 fitness avgs: ['28.29']
+Episode 79000/100000
+Fitnesses: ['43.63']
+100 fitness avgs: ['28.52']
+Episode 79050/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['28.81']
+Episode 79100/100000
+Fitnesses: ['31.59']
+100 fitness avgs: ['29.02']
+Episode 79150/100000
+Fitnesses: ['32.12']
+100 fitness avgs: ['29.15']
+Episode 79200/100000
+Fitnesses: ['2.20']
+100 fitness avgs: ['29.22']
+Episode 79250/100000
+Fitnesses: ['20.03']
+100 fitness avgs: ['29.41']
+Episode 79300/100000
+Fitnesses: ['39.12']
+100 fitness avgs: ['29.82']
+Episode 79350/100000
+Fitnesses: ['77.25']
+100 fitness avgs: ['30.57']
+Episode 79400/100000
+Fitnesses: ['22.87']
+100 fitness avgs: ['30.76']
+Episode 79450/100000
+Fitnesses: ['11.30']
+100 fitness avgs: ['30.44']
+Episode 79500/100000
+Fitnesses: ['75.94']
+100 fitness avgs: ['31.06']
+Episode 79550/100000
+Fitnesses: ['4.04']
+100 fitness avgs: ['30.60']
+Episode 79600/100000
+Fitnesses: ['16.04']
+100 fitness avgs: ['30.51']
+Episode 79650/100000
+Fitnesses: ['34.92']
+100 fitness avgs: ['30.71']
+Episode 79700/100000
+Fitnesses: ['40.00']
+100 fitness avgs: ['31.09']
+Episode 79750/100000
+Fitnesses: ['25.26']
+100 fitness avgs: ['30.98']
+Episode 79800/100000
+Fitnesses: ['15.69']
+100 fitness avgs: ['30.90']
+Episode 79850/100000
+Fitnesses: ['13.35']
+100 fitness avgs: ['30.46']
+Episode 79900/100000
+Fitnesses: ['49.95']
+100 fitness avgs: ['30.21']
+Episode 79950/100000
+Fitnesses: ['17.25']
+100 fitness avgs: ['30.01']
+Episode 80000/100000
+Fitnesses: ['12.00']
+100 fitness avgs: ['29.77']
+Save Model at ep  80000
+Episode 80050/100000
+Fitnesses: ['6.90']
+100 fitness avgs: ['29.32']
+Episode 80100/100000
+Fitnesses: ['48.14']
+100 fitness avgs: ['29.75']
+Episode 80150/100000
+Fitnesses: ['-9.63']
+100 fitness avgs: ['28.98']
+Episode 80200/100000
+Fitnesses: ['46.12']
+100 fitness avgs: ['29.21']
+Episode 80250/100000
+Fitnesses: ['17.15']
+100 fitness avgs: ['29.36']
+Episode 80300/100000
+Fitnesses: ['28.48']
+100 fitness avgs: ['29.41']
+Episode 80350/100000
+Fitnesses: ['8.79']
+100 fitness avgs: ['29.30']
+Episode 80400/100000
+Fitnesses: ['27.55']
+100 fitness avgs: ['29.38']
+Episode 80450/100000
+Fitnesses: ['8.11']
+100 fitness avgs: ['29.29']
+Episode 80500/100000
+Fitnesses: ['20.66']
+100 fitness avgs: ['29.33']
+Episode 80550/100000
+Fitnesses: ['17.94']
+100 fitness avgs: ['28.97']
+Episode 80600/100000
+Fitnesses: ['-6.69']
+100 fitness avgs: ['28.40']
+Episode 80650/100000
+Fitnesses: ['6.27']
+100 fitness avgs: ['27.95']
+Episode 80700/100000
+Fitnesses: ['46.31']
+100 fitness avgs: ['28.40']
+Episode 80750/100000
+Fitnesses: ['52.58']
+100 fitness avgs: ['27.95']
+Episode 80800/100000
+Fitnesses: ['31.77']
+100 fitness avgs: ['28.07']
+Episode 80850/100000
+Fitnesses: ['31.00']
+100 fitness avgs: ['28.02']
+Episode 80900/100000
+Fitnesses: ['-4.38']
+100 fitness avgs: ['27.60']
+Episode 80950/100000
+Fitnesses: ['67.25']
+100 fitness avgs: ['28.25']
+Episode 81000/100000
+Fitnesses: ['0.00']
+100 fitness avgs: ['27.73']
+Episode 81050/100000
+Fitnesses: ['49.70']
+100 fitness avgs: ['28.30']
+Episode 81100/100000
+Fitnesses: ['22.33']
+100 fitness avgs: ['27.98']
+Episode 81150/100000
+Fitnesses: ['53.17']
+100 fitness avgs: ['27.94']
+Episode 81200/100000
+Fitnesses: ['34.58']
+100 fitness avgs: ['27.96']
+Episode 81250/100000
+Fitnesses: ['5.16']
+100 fitness avgs: ['27.94']
+Episode 81300/100000
+Fitnesses: ['-0.06']
+100 fitness avgs: ['27.28']
+Episode 81350/100000
+Fitnesses: ['12.14']
+100 fitness avgs: ['26.76']
+Episode 81400/100000
+Fitnesses: ['-10.04']
+100 fitness avgs: ['26.22']
+Episode 81450/100000
+Fitnesses: ['11.76']
+100 fitness avgs: ['26.29']
+Episode 81500/100000
+Fitnesses: ['24.07']
+100 fitness avgs: ['26.20']
+Episode 81550/100000
+Fitnesses: ['31.87']
+100 fitness avgs: ['26.46']
+Episode 81600/100000
+Fitnesses: ['-0.16']
+100 fitness avgs: ['26.37']
+Episode 81650/100000
+Fitnesses: ['32.89']
+100 fitness avgs: ['26.54']
+Episode 81700/100000
+Fitnesses: ['20.65']
+100 fitness avgs: ['26.22']
+Episode 81750/100000
+Fitnesses: ['-5.00']
+100 fitness avgs: ['25.91']
+Episode 81800/100000
+Fitnesses: ['17.58']
+100 fitness avgs: ['25.50']
+Episode 81850/100000
+Fitnesses: ['10.13']
+100 fitness avgs: ['25.64']
+Episode 81900/100000
+Fitnesses: ['1.06']
+100 fitness avgs: ['25.35']
+Episode 81950/100000
+Fitnesses: ['26.19']
+100 fitness avgs: ['25.40']
+Episode 82000/100000
+Fitnesses: ['7.69']
+100 fitness avgs: ['25.24']
+Episode 82050/100000
+Fitnesses: ['0.55']
+100 fitness avgs: ['25.06']
+Episode 82100/100000
+Fitnesses: ['43.38']
+100 fitness avgs: ['25.39']
+Episode 82150/100000
+Fitnesses: ['59.58']
+100 fitness avgs: ['25.30']
+Episode 82200/100000
+Fitnesses: ['6.27']
+100 fitness avgs: ['25.23']
+Episode 82250/100000
+Fitnesses: ['14.97']
+100 fitness avgs: ['24.87']
+Episode 82300/100000
+Fitnesses: ['-8.35']
+100 fitness avgs: ['24.63']
+Episode 82350/100000
+Fitnesses: ['29.78']
+100 fitness avgs: ['24.84']
+Episode 82400/100000
+Fitnesses: ['40.98']
+100 fitness avgs: ['24.78']
+Episode 82450/100000
+Fitnesses: ['5.12']
+100 fitness avgs: ['24.18']
+Episode 82500/100000
+Fitnesses: ['32.33']
+100 fitness avgs: ['24.42']
+Episode 82550/100000
+Fitnesses: ['78.45']
+100 fitness avgs: ['25.06']
+Episode 82600/100000
+Fitnesses: ['14.07']
+100 fitness avgs: ['25.08']
+Episode 82650/100000
+Fitnesses: ['25.38']
+100 fitness avgs: ['25.23']
+Episode 82700/100000
+Fitnesses: ['-0.15']
+100 fitness avgs: ['24.91']
+Episode 82750/100000
+Fitnesses: ['24.98']
+100 fitness avgs: ['25.11']
+Episode 82800/100000
+Fitnesses: ['-1.94']
+100 fitness avgs: ['24.92']
+Episode 82850/100000
+Fitnesses: ['-15.73']
+100 fitness avgs: ['24.07']
+Episode 82900/100000
+Fitnesses: ['-3.24']
+100 fitness avgs: ['23.43']
+Episode 82950/100000
+Fitnesses: ['9.13']
+100 fitness avgs: ['23.26']
+Episode 83000/100000
+Fitnesses: ['9.85']
+100 fitness avgs: ['23.38']
+Episode 83050/100000
+Fitnesses: ['36.97']
+100 fitness avgs: ['22.97']
+Episode 83100/100000
+Fitnesses: ['62.91']
+100 fitness avgs: ['23.34']
+Episode 83150/100000
+Fitnesses: ['30.91']
+100 fitness avgs: ['23.26']
+Episode 83200/100000
+Fitnesses: ['43.36']
+100 fitness avgs: ['23.67']
+Episode 83250/100000
+Fitnesses: ['10.78']
+100 fitness avgs: ['23.62']
+Episode 83300/100000
+Fitnesses: ['45.29']
+100 fitness avgs: ['24.13']
+Episode 83350/100000
+Fitnesses: ['15.46']
+100 fitness avgs: ['24.22']
+Episode 83400/100000
+Fitnesses: ['65.02']
+100 fitness avgs: ['24.85']
+Episode 83450/100000
+Fitnesses: ['15.60']
+100 fitness avgs: ['24.72']
+Episode 83500/100000
+Fitnesses: ['64.26']
+100 fitness avgs: ['25.00']
+Episode 83550/100000
+Fitnesses: ['24.45']
+100 fitness avgs: ['24.77']
+Episode 83600/100000
+Fitnesses: ['21.39']
+100 fitness avgs: ['24.87']
+Episode 83650/100000
+Fitnesses: ['18.49']
+100 fitness avgs: ['24.61']
+Episode 83700/100000
+Fitnesses: ['10.01']
+100 fitness avgs: ['24.65']
+Episode 83750/100000
+Fitnesses: ['25.07']
+100 fitness avgs: ['23.66']
+Episode 83800/100000
+Fitnesses: ['21.94']
+100 fitness avgs: ['23.82']
+Episode 83850/100000
+Fitnesses: ['51.27']
+100 fitness avgs: ['23.93']
+Episode 83900/100000
+Fitnesses: ['48.53']
+100 fitness avgs: ['24.49']
+Episode 83950/100000
+Fitnesses: ['46.67']
+100 fitness avgs: ['24.45']
+Episode 84000/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['24.61']
+Episode 84050/100000
+Fitnesses: ['54.82']
+100 fitness avgs: ['24.70']
+Episode 84100/100000
+Fitnesses: ['4.64']
+100 fitness avgs: ['24.43']
+Episode 84150/100000
+Fitnesses: ['26.10']
+100 fitness avgs: ['24.37']
+Episode 84200/100000
+Fitnesses: ['25.82']
+100 fitness avgs: ['24.60']
+Episode 84250/100000
+Fitnesses: ['55.95']
+100 fitness avgs: ['24.96']
+Episode 84300/100000
+Fitnesses: ['-4.29']
+100 fitness avgs: ['24.53']
+Episode 84350/100000
+Fitnesses: ['4.14']
+100 fitness avgs: ['23.80']
+Episode 84400/100000
+Fitnesses: ['30.93']
+100 fitness avgs: ['23.88']
+Episode 84450/100000
+Fitnesses: ['9.75']
+100 fitness avgs: ['23.86']
+Episode 84500/100000
+Fitnesses: ['43.14']
+100 fitness avgs: ['23.53']
+Episode 84550/100000
+Fitnesses: ['-9.63']
+100 fitness avgs: ['23.40']
+Episode 84600/100000
+Fitnesses: ['28.93']
+100 fitness avgs: ['23.53']
+Episode 84650/100000
+Fitnesses: ['-3.96']
+100 fitness avgs: ['23.14']
+Episode 84700/100000
+Fitnesses: ['15.27']
+100 fitness avgs: ['22.89']
+Episode 84750/100000
+Fitnesses: ['22.39']
+100 fitness avgs: ['22.86']
+Episode 84800/100000
+Fitnesses: ['13.22']
+100 fitness avgs: ['22.84']
+Episode 84850/100000
+Fitnesses: ['77.65']
+100 fitness avgs: ['23.48']
+Episode 84900/100000
+Fitnesses: ['42.63']
+100 fitness avgs: ['23.41']
+Episode 84950/100000
+Fitnesses: ['49.20']
+100 fitness avgs: ['23.73']
+Episode 85000/100000
+Fitnesses: ['41.40']
+100 fitness avgs: ['24.02']
+Save Model at ep  85000
+Episode 85050/100000
+Fitnesses: ['19.63']
+100 fitness avgs: ['24.15']
+Episode 85100/100000
+Fitnesses: ['26.31']
+100 fitness avgs: ['23.93']
+Episode 85150/100000
+Fitnesses: ['-15.26']
+100 fitness avgs: ['23.87']
+Episode 85200/100000
+Fitnesses: ['45.14']
+100 fitness avgs: ['23.86']
+Episode 85250/100000
+Fitnesses: ['17.36']
+100 fitness avgs: ['23.86']
+Episode 85300/100000
+Fitnesses: ['11.71']
+100 fitness avgs: ['23.70']
+Episode 85350/100000
+Fitnesses: ['33.32']
+100 fitness avgs: ['23.94']
+Episode 85400/100000
+Fitnesses: ['41.58']
+100 fitness avgs: ['24.08']
+Episode 85450/100000
+Fitnesses: ['6.22']
+100 fitness avgs: ['24.06']
+Episode 85500/100000
+Fitnesses: ['58.37']
+100 fitness avgs: ['24.44']
+Episode 85550/100000
+Fitnesses: ['10.94']
+100 fitness avgs: ['24.37']
+Episode 85600/100000
+Fitnesses: ['22.64']
+100 fitness avgs: ['24.66']
+Episode 85650/100000
+Fitnesses: ['12.89']
+100 fitness avgs: ['24.73']
+Episode 85700/100000
+Fitnesses: ['13.84']
+100 fitness avgs: ['24.41']
+Episode 85750/100000
+Fitnesses: ['9.81']
+100 fitness avgs: ['23.98']
+Episode 85800/100000
+Fitnesses: ['-8.30']
+100 fitness avgs: ['23.58']
+Episode 85850/100000
+Fitnesses: ['37.47']
+100 fitness avgs: ['23.64']
+Episode 85900/100000
+Fitnesses: ['50.67']
+100 fitness avgs: ['24.19']
+Episode 85950/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['23.72']
+Episode 86000/100000
+Fitnesses: ['51.42']
+100 fitness avgs: ['24.23']
+Episode 86050/100000
+Fitnesses: ['5.48']
+100 fitness avgs: ['23.79']
+Episode 86100/100000
+Fitnesses: ['66.03']
+100 fitness avgs: ['24.23']
+Episode 86150/100000
+Fitnesses: ['82.94']
+100 fitness avgs: ['24.53']
+Episode 86200/100000
+Fitnesses: ['44.91']
+100 fitness avgs: ['24.63']
+Episode 86250/100000
+Fitnesses: ['7.54']
+100 fitness avgs: ['24.65']
+Episode 86300/100000
+Fitnesses: ['-5.06']
+100 fitness avgs: ['24.60']
+Episode 86350/100000
+Fitnesses: ['-8.64']
+100 fitness avgs: ['24.40']
+Episode 86400/100000
+Fitnesses: ['30.04']
+100 fitness avgs: ['24.80']
+Episode 86450/100000
+Fitnesses: ['15.91']
+100 fitness avgs: ['24.84']
+Episode 86500/100000
+Fitnesses: ['30.54']
+100 fitness avgs: ['24.90']
+Episode 86550/100000
+Fitnesses: ['45.25']
+100 fitness avgs: ['25.04']
+Episode 86600/100000
+Fitnesses: ['55.31']
+100 fitness avgs: ['25.59']
+Episode 86650/100000
+Fitnesses: ['40.32']
+100 fitness avgs: ['25.67']
+Episode 86700/100000
+Fitnesses: ['3.18']
+100 fitness avgs: ['25.49']
+Episode 86750/100000
+Fitnesses: ['-4.79']
+100 fitness avgs: ['25.49']
+Episode 86800/100000
+Fitnesses: ['11.78']
+100 fitness avgs: ['25.43']
+Episode 86850/100000
+Fitnesses: ['26.78']
+100 fitness avgs: ['25.60']
+Episode 86900/100000
+Fitnesses: ['33.17']
+100 fitness avgs: ['25.92']
+Episode 86950/100000
+Fitnesses: ['41.52']
+100 fitness avgs: ['26.08']
+Episode 87000/100000
+Fitnesses: ['95.67']
+100 fitness avgs: ['26.96']
+Episode 87050/100000
+Fitnesses: ['22.81']
+100 fitness avgs: ['27.18']
+Episode 87100/100000
+Fitnesses: ['51.34']
+100 fitness avgs: ['27.26']
+Episode 87150/100000
+Fitnesses: ['39.76']
+100 fitness avgs: ['27.06']
+Episode 87200/100000
+Fitnesses: ['19.53']
+100 fitness avgs: ['27.19']
+Episode 87250/100000
+Fitnesses: ['38.80']
+100 fitness avgs: ['27.43']
+Episode 87300/100000
+Fitnesses: ['59.80']
+100 fitness avgs: ['28.11']
+Episode 87350/100000
+Fitnesses: ['7.80']
+100 fitness avgs: ['27.89']
+Episode 87400/100000
+Fitnesses: ['26.66']
+100 fitness avgs: ['27.75']
+Episode 87450/100000
+Fitnesses: ['4.80']
+100 fitness avgs: ['27.75']
+Episode 87500/100000
+Fitnesses: ['2.40']
+100 fitness avgs: ['27.45']
+Episode 87550/100000
+Fitnesses: ['14.37']
+100 fitness avgs: ['26.81']
+Episode 87600/100000
+Fitnesses: ['14.26']
+100 fitness avgs: ['26.81']
+Episode 87650/100000
+Fitnesses: ['31.77']
+100 fitness avgs: ['26.87']
+Episode 87700/100000
+Fitnesses: ['9.65']
+100 fitness avgs: ['26.97']
+Episode 87750/100000
+Fitnesses: ['20.32']
+100 fitness avgs: ['26.92']
+Episode 87800/100000
+Fitnesses: ['47.13']
+100 fitness avgs: ['27.41']
+Episode 87850/100000
+Fitnesses: ['29.32']
+100 fitness avgs: ['27.86']
+Episode 87900/100000
+Fitnesses: ['30.62']
+100 fitness avgs: ['28.20']
+Episode 87950/100000
+Fitnesses: ['5.64']
+100 fitness avgs: ['28.17']
+Episode 88000/100000
+Fitnesses: ['8.60']
+100 fitness avgs: ['28.16']
+Episode 88050/100000
+Fitnesses: ['71.26']
+100 fitness avgs: ['28.50']
+Episode 88100/100000
+Fitnesses: ['-4.36']
+100 fitness avgs: ['27.83']
+Episode 88150/100000
+Fitnesses: ['38.42']
+100 fitness avgs: ['27.90']
+Episode 88200/100000
+Fitnesses: ['54.19']
+100 fitness avgs: ['28.01']
+Episode 88250/100000
+Fitnesses: ['-2.08']
+100 fitness avgs: ['27.88']
+Episode 88300/100000
+Fitnesses: ['74.98']
+100 fitness avgs: ['28.18']
+Episode 88350/100000
+Fitnesses: ['64.71']
+100 fitness avgs: ['28.67']
+Episode 88400/100000
+Fitnesses: ['30.75']
+100 fitness avgs: ['28.33']
+Episode 88450/100000
+Fitnesses: ['49.43']
+100 fitness avgs: ['28.67']
+Episode 88500/100000
+Fitnesses: ['85.78']
+100 fitness avgs: ['28.88']
+Episode 88550/100000
+Fitnesses: ['15.89']
+100 fitness avgs: ['28.79']
+Episode 88600/100000
+Fitnesses: ['7.09']
+100 fitness avgs: ['28.65']
+Episode 88650/100000
+Fitnesses: ['19.87']
+100 fitness avgs: ['28.67']
+Episode 88700/100000
+Fitnesses: ['38.41']
+100 fitness avgs: ['28.95']
+Episode 88750/100000
+Fitnesses: ['60.38']
+100 fitness avgs: ['29.30']
+Episode 88800/100000
+Fitnesses: ['1.92']
+100 fitness avgs: ['29.10']
+Episode 88850/100000
+Fitnesses: ['14.31']
+100 fitness avgs: ['28.73']
+Episode 88900/100000
+Fitnesses: ['37.85']
+100 fitness avgs: ['28.63']
+Episode 88950/100000
+Fitnesses: ['41.97']
+100 fitness avgs: ['28.58']
+Episode 89000/100000
+Fitnesses: ['21.09']
+100 fitness avgs: ['28.19']
+Episode 89050/100000
+Fitnesses: ['-6.80']
+100 fitness avgs: ['27.57']
+Episode 89100/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['27.73']
+Episode 89150/100000
+Fitnesses: ['47.96']
+100 fitness avgs: ['27.95']
+Episode 89200/100000
+Fitnesses: ['79.56']
+100 fitness avgs: ['28.48']
+Episode 89250/100000
+Fitnesses: ['60.35']
+100 fitness avgs: ['28.53']
+Episode 89300/100000
+Fitnesses: ['13.88']
+100 fitness avgs: ['28.71']
+Episode 89350/100000
+Fitnesses: ['57.75']
+100 fitness avgs: ['29.25']
+Episode 89400/100000
+Fitnesses: ['2.54']
+100 fitness avgs: ['28.96']
+Episode 89450/100000
+Fitnesses: ['28.62']
+100 fitness avgs: ['29.15']
+Episode 89500/100000
+Fitnesses: ['31.75']
+100 fitness avgs: ['29.04']
+Episode 89550/100000
+Fitnesses: ['62.30']
+100 fitness avgs: ['29.76']
+Episode 89600/100000
+Fitnesses: ['-0.06']
+100 fitness avgs: ['29.47']
+Episode 89650/100000
+Fitnesses: ['32.75']
+100 fitness avgs: ['29.83']
+Episode 89700/100000
+Fitnesses: ['132.71']
+100 fitness avgs: ['31.01']
+Episode 89750/100000
+Fitnesses: ['30.95']
+100 fitness avgs: ['31.09']
+Episode 89800/100000
+Fitnesses: ['12.73']
+100 fitness avgs: ['31.09']
+Episode 89850/100000
+Fitnesses: ['26.66']
+100 fitness avgs: ['30.58']
+Episode 89900/100000
+Fitnesses: ['3.60']
+100 fitness avgs: ['30.19']
+Episode 89950/100000
+Fitnesses: ['26.60']
+100 fitness avgs: ['29.96']
+Episode 90000/100000
+Fitnesses: ['-2.61']
+100 fitness avgs: ['29.52']
+Save Model at ep  90000
+Episode 90050/100000
+Fitnesses: ['46.14']
+100 fitness avgs: ['29.79']
+Episode 90100/100000
+Fitnesses: ['78.50']
+100 fitness avgs: ['30.31']
+Episode 90150/100000
+Fitnesses: ['49.70']
+100 fitness avgs: ['30.96']
+Episode 90200/100000
+Fitnesses: ['38.08']
+100 fitness avgs: ['30.89']
+Episode 90250/100000
+Fitnesses: ['-7.93']
+100 fitness avgs: ['30.63']
+Episode 90300/100000
+Fitnesses: ['52.78']
+100 fitness avgs: ['31.05']
+Episode 90350/100000
+Fitnesses: ['52.37']
+100 fitness avgs: ['31.24']
+Episode 90400/100000
+Fitnesses: ['15.32']
+100 fitness avgs: ['30.97']
+Episode 90450/100000
+Fitnesses: ['71.71']
+100 fitness avgs: ['31.63']
+Episode 90500/100000
+Fitnesses: ['74.79']
+100 fitness avgs: ['31.79']
+Episode 90550/100000
+Fitnesses: ['63.77']
+100 fitness avgs: ['32.32']
+Episode 90600/100000
+Fitnesses: ['32.88']
+100 fitness avgs: ['32.42']
+Episode 90650/100000
+Fitnesses: ['5.89']
+100 fitness avgs: ['32.35']
+Episode 90700/100000
+Fitnesses: ['26.99']
+100 fitness avgs: ['32.48']
+Episode 90750/100000
+Fitnesses: ['34.79']
+100 fitness avgs: ['32.73']
+Episode 90800/100000
+Fitnesses: ['36.47']
+100 fitness avgs: ['33.18']
+Episode 90850/100000
+Fitnesses: ['15.16']
+100 fitness avgs: ['32.96']
+Episode 90900/100000
+Fitnesses: ['45.43']
+100 fitness avgs: ['32.91']
+Episode 90950/100000
+Fitnesses: ['8.07']
+100 fitness avgs: ['32.79']
+Episode 91000/100000
+Fitnesses: ['18.56']
+100 fitness avgs: ['32.46']
+Episode 91050/100000
+Fitnesses: ['18.88']
+100 fitness avgs: ['32.59']
+Episode 91100/100000
+Fitnesses: ['44.85']
+100 fitness avgs: ['32.38']
+Episode 91150/100000
+Fitnesses: ['41.39']
+100 fitness avgs: ['31.97']
+Episode 91200/100000
+Fitnesses: ['54.90']
+100 fitness avgs: ['32.07']
+Episode 91250/100000
+Fitnesses: ['43.25']
+100 fitness avgs: ['32.42']
+Episode 91300/100000
+Fitnesses: ['19.35']
+100 fitness avgs: ['32.67']
+Episode 91350/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['33.35']
+Episode 91400/100000
+Fitnesses: ['-10.41']
+100 fitness avgs: ['32.95']
+Episode 91450/100000
+Fitnesses: ['73.81']
+100 fitness avgs: ['33.53']
+Episode 91500/100000
+Fitnesses: ['17.66']
+100 fitness avgs: ['33.40']
+Episode 91550/100000
+Fitnesses: ['24.55']
+100 fitness avgs: ['33.19']
+Episode 91600/100000
+Fitnesses: ['21.10']
+100 fitness avgs: ['32.85']
+Episode 91650/100000
+Fitnesses: ['32.73']
+100 fitness avgs: ['32.77']
+Episode 91700/100000
+Fitnesses: ['15.88']
+100 fitness avgs: ['32.90']
+Episode 91750/100000
+Fitnesses: ['12.22']
+100 fitness avgs: ['33.07']
+Episode 91800/100000
+Fitnesses: ['-1.12']
+100 fitness avgs: ['32.94']
+Episode 91850/100000
+Fitnesses: ['64.04']
+100 fitness avgs: ['33.31']
+Episode 91900/100000
+Fitnesses: ['33.24']
+100 fitness avgs: ['33.31']
+Episode 91950/100000
+Fitnesses: ['26.48']
+100 fitness avgs: ['33.16']
+Episode 92000/100000
+Fitnesses: ['30.26']
+100 fitness avgs: ['32.51']
+Episode 92050/100000
+Fitnesses: ['15.50']
+100 fitness avgs: ['32.44']
+Episode 92100/100000
+Fitnesses: ['20.51']
+100 fitness avgs: ['32.13']
+Episode 92150/100000
+Fitnesses: ['60.00']
+100 fitness avgs: ['32.33']
+Episode 92200/100000
+Fitnesses: ['10.01']
+100 fitness avgs: ['32.24']
+Episode 92250/100000
+Fitnesses: ['5.52']
+100 fitness avgs: ['31.90']
+Episode 92300/100000
+Fitnesses: ['39.65']
+100 fitness avgs: ['31.70']
+Episode 92350/100000
+Fitnesses: ['38.83']
+100 fitness avgs: ['32.01']
+Episode 92400/100000
+Fitnesses: ['-62.35']
+100 fitness avgs: ['31.12']
+Episode 92450/100000
+Fitnesses: ['27.39']
+100 fitness avgs: ['31.35']
+Episode 92500/100000
+Fitnesses: ['69.90']
+100 fitness avgs: ['32.02']
+Episode 92550/100000
+Fitnesses: ['49.25']
+100 fitness avgs: ['32.37']
+Episode 92600/100000
+Fitnesses: ['17.70']
+100 fitness avgs: ['32.41']
+Episode 92650/100000
+Fitnesses: ['60.93']
+100 fitness avgs: ['32.70']
+Episode 92700/100000
+Fitnesses: ['22.76']
+100 fitness avgs: ['32.83']
+Episode 92750/100000
+Fitnesses: ['53.33']
+100 fitness avgs: ['33.16']
+Episode 92800/100000
+Fitnesses: ['52.38']
+100 fitness avgs: ['33.21']
+Episode 92850/100000
+Fitnesses: ['16.82']
+100 fitness avgs: ['33.09']
+Episode 92900/100000
+Fitnesses: ['80.51']
+100 fitness avgs: ['33.59']
+Episode 92950/100000
+Fitnesses: ['32.89']
+100 fitness avgs: ['33.86']
+Episode 93000/100000
+Fitnesses: ['20.01']
+100 fitness avgs: ['33.97']
+Episode 93050/100000
+Fitnesses: ['37.81']
+100 fitness avgs: ['33.64']
+Episode 93100/100000
+Fitnesses: ['68.11']
+100 fitness avgs: ['34.36']
+Episode 93150/100000
+Fitnesses: ['22.40']
+100 fitness avgs: ['34.20']
+Episode 93200/100000
+Fitnesses: ['-1.58']
+100 fitness avgs: ['33.64']
+Episode 93250/100000
+Fitnesses: ['104.91']
+100 fitness avgs: ['34.71']
+Episode 93300/100000
+Fitnesses: ['148.85']
+100 fitness avgs: ['35.45']
+Episode 93350/100000
+Fitnesses: ['-2.54']
+100 fitness avgs: ['34.78']
+Episode 93400/100000
+Fitnesses: ['4.12']
+100 fitness avgs: ['34.51']
+Episode 93450/100000
+Fitnesses: ['31.68']
+100 fitness avgs: ['34.34']
+Episode 93500/100000
+Fitnesses: ['9.74']
+100 fitness avgs: ['33.58']
+Episode 93550/100000
+Fitnesses: ['37.86']
+100 fitness avgs: ['33.80']
+Episode 93600/100000
+Fitnesses: ['34.80']
+100 fitness avgs: ['34.07']
+Episode 93650/100000
+Fitnesses: ['10.16']
+100 fitness avgs: ['33.98']
+Episode 93700/100000
+Fitnesses: ['73.04']
+100 fitness avgs: ['34.32']
+Episode 93750/100000
+Fitnesses: ['3.94']
+100 fitness avgs: ['33.76']
+Episode 93800/100000
+Fitnesses: ['-0.07']
+100 fitness avgs: ['33.74']
+Episode 93850/100000
+Fitnesses: ['-9.77']
+100 fitness avgs: ['33.50']
+Episode 93900/100000
+Fitnesses: ['12.75']
+100 fitness avgs: ['33.25']
+Episode 93950/100000
+Fitnesses: ['53.29']
+100 fitness avgs: ['33.36']
+Episode 94000/100000
+Fitnesses: ['15.32']
+100 fitness avgs: ['33.30']
+Episode 94050/100000
+Fitnesses: ['30.00']
+100 fitness avgs: ['33.67']
+Episode 94100/100000
+Fitnesses: ['44.65']
+100 fitness avgs: ['33.92']
+Episode 94150/100000
+Fitnesses: ['-7.06']
+100 fitness avgs: ['33.37']
+Episode 94200/100000
+Fitnesses: ['59.04']
+100 fitness avgs: ['33.16']
+Episode 94250/100000
+Fitnesses: ['49.94']
+100 fitness avgs: ['33.06']
+Episode 94300/100000
+Fitnesses: ['23.11']
+100 fitness avgs: ['33.15']
+Episode 94350/100000
+Fitnesses: ['67.71']
+100 fitness avgs: ['33.25']
+Episode 94400/100000
+Fitnesses: ['1.06']
+100 fitness avgs: ['33.23']
+Episode 94450/100000
+Fitnesses: ['47.24']
+100 fitness avgs: ['33.42']
+Episode 94500/100000
+Fitnesses: ['53.53']
+100 fitness avgs: ['33.64']
+Episode 94550/100000
+Fitnesses: ['61.99']
+100 fitness avgs: ['33.63']
+Episode 94600/100000
+Fitnesses: ['35.70']
+100 fitness avgs: ['33.99']
+Episode 94650/100000
+Fitnesses: ['-2.16']
+100 fitness avgs: ['33.64']
+Episode 94700/100000
+Fitnesses: ['59.23']
+100 fitness avgs: ['32.91']
+Episode 94750/100000
+Fitnesses: ['25.23']
+100 fitness avgs: ['32.85']
+Episode 94800/100000
+Fitnesses: ['19.08']
+100 fitness avgs: ['32.91']
+Episode 94850/100000
+Fitnesses: ['15.81']
+100 fitness avgs: ['32.81']
+Episode 94900/100000
+Fitnesses: ['14.14']
+100 fitness avgs: ['32.91']
+Episode 94950/100000
+Fitnesses: ['4.83']
+100 fitness avgs: ['32.69']
+Episode 95000/100000
+Fitnesses: ['-11.99']
+100 fitness avgs: ['32.60']
+Save Model at ep  95000
+Episode 95050/100000
+Fitnesses: ['42.79']
+100 fitness avgs: ['32.57']
+Episode 95100/100000
+Fitnesses: ['20.16']
+100 fitness avgs: ['31.98']
+Episode 95150/100000
+Fitnesses: ['3.95']
+100 fitness avgs: ['31.53']
+Episode 95200/100000
+Fitnesses: ['-5.47']
+100 fitness avgs: ['31.09']
+Episode 95250/100000
+Fitnesses: ['65.42']
+100 fitness avgs: ['31.82']
+Episode 95300/100000
+Fitnesses: ['17.06']
+100 fitness avgs: ['31.47']
+Episode 95350/100000
+Fitnesses: ['17.06']
+100 fitness avgs: ['31.11']
+Episode 95400/100000
+Fitnesses: ['18.07']
+100 fitness avgs: ['31.14']
+Episode 95450/100000
+Fitnesses: ['0.70']
+100 fitness avgs: ['30.43']
+Episode 95500/100000
+Fitnesses: ['15.35']
+100 fitness avgs: ['29.84']
+Episode 95550/100000
+Fitnesses: ['-5.70']
+100 fitness avgs: ['29.14']
+Episode 95600/100000
+Fitnesses: ['13.88']
+100 fitness avgs: ['28.95']
+Episode 95650/100000
+Fitnesses: ['96.68']
+100 fitness avgs: ['29.86']
+Episode 95700/100000
+Fitnesses: ['3.60']
+100 fitness avgs: ['29.63']
+Episode 95750/100000
+Fitnesses: ['27.28']
+100 fitness avgs: ['29.55']
+Episode 95800/100000
+Fitnesses: ['56.46']
+100 fitness avgs: ['29.75']
+Episode 95850/100000
+Fitnesses: ['33.84']
+100 fitness avgs: ['29.94']
+Episode 95900/100000
+Fitnesses: ['35.19']
+100 fitness avgs: ['29.83']
+Episode 95950/100000
+Fitnesses: ['7.27']
+100 fitness avgs: ['29.83']
+Episode 96000/100000
+Fitnesses: ['21.68']
+100 fitness avgs: ['29.86']
+Episode 96050/100000
+Fitnesses: ['69.30']
+100 fitness avgs: ['30.36']
+Episode 96100/100000
+Fitnesses: ['30.25']
+100 fitness avgs: ['30.22']
+Episode 96150/100000
+Fitnesses: ['43.85']
+100 fitness avgs: ['30.24']
+Episode 96200/100000
+Fitnesses: ['21.95']
+100 fitness avgs: ['29.91']
+Episode 96250/100000
+Fitnesses: ['35.97']
+100 fitness avgs: ['29.84']
+Episode 96300/100000
+Fitnesses: ['53.39']
+100 fitness avgs: ['30.18']
+Episode 96350/100000
+Fitnesses: ['39.49']
+100 fitness avgs: ['29.97']
+Episode 96400/100000
+Fitnesses: ['-14.90']
+100 fitness avgs: ['29.93']
+Episode 96450/100000
+Fitnesses: ['1.10']
+100 fitness avgs: ['29.20']
+Episode 96500/100000
+Fitnesses: ['-5.54']
+100 fitness avgs: ['28.97']
+Episode 96550/100000
+Fitnesses: ['14.67']
+100 fitness avgs: ['28.87']
+Episode 96600/100000
+Fitnesses: ['96.31']
+100 fitness avgs: ['29.62']
+Episode 96650/100000
+Fitnesses: ['-16.97']
+100 fitness avgs: ['29.13']
+Episode 96700/100000
+Fitnesses: ['51.85']
+100 fitness avgs: ['29.49']
+Episode 96750/100000
+Fitnesses: ['9.48']
+100 fitness avgs: ['29.46']
+Episode 96800/100000
+Fitnesses: ['28.25']
+100 fitness avgs: ['29.75']
+Episode 96850/100000
+Fitnesses: ['16.17']
+100 fitness avgs: ['29.27']
+Episode 96900/100000
+Fitnesses: ['19.56']
+100 fitness avgs: ['29.14']
+Episode 96950/100000
+Fitnesses: ['37.03']
+100 fitness avgs: ['29.24']
+Episode 97000/100000
+Fitnesses: ['3.38']
+100 fitness avgs: ['28.97']
+Episode 97050/100000
+Fitnesses: ['28.59']
+100 fitness avgs: ['29.10']
+Episode 97100/100000
+Fitnesses: ['16.47']
+100 fitness avgs: ['29.06']
+Episode 97150/100000
+Fitnesses: ['35.53']
+100 fitness avgs: ['28.82']
+Episode 97200/100000
+Fitnesses: ['8.90']
+100 fitness avgs: ['28.81']
+Episode 97250/100000
+Fitnesses: ['-3.32']
+100 fitness avgs: ['28.72']
+Episode 97300/100000
+Fitnesses: ['58.72']
+100 fitness avgs: ['28.91']
+Episode 97350/100000
+Fitnesses: ['36.38']
+100 fitness avgs: ['28.89']
+Episode 97400/100000
+Fitnesses: ['14.19']
+100 fitness avgs: ['29.65']
+Episode 97450/100000
+Fitnesses: ['7.56']
+100 fitness avgs: ['29.45']
+Episode 97500/100000
+Fitnesses: ['48.53']
+100 fitness avgs: ['29.24']
+Episode 97550/100000
+Fitnesses: ['15.37']
+100 fitness avgs: ['28.90']
+Episode 97600/100000
+Fitnesses: ['37.89']
+100 fitness avgs: ['29.10']
+Episode 97650/100000
+Fitnesses: ['-8.52']
+100 fitness avgs: ['28.41']
+Episode 97700/100000
+Fitnesses: ['60.20']
+100 fitness avgs: ['28.78']
+Episode 97750/100000
+Fitnesses: ['70.70']
+100 fitness avgs: ['28.96']
+Episode 97800/100000
+Fitnesses: ['19.85']
+100 fitness avgs: ['28.63']
+Episode 97850/100000
+Fitnesses: ['22.80']
+100 fitness avgs: ['28.69']
+Episode 97900/100000
+Fitnesses: ['9.85']
+100 fitness avgs: ['27.98']
+Episode 97950/100000
+Fitnesses: ['50.03']
+100 fitness avgs: ['28.16']
+Episode 98000/100000
+Fitnesses: ['13.11']
+100 fitness avgs: ['28.09']
+Episode 98050/100000
+Fitnesses: ['26.38']
+100 fitness avgs: ['27.97']
+Episode 98100/100000
+Fitnesses: ['13.10']
+100 fitness avgs: ['27.42']
+Episode 98150/100000
+Fitnesses: ['-4.93']
+100 fitness avgs: ['27.15']
+Episode 98200/100000
+Fitnesses: ['26.52']
+100 fitness avgs: ['27.43']
+Episode 98250/100000
+Fitnesses: ['29.75']
+100 fitness avgs: ['26.68']
+Episode 98300/100000
+Fitnesses: ['-7.22']
+100 fitness avgs: ['25.12']
+Episode 98350/100000
+Fitnesses: ['24.76']
+100 fitness avgs: ['25.39']
+Episode 98400/100000
+Fitnesses: ['11.86']
+100 fitness avgs: ['25.47']
+Episode 98450/100000
+Fitnesses: ['-15.31']
+100 fitness avgs: ['25.00']
+Episode 98500/100000
+Fitnesses: ['45.03']
+100 fitness avgs: ['25.35']
+Episode 98550/100000
+Fitnesses: ['-7.69']
+100 fitness avgs: ['24.89']
+Episode 98600/100000
+Fitnesses: ['14.45']
+100 fitness avgs: ['24.69']
+Episode 98650/100000
+Fitnesses: ['39.22']
+100 fitness avgs: ['24.98']
+Episode 98700/100000
+Fitnesses: ['13.62']
+100 fitness avgs: ['24.39']
+Episode 98750/100000
+Fitnesses: ['37.22']
+100 fitness avgs: ['24.72']
+Episode 98800/100000
+Fitnesses: ['56.10']
+100 fitness avgs: ['25.28']
+Episode 98850/100000
+Fitnesses: ['1.86']
+100 fitness avgs: ['25.40']
+Episode 98900/100000
+Fitnesses: ['8.45']
+100 fitness avgs: ['25.36']
+Episode 98950/100000
+Fitnesses: ['20.00']
+100 fitness avgs: ['25.02']
+Episode 99000/100000
+Fitnesses: ['39.94']
+100 fitness avgs: ['25.27']
+Episode 99050/100000
+Fitnesses: ['42.43']
+100 fitness avgs: ['25.39']
+Episode 99100/100000
+Fitnesses: ['52.15']
+100 fitness avgs: ['25.47']
+Episode 99150/100000
+Fitnesses: ['10.09']
+100 fitness avgs: ['25.64']
+Episode 99200/100000
+Fitnesses: ['23.45']
+100 fitness avgs: ['25.28']
+Episode 99250/100000
+Fitnesses: ['35.34']
+100 fitness avgs: ['25.14']
+Episode 99300/100000
+Fitnesses: ['64.78']
+100 fitness avgs: ['25.55']
+Episode 99350/100000
+Fitnesses: ['85.68']
+100 fitness avgs: ['25.73']
+Episode 99400/100000
+Fitnesses: ['44.43']
+100 fitness avgs: ['26.17']
+Episode 99450/100000
+Fitnesses: ['42.86']
+100 fitness avgs: ['26.12']
+Episode 99500/100000
+Fitnesses: ['66.03']
+100 fitness avgs: ['26.25']
+Episode 99550/100000
+Fitnesses: ['30.32']
+100 fitness avgs: ['25.93']
+Episode 99600/100000
+Fitnesses: ['17.64']
+100 fitness avgs: ['25.75']
+Episode 99650/100000
+Fitnesses: ['19.10']
+100 fitness avgs: ['25.96']
+Episode 99700/100000
+Fitnesses: ['29.86']
+100 fitness avgs: ['25.67']
+Episode 99750/100000
+Fitnesses: ['97.75']
+100 fitness avgs: ['26.40']
+Episode 99800/100000
+Fitnesses: ['30.99']
+100 fitness avgs: ['26.51']
+Episode 99850/100000
+Fitnesses: ['5.48']
+100 fitness avgs: ['26.41']
+Episode 99900/100000
+Fitnesses: ['26.97']
+100 fitness avgs: ['26.54']
+Episode 99950/100000
+Fitnesses: ['11.84']
+100 fitness avgs: ['26.61']
+Episode 100000/100000
+Fitnesses: ['52.97']
+100 fitness avgs: ['27.26']
+Save Model at ep  100000
+
+Saving Files...
+Done.
