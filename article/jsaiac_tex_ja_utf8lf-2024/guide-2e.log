@@ -1,0 +1,134 @@
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.10.18)  6 NOV 2023 17:52
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**guide-2e.tex
+(./guide-2e.tex
+pLaTeX2e <2021-11-15> (based on LaTeX2e <2022-06-01> patch level 5)
+L3 programming layer <2022-09-28>
+(/usr/local/texlive/2022/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2020/09/30 v1.8f Standard pLaTeX class
+\c@@paper=\count184
+(/usr/local/texlive/2022/texmf-dist/tex/platex/base/jsize10.clo
+File: jsize10.clo 2020/09/30 v1.8f Standard pLaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 615.
+\toclineskip=\dimen154
+\@lnumwidth=\dimen155
+\bibindent=\dimen156
+\heisei=\count193
+) (./jsaiac.sty
+Document Class(Style) `j(-)article' Option Style: `jsaiac version 1.02 ' [March
+ 6, 2003 (kita)]
+\@abstractbox=\box68
+\@tempcnta=\count194
+) (./data.tex (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 149.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+\stockwidth=\dimen157
+\stockheight=\dimen158
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 39.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2022-09-28 L3 backend support: dvips
+\l__pdf_internal_box=\box69
+\g__pdf_backend_object_int=\count195
+\l__pdf_backend_content_box=\box70
+\l__pdf_backend_model_box=\box71
+\g__pdf_backend_annotation_int=\count196
+\g__pdf_backend_link_int=\count197
+\g__pdf_backend_link_sf_int=\count198
+)
+(./guide-2e.aux)
+\openout1 = `guide-2e.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 51.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 51.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 51.
+
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 51--51
+ [][][][] 
+ []
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 62.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 62.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
+[1
+
+
+] [2]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
+(Font)              No change on input line 273.
+) [3
+
+] (./guide-2e.aux) ) 
+Here is how much of TeX's memory you used:
+ 919 strings out of 475530
+ 15126 string characters out of 5790986
+ 387698 words of memory out of 5000000
+ 22581 multiletter control sequences out of 15000+600000
+ 481569 words of font info for 75 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 38i,13n,43p,296b,413s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on guide-2e.dvi (3 pages, 17956 bytes).

@@ -1,0 +1,293 @@
+\usepackage{color}
+
+%%
+\title{
+\jtitle{20XX年度人工知能学会全国大会・\LaTeX{}スタイルファイル}
+\etitle{\LaTeX{} Style file for manuscripts of JSAI 20XX}
+}
+%%英文は以下を使用
+%\title{Style file for manuscripts of JSAI 20XX}
+
+\jaddress{氏名，所属，住所，電話番号，Fax番号，電子メールアドレスなど}
+
+\author{%
+\jname{第XX回全国大会プログラム委員会\first}
+\ename{The Program Committee of the XXth annual conference of JSAI}
+\and
+\jname{第2筆者氏名\second}
+\ename{Second Author's Name}
+%\and
+%Given-name Surname\third{}%%英文は左を使用
+}
+
+\affiliate{
+\jname{\first{}人工知能学会}
+\ename{The Japanese Society for Artificial Intelligence}
+\and
+\jname{\second{}所属和文2}
+\ename{Affiliation \#2 in English}
+%\and
+%\third{}Affiliation \#3 in English%%英文は左を使用
+}
+
+%%
+%\Vol{28}        %% <-- 28th（変更しないでください）
+%\session{0A0-00}%% <-- 講演ID（必須)
+
+\begin{abstract}
+Here is an abstract of up to 150 words \textcolor{red}{in English}. 
+This document describes the format guidelines for Japanese manuscripts in \LaTeX{} of the annual conference of JSAI. 
+This is also a sample of a formatted manuscripts (see 2.4 for writing the abstract).
+\end{abstract}
+
+%\setcounter{page}{1}
+\def\Style{``jsaiac.sty''}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em%
+ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\def\JBibTeX{\leavevmode\lower .6ex\hbox{J}\kern-0.15em\BibTeX}
+\def\LaTeXe{\LaTeX\kern.15em2$_{\textstyle\varepsilon}$}
+
+\begin{document}
+\maketitle
+
+\section{はじめに}
+全国大会論文集は電子的にご提出頂くファイルをそのまま収録したもので
+す．この案内をご参照の上，原稿をお作り頂きますようお願いします．この
+案内は \LaTeX 用スタイルファイルの使い方を説明したもので，これ自体も
+サンプルとなっています．
+\textcolor{red}{この案内は公開後も更新される可能性があります．投稿する前に最新版であることをご確認ください．}
+
+\section{全般的事項}
+
+\subsection{ファイル形式・サイズ}
+Adobe(R) PDF （Portable Document Format） 形式 のファイルを提出してく
+ださい．その他の形式での提出は受け付けませんので，ご注意ください．ファ
+イルサイズはファイル受付システムの制限がありますので，3MB 以下にしてく
+ださい．また，ファイル名の拡張子は .pdf にしてください．
+
+\subsection{ヘッダー部分}
+2015年大会から講演番号およびヘッダの会議名は，原稿提出後に運営側で挿入しますので，著者が作成する原稿には記入しないでください．
+
+\subsection{タイトルと著者名}
+原稿におけるタイトル・筆者名等は，発表申し込み時に入力したものに一致させてください．\textcolor{red}{原稿のタイトルや著者名が発表申し込み時と異ならないように十分注意してください．}
+
+\subsection{アブストラクト}
+概要（Abstract）には  (1)目的と (2)結果の概要あるいは結論を含めてください．必要に応じ方法を記載してください．
+\textcolor{red}{(1)(2)の記述のない場合は不採択となることがあります．}
+
+\subsection{原稿枚数}
+下記指定フォーマットでA4用紙2ページです．希望によりさらに2ページまで無料で追加できます．
+
+\subsection{国際セッション}
+\textcolor{red}{国際セッションについては英語のみとなります．}国際セッション論文は，会議時には大会ホームページに掲載されますが，特に本会議と関連が深く，優秀とみなされた論文は，その拡張版のNew Generation Computing誌の特集号への投稿を推奨する予定です．
+
+
+\section{\LaTeX{}原稿のスタイル}
+論文のスタイルを統一するために，原稿はできるだけ以下のスタイルファイル
+を使ってください．基本的には2000年度までの全国大会論文集用に配布されて
+いた原稿用紙と同じ形に仕上がるようになっています．スタイルファイル自体
+は昨年度用のものと同一です．
+
+スタイルファイルは以下のように指定してください．
+
+ASCII版\LaTeX{}2.09なら
+\begin{verbatim}
+\documentstyle[twocolumn,jsaiac]{jarticle}
+\end{verbatim}
+
+NTT版\LaTeX{}2.09なら
+\begin{verbatim}
+\documentstyle[twocolumn,jsaiac]{j-article}
+\end{verbatim}
+
+ASCII版\LaTeXe{}なら
+\begin{verbatim}
+\documentclass[twocolumn]{jarticle}
+\usepackage{jsaiac}
+\end{verbatim}
+
+欧文使用の\LaTeX{}2.09なら
+\begin{verbatim}
+\documentstyle[twocolumn,jsaiac]{article}
+\end{verbatim}
+
+欧文使用の\LaTeXe{}なら
+\begin{verbatim}
+\documentclass[twocolumn]{article}
+\usepackage{jsaiac}
+\end{verbatim}
+
+\Style{}は以上のように，標準で配布されるパッケージである
+jarticle.sty，j-article.sty，jarticle.cls
+（欧文論文の場合はarticle.sty，article.cls）を主のスタイルファイルとして，
+それにオプションという形で使うように設定されています．
+\Style{}はタイトル部分，文字組の調整，一部脚注の
+調整以外は行っていませんが，
+共通版にする関係から，オプションのtwocolumnの指定が必須です．
+以上のことから，
+\Style{}を使う場合は，上記の指定方法を必ず守るようお願いいたします．
+
+\Style{}は以上の3つの\LaTeX{}のバージョンに対応しています．
+NTT版の\LaTeXe{}は動作確認を行っていません．
+
+\subsection{\Style{}を使うことで指定が不要なもの}
+
+\Style{}を使えば，次の指定は必要ありません．
+
+\begin{itemize}
+\item ページ番号の書式
+\item マージン等の位置
+\item 用紙（A4）用紙
+\item 本文（2段組）
+\end{itemize}
+
+\subsection{\Style{}を使うことで指定が必要なもの}
+
+\def\Label{\vskip.5\baselineskip\noindent$\circ$\hskip3pt{}}
+
+\Label タイトル領域：　\Style{}の書き方のきまりは次のようになります．
+\begin{itemize}
+\item タイトル：　
+\begin{verbatim}
+\title{
+   \jtitle{和文タイトル}
+   \etitle{欧文タイトル}
+}
+\end{verbatim}
+なお，欧文論文の場合は，単に
+\begin{verbatim}
+\title{欧文タイトル}
+\end{verbatim}
+としてください．
+\item 筆者名（同一所属の場合）：　
+
+\begin{verbatim}
+\author{%
+   \jname{筆者氏名}
+   \ename{Given-name Surname}
+\and
+   \jname{筆者氏名}
+   \ename{Given-name Surname}
+\and
+   Given-name Surname
+}
+\end{verbatim}
+
+なお，欧文論文の場合は，単に
+\begin{verbatim}
+\author{%
+   Given-name Surname
+\and
+   Given-name Surname
+}
+\end{verbatim}
+としてください．\verb|\jname{ }|や\verb|\ename{ }| は指定しません．
+\item 筆者名（所属が異なる場合）：　
+\begin{verbatim}
+\author{%
+   \jname{第1筆者氏名\first{}}
+   \ename{Given-name Surname}
+\and
+   \jname{第2筆者氏名\second{}}
+   \ename{Given-name Surname}
+\and
+   Given-name Surname\third{}
+}
+\end{verbatim}
+所属が異なる場合，違いを識別するため，
+\begin{verbatim}
+\first   \second    \third .... 
+\end{verbatim}
+の指定を加えてください．これは
+同一の所属は同一のコマンドを与えます．
+さらに所属の方にも，該当する \verb|\first|，\linebreak
+\verb|\second|，
+\verb|\third|$\cdots$ の指定を加えますが，その順序は自由です．
+具体的な出力は，\verb|\first| と指定すると，``$^{\ast 1}$''が
+筆者名の右上（所属は左上）に表示されます．
+これは単純なコマンドです．全部で9つ用意してあります．
+以下がその内訳です．
+\begin{verbatim}
+\def\first{\hbox{$\m@th^{\ast 1}$\hss}}
+\def\second{\hbox{$\m@th^{\ast 2}$\hss}}
+\def\third{\hbox{$\m@th^{\ast 3}$\hss}}
+\def\fourth{\hbox{$\m@th^{\ast 4}$\hss}}
+\def\fifth{\hbox{$\m@th^{\ast 5}$\hss}}
+\def\sixth{\hbox{$\m@th^{\ast 6}$\hss}}
+\def\seventh{\hbox{$\m@th^{\ast 7}$\hss}}
+\def\eighth{\hbox{$\m@th^{\ast 8}$\hss}}
+\def\ninth{\hbox{$\m@th^{\ast 9}$\hss}}
+\end{verbatim}
+
+\item 所属：　\verb|\jname{ }|や\verb|\ename{ }| の指定は筆者名の場合と
+同じです．次のように指定します．
+\begin{verbatim}
+\affiliate{
+   \jname{\first{}所属和文1}
+   \ename{Affiliation #1 in English}
+\and
+   \jname{\second{}所属和文2}
+   \ename{Affiliation #2 in English}
+\and
+   \third{}Affiliation #3 in English
+}
+\end{verbatim}
+なお，欧文論文の場合は，単に
+\begin{verbatim}
+\affiliate{
+   \first{}Affiliation #1 in English
+\and
+   \second{}Affiliation #2 in English
+\and
+   \third{}Affiliation #3 in English
+}
+\end{verbatim}
+とします．\verb|\jname{ }|や\verb|\ename{ }| は指定しません．
+ただし，和欧文とも所属が同一の場合は，\verb|\first| の指定は不要です。
+
+\item 連絡先：　代表者の氏名，所属，所在地，電話番号，Fax番号, 
+e-mail アドレスなどをお書き下さい．
+\begin{verbatim}
+\jaddress{氏名，所属，住所，電話番号，Fax番号，電子メールアドレスなど}
+\end{verbatim}
+とすれば，脚注の位置に``連絡先:~''という形で出力されます．
+なお，欧文論文の場合は，
+\begin{verbatim}
+\address{name, affiliation, address,
+phone number, Fax number,
+e-mail address}
+\end{verbatim}
+とすれば，脚注の位置に``Contact:~''という形で出力されます．
+\end{itemize}
+
+\Label その他
+\begin{itemize}
+\item 脚注：　脚注は，下にある例のように\footnote{この例が脚注です．}
+通常の\LaTeX{}\linebreak
+（\cite{latexブック}）の
+書き方である\verb|\footnote{  }| を使って書きます．
+\item 参考文献：　j(-)article.cls(sty)（欧文論文の場合は
+article.sty(cls)）が用意しているものを使うことになります．
+著者名，文献名，ジャーナル（出版社），発行年など，イニシャル，
+略語のスタイル，記載順などは論文誌の規則に従ってください．
+\JBibTeX{}を使う場合は論文誌用の\LaTeX{}スタイルファイルと
+同時に配布されている``jsai.bst''を使うことをお勧めします．
+参照ラベルの \verb|\cite{ }| も使えます．
+最後の部分に参考文献のサンプルが添付してあります．
+\item 他のコマンド　通常の\LaTeX{}の組版と変わりありません．
+j(-)article.cls{sty}（欧文論文の場合はarticle.sty(cls)）で
+扱えるものはすべて使うことができます．
+\end{itemize}
+
+\begin{thebibliography}{99}
+\bibitem[Knuth 84]{texbook}
+ Knuth,~D.~E.: The \TeX{}book, Addison-Wesley (1984),
+  (邦訳~: \TeX{}ブック, 斎藤 信男 監修, 鷺谷 好輝 訳,
+  アスキー出版局 (1992)).
+\bibitem[Lamport 86]{latexブック}
+Leslie,~L: \LaTeX{}: {A} Document Preparation System (Updated for
+  \LaTeX{}2$\varepsilon$), Addison-Wesley, 2nd edition (1998)
+  (邦訳~: 文書処理システム \LaTeX{}2$\varepsilon$,
+  阿瀬 はる美 訳, ピアソン・エデュケーション, (1999)).
+\end{thebibliography}
+%%
